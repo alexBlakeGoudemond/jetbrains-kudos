@@ -19,6 +19,19 @@ accepted by a developer. Giving credit to the AI Agent makes its involvement exp
 automatically whether AI was used. Transparency is key to maintaining trust in the development process - attribution
 forms a keen part of that trust.
 
+## Why is it called Kudos?
+
+*Kudos* comes from the Greek word *kydos*, meaning glory, praise, or renown.
+
+In modern usage, to give someone "kudos" is to give them credit or recognition for something they did well.
+
+That's exactly what this plugin is about:
+
+> **Give credit where credit is due.**
+
+Whether that credit goes to a teammate, an open-source project, Stack Overflow, or an AI Agent — Kudos makes it easy to
+say, "Hey, you helped with this."
+
 ## How does this Plugin work?
 
 Kudos takes a deliberately simple approach:

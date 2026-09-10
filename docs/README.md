@@ -73,3 +73,40 @@ Kudos deliberately chooses a low-tech approach:
 
 The developer is already responsible for reviewing and accepting the changes. They are therefore also the person best
 placed to decide who deserves credit for them.
+
+## Plugin Design
+
+The plugin should initially integrate with the JetBrains Commit Tool Window:
+
+![Kudos Commit Tool Window v0.0.1](kudos-commit-tool-window-v001.png)
+
+> Every commit will receive attribution until either:
+> - The `Give Kudos` checkbox is deselected
+> - The Commit Tool Window Kudos section is disabled
+
+### Commit Tool Window
+
+The Commit Tool Window should provide:
+
+- A checkbox labelled `Give Kudos`
+- A drop-down tray containing the configured collaborator options
+  - The tray should support scrolling if there are more options than can be displayed comfortably
+- The `Give Kudos` setting should be remembered globally across JetBrains IDEs, rather than being stored per repository
+
+When `Give Kudos` is enabled, the selected collaborator should be added to the commit message in the appropriate
+attribution format.
+
+### Kudos Tool Window
+
+Kudos should also provide a dedicated Tool Window for configuration.
+
+The Tool Window should allow the user to:
+
+- Enable or disable the Kudos UI in the Commit Tool Window
+  - When disabled, the UI should provide a tooltip explaining that Kudos is currently disabled
+- Edit the available collaborator options
+  - Collaborators should be represented as a map where
+    - The key is the collaborator's display name/description
+    - The value is the collaborator's email address, or `null` when no email address is available
+- Preview how the attribution will look. Default: `collaborator <collaborationEmail>
+- Reset the collaborator options to the default values
