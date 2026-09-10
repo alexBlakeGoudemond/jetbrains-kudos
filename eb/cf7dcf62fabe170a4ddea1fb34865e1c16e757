@@ -1,0 +1,26 @@
+build.gradle.kts
+  h_1197a506f6c7d6 1-22
+gradle.properties
+  h_1197a506f6c7d6 1
+gradle/wrapper/gradle-wrapper.properties
+  h_1197a506f6c7d6 1-6
+gradlew
+  h_1197a506f6c7d6 1-234
+gradlew.bat
+  h_1197a506f6c7d6 1-89
+settings.gradle.kts
+  h_1197a506f6c7d6 1-4
+src/main/kotlin/Main.kt
+  h_1197a506f6c7d6 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "ebcf7dcf62fabe170a4ddea1fb34865e1c16e757",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
