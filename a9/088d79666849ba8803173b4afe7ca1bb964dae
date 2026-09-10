@@ -1,0 +1,28 @@
+README.md
+  h_1197a506f6c7d6 2,4
+src/main/kotlin/com/kudos/Main.kt
+  s_b8bf2ecd7d1b1c::t_6d9682f2d3fa5a 4
+  h_1197a506f6c7d6 2-3
+  h_1197a506f6c7d6 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a9088d79666849ba8803173b4afe7ca1bb964dae",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_b8bf2ecd7d1b1c": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1789055104974",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
