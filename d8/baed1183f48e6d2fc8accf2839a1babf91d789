@@ -1,0 +1,18 @@
+build.gradle.kts
+  h_1197a506f6c7d6 1-2,38,41-45
+src/test/kotlin/com/kudos/settings/KudosSettingsStateTest.kt
+  h_1197a506f6c7d6 1-65
+src/main/kotlin/com/kudos/settings/KudosSettingsState.kt
+  h_1197a506f6c7d6 1-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d8baed1183f48e6d2fc8accf2839a1babf91d789",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
