@@ -2,6 +2,7 @@ plugins {
     id("java")
     alias(libs.plugins.kotlin)
     alias(libs.plugins.intellijPlatform)
+    alias(libs.plugins.changelog)
 }
 
 group = providers.gradleProperty("pluginGroup").get()
@@ -22,6 +23,12 @@ repositories {
     }
 }
 
+// Read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin.html
+changelog {
+    groups.empty()
+    repositoryUrl = "https://github.com/alexBlakeGoudemond/jetbrains-window-accent"
+}
+
 dependencies {
     intellijPlatform {
         intellijIdea(providers.gradleProperty("platformVersion"))
@@ -35,6 +42,16 @@ intellijPlatform {
         ideaVersion {
             sinceBuild.set(providers.gradleProperty("pluginSinceBuild"))
         }
+
+        val changelogHandle = changelog
+        changeNotes.set(
+            providers.gradleProperty("pluginVersion").map {
+                changelogHandle.renderItem(
+                    changelogHandle.get(it).withHeader(false).withEmptySections(false),
+                    org.jetbrains.changelog.Changelog.OutputType.HTML,
+                )
+            }
+        )
     }
 
     instrumentCode = false
