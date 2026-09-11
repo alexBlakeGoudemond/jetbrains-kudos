@@ -1,0 +1,16 @@
+src/test/kotlin/com/kudos/settings/KudosSettingsPanelTest.kt
+  h_1197a506f6c7d6 1-68
+src/main/kotlin/com/kudos/settings/KudosSettingsPanel.kt
+  h_1197a506f6c7d6 19,41,45,50,113,120,132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7b1d443186fb4a4ca238787d4ecf0442d9e073af",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
