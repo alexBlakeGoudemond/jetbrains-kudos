@@ -16,7 +16,7 @@ import javax.swing.event.ListSelectionListener
  * A single row in the collaborators table. `email` is "" rather than null here -
  * KudosSettingsState translates that at its own boundary, see setCollaborators().
  */
-private data class CollaboratorRow(var name: String, var email: String)
+data class CollaboratorRow(var name: String, var email: String)
 
 private class NameColumn : ColumnInfo<CollaboratorRow, String>("Name") {
     override fun valueOf(item: CollaboratorRow): String = item.name
@@ -38,16 +38,16 @@ class KudosSettingsPanel {
 
     private val settings = KudosSettingsState.getInstance()
 
-    private val tableModel = ListTableModel<CollaboratorRow>(NameColumn(), EmailColumn()).apply {
+    val tableModel = ListTableModel<CollaboratorRow>(NameColumn(), EmailColumn()).apply {
         items = rowsFromSettings()
     }
 
-    private val table = JBTable(tableModel).apply {
+    val table = JBTable(tableModel).apply {
         setShowGrid(false)
         rowHeight = JBUI.scale(24)
     }
 
-    private val previewLabel = JBLabel().apply {
+    val previewLabel = JBLabel().apply {
         foreground = JBColor.GRAY
     }
 
@@ -110,14 +110,14 @@ class KudosSettingsPanel {
         }
     }
 
-    private fun addCollaborator() {
+    fun addCollaborator() {
         tableModel.addRow(CollaboratorRow("New collaborator", ""))
         val newRowIndex = tableModel.rowCount - 1
         table.editCellAt(newRowIndex, 0)
         table.setRowSelectionInterval(newRowIndex, newRowIndex)
     }
 
-    private fun removeSelectedCollaborator() {
+    fun removeSelectedCollaborator() {
         val selectedRow = table.selectedRow
         if (selectedRow >= 0) {
             tableModel.removeRow(selectedRow)
@@ -129,7 +129,7 @@ class KudosSettingsPanel {
         settings.setCollaborators(map)
     }
 
-    private fun updatePreview() {
+    fun updatePreview() {
         val row = tableModel.items.getOrNull(table.selectedRow) ?: tableModel.items.firstOrNull()
         previewLabel.text = row?.let { settings.formatAttribution(it.name) } ?: "No collaborators configured"
     }
