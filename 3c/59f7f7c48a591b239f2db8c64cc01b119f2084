@@ -1,0 +1,14 @@
+build.gradle.kts
+  h_1197a506f6c7d6 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3c59f7f7c48a591b239f2db8c64cc01b119f2084",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
