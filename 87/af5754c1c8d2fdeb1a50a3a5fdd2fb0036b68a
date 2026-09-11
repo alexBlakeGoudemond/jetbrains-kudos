@@ -1,0 +1,18 @@
+src/main/resources/META-INF/pluginIcon.svg
+  h_1197a506f6c7d6 1-23
+src/main/resources/META-INF/plugin.xml
+  h_1197a506f6c7d6 17,26-31
+src/main/resources/META-INF/plugin-icon-simple.svg
+  h_1197a506f6c7d6 1-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "87af5754c1c8d2fdeb1a50a3a5fdd2fb0036b68a",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
