@@ -35,6 +35,7 @@ dependencies {
     intellijPlatform {
         intellijIdea(providers.gradleProperty("platformVersion"))
         jetbrainsRuntime()
+        bundledModule("intellij.platform.vcs.impl")
         testFramework(TestFrameworkType.Platform)
     }
     testImplementation(kotlin("test"))
