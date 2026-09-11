@@ -1,0 +1,16 @@
+gradle/libs.versions.toml
+  h_1197a506f6c7d6 1-9
+build.gradle.kts
+  h_1197a506f6c7d6 2-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "71a16f8b7c8d71b53993670c140e011e2f5acc26",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
