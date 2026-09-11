@@ -1,0 +1,14 @@
+src/main/resources/META-INF/pluginIcon.svg
+  h_1197a506f6c7d6 11,20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d4a92a115b6a32183a0471a561bd5273a43f2939",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
