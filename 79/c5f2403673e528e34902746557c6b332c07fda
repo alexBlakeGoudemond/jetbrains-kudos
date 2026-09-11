@@ -1,0 +1,14 @@
+".run/Run IDE with Plugin.run.xml"
+  h_1197a506f6c7d6 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "79c5f2403673e528e34902746557c6b332c07fda",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
