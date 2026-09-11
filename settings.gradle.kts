@@ -1,4 +1,19 @@
+pluginManagement {
+    repositories {
+        maven("https://cache-redirector.jetbrains.com/intellij-dependencies")
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
-rootProject.name = "jetbrains-kudos"
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Kudos"
