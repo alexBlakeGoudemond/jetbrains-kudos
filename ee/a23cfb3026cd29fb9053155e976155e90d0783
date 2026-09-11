@@ -1,0 +1,19 @@
+src/main/kotlin/com/kudos/settings/KudosSettingsPanel.kt
+  h_1197a506f6c7d6 1-136
+src/main/resources/META-INF/plugin.xml
+  h_1197a506f6c7d6 28-29
+  h_1197a506f6c7d6 27,30-32
+src/main/kotlin/com/kudos/settings/KudosToolWindowFactory.kt
+  h_1197a506f6c7d6 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "eea23cfb3026cd29fb9053155e976155e90d0783",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
