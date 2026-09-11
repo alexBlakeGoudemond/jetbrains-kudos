@@ -14,7 +14,7 @@
     ]]></description>
 
     <resource-bundle>messages.MyMessageBundle</resource-bundle>
-    
+
     <!-- com.intellij.modules.platform is the minimal dependency every plugin needs.
          We'll add com.intellij.modules.vcs / Git4Idea in a later step once we build
          the actual commit-checkbox integration. -->
@@ -23,5 +23,11 @@
     <extensions defaultExtensionNs="com.intellij">
         <!-- Extension points (commit handler, tool window, settings service)
              will be registered here in later steps. -->
+
+<!--        <toolWindow id="Kudos"-->
+<!--                    factoryClass="..."-->
+<!--                    icon="/META-INF/plugin-icon-simple.svg"-->
+<!--                    anchor="left"-->
+<!--                    doNotActivateOnStart="true"/>-->
     </extensions>
 </idea-plugin>
