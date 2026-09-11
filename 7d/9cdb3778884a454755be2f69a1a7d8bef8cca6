@@ -1,0 +1,25 @@
+AGENTS.md
+  s_ffe7ec55c2ffed::t_b11b000fd7002d 1-2,4-7,9-13,15,17-21,23-28,30,32-34,36-38,40,42-44,46-48,50-51,53,55-57,60,62-68,70-82,84-87,89-92,94-103,105-111
+  h_1197a506f6c7d6 3,8,14,16,22,29,31,35,39,41,45,49,52,54,58-59,61,69,83,88,93,104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7d9cdb3778884a454755be2f69a1a7d8bef8cca6",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_ffe7ec55c2ffed": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "f88d8ad8-d39e-4e1c-aff6-0cb8e4bf5310",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
