@@ -20,14 +20,6 @@ class KudosCheckinHandler(private val panel: CheckinProjectPanel) : CheckinHandl
     }
 
     private fun appendAttribution(attribution: String) {
-        val trailer = "Co-authored-by: $attribution"
-        val message = panel.commitMessage
-
-        // Guard against double-adding on amend / re-open-and-recommit.
-        if (trailer in message) return
-
-        val trimmed = message.trimEnd('\n')
-        val newMessage = if (trimmed.isBlank()) trailer else "$trimmed\n\n$trailer"
-        panel.setCommitMessage(newMessage)
+        panel.setCommitMessage(KudosCommitMessage.withTrailer(panel.commitMessage, attribution))
     }
 }

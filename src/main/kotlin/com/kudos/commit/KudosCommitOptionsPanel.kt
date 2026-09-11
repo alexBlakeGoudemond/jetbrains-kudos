@@ -16,8 +16,8 @@ import javax.swing.JPanel
  */
 class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent {
 
-    private val checkBox = JBCheckBox("Give Kudos")
-    private val comboBox = ComboBox<String>()
+    val checkBox = JBCheckBox("Give Kudos")
+    val comboBox = ComboBox<String>()
 
     private val rootPanel = JPanel(FlowLayout(FlowLayout.LEFT, 4, 0)).apply {
         add(checkBox)
