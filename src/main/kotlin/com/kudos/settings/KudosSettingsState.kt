@@ -2,6 +2,15 @@ package com.kudos.settings
 
 import com.intellij.openapi.components.*
 import com.intellij.util.xmlb.XmlSerializerUtil
+import com.intellij.openapi.application.ApplicationManager
+import com.intellij.util.messages.Topic
+
+/**
+ * Listener for Kudos settings changes published over the application message bus.
+ */
+interface KudosSettingsListener {
+    fun collaboratorsChanged()
+}
 
 /**
  * Application-level (global, not per-project/per-repo) settings for Kudos.
@@ -63,6 +72,11 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
         if (myState.selectedCollaborator !in myState.collaborators) {
             myState.selectedCollaborator = myState.collaborators.keys.firstOrNull() ?: ""
         }
+
+        // Notify listeners that collaborators changed so UI components can refresh live
+        ApplicationManager.getApplication().messageBus
+            .syncPublisher(KUDOS_SETTINGS_TOPIC)
+            .collaboratorsChanged()
     }
 
     fun resetToDefaults() {
@@ -97,5 +111,13 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
             "GitHub Copilot" to "",
             "ChatGPT" to "",
         )
+
+        /**
+         * Message-bus topic for notifying UI components about settings changes.
+         * Subscribers should update UI on the EDT when collaboratorsChanged() is invoked.
+         */
+
+        val KUDOS_SETTINGS_TOPIC: Topic<KudosSettingsListener> =
+            Topic.create("KudosSettings", KudosSettingsListener::class.java)
     }
 }
