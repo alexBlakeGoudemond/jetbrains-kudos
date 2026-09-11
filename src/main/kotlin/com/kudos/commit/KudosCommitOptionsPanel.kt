@@ -4,10 +4,13 @@ import com.intellij.openapi.ui.ComboBox
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent
 import com.intellij.ui.components.JBCheckBox
 import com.kudos.settings.KudosSettingsState
+import com.kudos.settings.KudosSettingsListener
+import com.intellij.openapi.application.ApplicationManager
 import java.awt.FlowLayout
 import javax.swing.DefaultComboBoxModel
 import javax.swing.JComponent
 import javax.swing.JPanel
+import javax.swing.SwingUtilities
 
 /**
  * The "Give Kudos [dropdown]" row shown in the commit dialog's options area.
@@ -16,6 +19,7 @@ import javax.swing.JPanel
  */
 class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent {
 
+    @Suppress("DialogTitleCapitalization")
     val checkBox = JBCheckBox("Give Kudos")
     val comboBox = ComboBox<String>()
 
@@ -36,6 +40,26 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         }
 
         restoreState()
+
+        // Subscribe to settings changes so the commit options update live when collaborators are edited
+        ApplicationManager.getApplication().messageBus.connect().subscribe(
+            KudosSettingsState.KUDOS_SETTINGS_TOPIC,
+            object : KudosSettingsListener {
+                override fun collaboratorsChanged() {
+                    if (SwingUtilities.isEventDispatchThread()) {
+                        comboBox.model = DefaultComboBoxModel(settings.collaborators.keys.toTypedArray())
+                        comboBox.selectedItem = settings.selectedCollaborator
+                        applyUiEnabledState()
+                    } else {
+                        SwingUtilities.invokeLater {
+                            comboBox.model = DefaultComboBoxModel(settings.collaborators.keys.toTypedArray())
+                            comboBox.selectedItem = settings.selectedCollaborator
+                            applyUiEnabledState()
+                        }
+                    }
+                }
+            }
+        )
     }
 
     private fun applyUiEnabledState() {

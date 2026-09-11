@@ -115,6 +115,10 @@ class KudosSettingsPanel {
         val newRowIndex = tableModel.rowCount - 1
         table.editCellAt(newRowIndex, 0)
         table.setRowSelectionInterval(newRowIndex, newRowIndex)
+
+        // Persist immediately so consumers (commit UI) can update live
+        persistCollaborators()
+        updatePreview()
     }
 
     fun removeSelectedCollaborator() {
