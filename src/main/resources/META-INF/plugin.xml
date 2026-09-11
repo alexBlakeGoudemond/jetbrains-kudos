@@ -24,10 +24,11 @@
         <!-- Extension points (commit handler, tool window, settings service)
              will be registered here in later steps. -->
 
-<!--        <toolWindow id="Kudos"-->
-<!--                    factoryClass="..."-->
-<!--                    icon="/META-INF/plugin-icon-simple.svg"-->
-<!--                    anchor="left"-->
-<!--                    doNotActivateOnStart="true"/>-->
+        <toolWindow id="Kudos"
+                    secondary="true"
+                    factoryClass="com.kudos.settings.KudosToolWindowFactory"
+                    icon="/META-INF/plugin-icon-simple.svg"
+                    anchor="left"
+                    doNotActivateOnStart="true"/>
     </extensions>
 </idea-plugin>
