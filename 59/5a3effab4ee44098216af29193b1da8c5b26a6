@@ -1,0 +1,14 @@
+src/main/kotlin/com/github/alexblakegoudemond/kudos/settings/KudosSettingsState.kt
+  h_1197a506f6c7d6 1-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "595a3effab4ee44098216af29193b1da8c5b26a6",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
