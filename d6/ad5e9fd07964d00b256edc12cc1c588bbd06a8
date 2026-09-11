@@ -1,0 +1,22 @@
+src/main/kotlin/com/kudos/commit/KudosCommitMessage.kt
+  h_1197a506f6c7d6 1-24
+src/test/kotlin/com/kudos/commit/KudosCommitOptionsPanelTest.kt
+  h_1197a506f6c7d6 1-73
+src/test/kotlin/com/kudos/commit/KudosCommitMessageTest.kt
+  h_1197a506f6c7d6 1-44
+src/main/kotlin/com/kudos/commit/KudosCommitOptionsPanel.kt
+  h_1197a506f6c7d6 19-20
+src/main/kotlin/com/kudos/commit/KudosCheckinHandler.kt
+  h_1197a506f6c7d6 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d6ad5e9fd07964d00b256edc12cc1c588bbd06a8",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
