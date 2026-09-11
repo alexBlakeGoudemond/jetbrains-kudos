@@ -1,0 +1,22 @@
+src/main/kotlin/com/kudos/commit/KudosCheckinHandlerFactory.kt
+  h_1197a506f6c7d6 1-11
+src/main/kotlin/com/kudos/commit/KudosCommitOptionsPanel.kt
+  h_1197a506f6c7d6 1-71
+src/main/resources/META-INF/plugin.xml
+  h_1197a506f6c7d6 21-24,27,35
+build.gradle.kts
+  h_1197a506f6c7d6 38
+src/main/kotlin/com/kudos/commit/KudosCheckinHandler.kt
+  h_1197a506f6c7d6 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2b6a95a7694f9f41aab8cca14cd26db0c60899b0",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
