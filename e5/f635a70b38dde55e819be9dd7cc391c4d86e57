@@ -1,0 +1,14 @@
+.gitignore
+  h_1197a506f6c7d6 15,44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e5f635a70b38dde55e819be9dd7cc391c4d86e57",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
