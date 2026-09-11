@@ -1,0 +1,26 @@
+src/test/kotlin/com/kudos/commit/KudosIntegrationTest.kt
+  h_1197a506f6c7d6 26,38-39,43,45-54
+  s_ffe7ec55c2ffed::t_a258c192407680 1-25,27-37,40-42,44,55-56
+  s_ffe7ec55c2ffed::t_2f82f9ae9c02a6 57-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "dfa2486d2b3f251ad788a5364318adb295c3eadb",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_ffe7ec55c2ffed": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "f88d8ad8-d39e-4e1c-aff6-0cb8e4bf5310",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
