@@ -1,42 +1,61 @@
 package com.kudos.commit
 
-import com.intellij.openapi.ui.ComboBox
+import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent
 import com.intellij.ui.components.JBCheckBox
-import com.kudos.settings.KudosSettingsState
+import com.intellij.ui.components.JBList
+import com.intellij.ui.components.JBScrollPane
 import com.kudos.settings.KudosSettingsListener
-import com.intellij.openapi.application.ApplicationManager
-import java.awt.FlowLayout
-import javax.swing.DefaultComboBoxModel
+import com.kudos.settings.KudosSettingsState
+import java.awt.BorderLayout
+import java.awt.Dimension
+import javax.swing.DefaultListModel
 import javax.swing.JComponent
 import javax.swing.JPanel
+import javax.swing.ListSelectionModel
 import javax.swing.SwingUtilities
 
 /**
- * The "Give Kudos [dropdown]" row shown in the commit dialog's options area.
- * Swing's JComboBox already scrolls its popup once items exceed a comfortable
- * height, so the doc's "dropdown should support scrolling" requirement is free.
+ * The "Give Kudos" row shown in the commit dialog's options area.
+ *
+ * A unit of work can involve more than one collaborator at once (e.g. pairing with a colleague
+ * *and* using an AI agent), so collaborators are shown as a multi-select list rather than a
+ * single-select dropdown: hold Cmd/Ctrl (or Shift for a range) to select more than one. The list
+ * is wrapped in a scroll pane so it stays a fixed, comfortable size regardless of how many
+ * collaborators are configured.
  */
 class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent {
 
     @Suppress("DialogTitleCapitalization")
     val checkBox = JBCheckBox("Give Kudos")
-    val comboBox = ComboBox<String>()
 
-    private val rootPanel = JPanel(FlowLayout(FlowLayout.LEFT, 4, 0)).apply {
-        add(checkBox)
-        add(comboBox)
+    val collaboratorsList = JBList(DefaultListModel<String>()).apply {
+        selectionMode = ListSelectionModel.MULTIPLE_INTERVAL_SELECTION
+        visibleRowCount = 4
+    }
+
+    private val scrollPane = JBScrollPane(collaboratorsList).apply {
+        preferredSize = Dimension(220, 90)
+    }
+
+    private val rootPanel = JPanel(BorderLayout(0, 4)).apply {
+        add(checkBox, BorderLayout.NORTH)
+        add(scrollPane, BorderLayout.CENTER)
     }
 
     init {
-        comboBox.model = DefaultComboBoxModel(settings.collaborators.keys.toTypedArray())
+        reloadListModel()
 
         checkBox.addActionListener {
             settings.giveKudosEnabled = checkBox.isSelected
-            comboBox.isEnabled = checkBox.isSelected && settings.kudosUiEnabled
+            applyUiEnabledState()
         }
-        comboBox.addActionListener {
-            settings.selectedCollaborator = comboBox.selectedItem as? String
+        collaboratorsList.addListSelectionListener { event ->
+            // addListSelectionListener fires once per underlying mouse/key event batch; the final
+            // one (valueIsAdjusting == false) reflects the settled selection, so persist only then.
+            if (!event.valueIsAdjusting) {
+                settings.selectedCollaborators = selectedNames()
+            }
         }
 
         restoreState()
@@ -47,13 +66,13 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
             object : KudosSettingsListener {
                 override fun collaboratorsChanged() {
                     if (SwingUtilities.isEventDispatchThread()) {
-                        comboBox.model = DefaultComboBoxModel(settings.collaborators.keys.toTypedArray())
-                        comboBox.selectedItem = settings.selectedCollaborator
+                        reloadListModel()
+                        applySelection(settings.selectedCollaborators)
                         applyUiEnabledState()
                     } else {
                         SwingUtilities.invokeLater {
-                            comboBox.model = DefaultComboBoxModel(settings.collaborators.keys.toTypedArray())
-                            comboBox.selectedItem = settings.selectedCollaborator
+                            reloadListModel()
+                            applySelection(settings.selectedCollaborators)
                             applyUiEnabledState()
                         }
                     }
@@ -62,34 +81,55 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         )
     }
 
+    /** Rebuilds the list's contents from settings, without touching the current selection. */
+    private fun reloadListModel() {
+        val model = DefaultListModel<String>()
+        settings.collaborators.keys.forEach { model.addElement(it) }
+        collaboratorsList.model = model
+    }
+
+    /** Selects exactly the rows whose collaborator name is in [names]; ignores unknown names. */
+    private fun applySelection(names: Set<String>) {
+        collaboratorsList.clearSelection()
+        val model = collaboratorsList.model
+        for (index in 0 until model.size) {
+            if (model.getElementAt(index) in names) {
+                collaboratorsList.addSelectionInterval(index, index)
+            }
+        }
+    }
+
+    /** The collaborator names currently checked in the list, in list (i.e. settings) order. */
+    private fun selectedNames(): Set<String> = collaboratorsList.selectedValuesList.toCollection(LinkedHashSet())
+
     private fun applyUiEnabledState() {
         val uiEnabled = settings.kudosUiEnabled
         checkBox.isEnabled = uiEnabled
-        comboBox.isEnabled = uiEnabled && checkBox.isSelected
+        collaboratorsList.isEnabled = uiEnabled && checkBox.isSelected
 
         val tooltip = if (uiEnabled) null else "Kudos is currently disabled. Enable it from the Kudos tool window."
         checkBox.toolTipText = tooltip
-        comboBox.toolTipText = tooltip
+        collaboratorsList.toolTipText = tooltip
     }
 
     override fun getComponent(): JComponent = rootPanel
 
     /** Called when the commit dialog reopens - picks up edits made in the Kudos tool window meanwhile. */
     override fun refresh() {
-        comboBox.model = DefaultComboBoxModel(settings.collaborators.keys.toTypedArray())
-        comboBox.selectedItem = settings.selectedCollaborator
+        reloadListModel()
+        applySelection(settings.selectedCollaborators)
         checkBox.isSelected = settings.giveKudosEnabled
         applyUiEnabledState()
     }
 
     override fun saveState() {
         settings.giveKudosEnabled = checkBox.isSelected
-        settings.selectedCollaborator = comboBox.selectedItem as? String
+        settings.selectedCollaborators = selectedNames()
     }
 
     override fun restoreState() {
         checkBox.isSelected = settings.giveKudosEnabled
-        comboBox.selectedItem = settings.selectedCollaborator
+        applySelection(settings.selectedCollaborators)
         applyUiEnabledState()
     }
 }

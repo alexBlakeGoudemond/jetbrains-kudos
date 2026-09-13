@@ -48,12 +48,13 @@ class KudosIntegrationTest : BasePlatformTestCase() {
     }
 
     /**
-     * 1. Create an IntRange from 0 up until the itemCount
-     * 2. Foreach number in the IntRange, transform to the commitOption
+     * 1. Create an IntRange from 0 up until the model's size
+     * 2. Foreach number in the IntRange, transform to the collaborator name at that row
      * 3. return
      * */
     private fun fetchCollaborators(commitOptions: KudosCommitOptionsPanel): List<String?> {
-        val initialItems = (0 until commitOptions.comboBox.itemCount).map { commitOptions.comboBox.getItemAt(it) }
+        val model = commitOptions.collaboratorsList.model
+        val initialItems = (0 until model.size).map { model.getElementAt(it) }
         return initialItems
     }
 }

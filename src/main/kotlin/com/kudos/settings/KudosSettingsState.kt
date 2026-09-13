@@ -53,10 +53,16 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
             myState.kudosUiEnabled = value
         }
 
-    var selectedCollaborator: String?
-        get() = myState.selectedCollaborator.ifBlank { null }
+    /**
+     * The collaborators currently checked for this unit of work. A [LinkedHashSet] to preserve
+     * selection order (so e.g. "colleague first, then AI" produces trailers in that order) while
+     * still deduplicating - the commit UI can't select the same collaborator twice anyway, but
+     * callers (and old persisted state) shouldn't be able to sneak in a duplicate.
+     */
+    var selectedCollaborators: Set<String>
+        get() = myState.selectedCollaborators.toCollection(LinkedHashSet())
         set(value) {
-            myState.selectedCollaborator = value ?: ""
+            myState.selectedCollaborators = value.toCollection(LinkedHashSet()).toMutableList()
         }
 
     val collaborators: Map<String, String?>
@@ -67,11 +73,13 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
             .mapValues { (_, email) -> email ?: "" }
             .toMutableMap()
 
-        // If the previously-selected collaborator no longer exists, fall back sensibly
-        // rather than leaving a dangling reference to a removed entry.
-        if (myState.selectedCollaborator !in myState.collaborators) {
-            myState.selectedCollaborator = myState.collaborators.keys.firstOrNull() ?: ""
-        }
+        // Drop any previously-selected collaborators that no longer exist, rather than leaving
+        // dangling references to removed entries. Unlike the old single-selection fallback, we
+        // don't auto-select a replacement here: with multiple collaborators, silently picking
+        // "whichever is first" on someone's behalf is more likely to be wrong than helpful.
+        myState.selectedCollaborators = myState.selectedCollaborators
+            .filter { it in myState.collaborators }
+            .toMutableList()
 
         // Notify listeners that collaborators changed so UI components can refresh live
         ApplicationManager.getApplication().messageBus
@@ -92,15 +100,18 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
         return if (email.isNullOrBlank()) name else "$name <$email>"
     }
 
-    /** Convenience for the commit-handler step: the formatted trailer for whatever's currently selected. */
-    fun currentAttributionOrNull(): String? =
-        selectedCollaborator?.let { formatAttribution(it) }
+    /**
+     * Convenience for the commit-handler step: the formatted trailer text for every currently
+     * selected collaborator, in selection order. Empty if nothing is selected.
+     */
+    fun currentAttributions(): List<String> =
+        selectedCollaborators.filter { it in collaborators }.map { formatAttribution(it) }
 
     class State {
         var giveKudosEnabled: Boolean = true
         var kudosUiEnabled: Boolean = true
         var collaborators: MutableMap<String, String> = defaultCollaborators()
-        var selectedCollaborator: String = ""
+        var selectedCollaborators: MutableList<String> = mutableListOf()
     }
 
     companion object {
