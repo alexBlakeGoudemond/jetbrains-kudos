@@ -1,0 +1,39 @@
+src/test/kotlin/com/kudos/commit/KudosCommitOptionsPanelTest.kt
+  h_1197a506f6c7d6 14-15,17,21,34,38-39,44,48-50,88,91-93,100-102
+  s_c9f76689f380c2::t_24bf62cd3dac13 104
+src/test/kotlin/com/kudos/commit/KudosIntegrationTest.kt
+  h_1197a506f6c7d6 57
+  s_ffe7ec55c2ffed::t_e0b57de9a93a18 60
+src/main/kotlin/com/kudos/commit/KudosCommitOptionsPanel.kt
+  h_1197a506f6c7d6 5,20-22,29,47-51,62-63,65-67,69,75,77-80,84,100-102,107,112
+  s_c9f76689f380c2::t_2ead98167b5cef 64,115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d7d14417ec384f0a01c2168a40a6962214ba5aeb",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c9f76689f380c2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_c9f76689f380c2",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    },
+    "s_ffe7ec55c2ffed": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "f88d8ad8-d39e-4e1c-aff6-0cb8e4bf5310",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
