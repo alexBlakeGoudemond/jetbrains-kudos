@@ -26,6 +26,11 @@ import javax.swing.SwingUtilities
  */
 class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent {
 
+    // When true, selection-listener persistence is temporarily suppressed to avoid persisting
+    // intermediate empty selections while the UI rebuilds the list model and reapplies a valid
+    // selection (e.g. during refresh/collaboratorsChanged updates).
+    private var suppressSelectionPersistence: Boolean = false
+
     @Suppress("DialogTitleCapitalization")
     val checkBox = JBCheckBox("Give Kudos")
 
@@ -51,9 +56,9 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
             applyUiEnabledState()
         }
         collaboratorsList.addListSelectionListener { event ->
-            // addListSelectionListener fires once per underlying mouse/key event batch; the final
-            // one (valueIsAdjusting == false) reflects the settled selection, so persist only then.
-            if (!event.valueIsAdjusting) {
+            if (!suppressSelectionPersistence) {
+                // Persist selection immediately; doing this on every event avoids race conditions where
+                // other code updates collaborators before the final adjustment event has been delivered.
                 settings.selectedCollaborators = selectedNames()
             }
         }
@@ -66,16 +71,26 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
             object : KudosSettingsListener {
                 override fun collaboratorsChanged() {
                     if (SwingUtilities.isEventDispatchThread()) {
-                        reloadListModel()
-                        applySelection(settings.selectedCollaborators)
-                        applyUiEnabledState()
-                    } else {
-                        SwingUtilities.invokeLater {
-                            reloadListModel()
-                            applySelection(settings.selectedCollaborators)
-                            applyUiEnabledState()
+                            suppressSelectionPersistence = true
+                            try {
+                                reloadListModel()
+                                applySelection(settings.selectedCollaborators)
+                                applyUiEnabledState()
+                            } finally {
+                                suppressSelectionPersistence = false
+                            }
+                        } else {
+                            SwingUtilities.invokeLater {
+                                suppressSelectionPersistence = true
+                                try {
+                                    reloadListModel()
+                                    applySelection(settings.selectedCollaborators)
+                                    applyUiEnabledState()
+                                } finally {
+                                    suppressSelectionPersistence = false
+                                }
+                            }
                         }
-                    }
                 }
             }
         )
@@ -116,10 +131,18 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
 
     /** Called when the commit dialog reopens - picks up edits made in the Kudos tool window meanwhile. */
     override fun refresh() {
-        reloadListModel()
-        applySelection(settings.selectedCollaborators)
-        checkBox.isSelected = settings.giveKudosEnabled
-        applyUiEnabledState()
+        // Persist the current UI selection first — otherwise rebuilding the list model can
+        // cause a race where settings' selectedCollaborators is stale and gets overwritten.
+        saveState()
+        suppressSelectionPersistence = true
+        try {
+            reloadListModel()
+            applySelection(settings.selectedCollaborators)
+            checkBox.isSelected = settings.giveKudosEnabled
+            applyUiEnabledState()
+        } finally {
+            suppressSelectionPersistence = false
+        }
     }
 
     override fun saveState() {
