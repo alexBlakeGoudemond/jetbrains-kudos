@@ -1,0 +1,16 @@
+CHANGELOG.md
+  h_1197a506f6c7d6 3-9
+gradle.properties
+  h_1197a506f6c7d6 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "f541f3249027dbe4125216afc443f599de033395",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
