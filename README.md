@@ -58,3 +58,12 @@ Just a simple way to give credit.
 
 See [docs/README.md](docs/README.md) for more information about the problem Kudos is trying to solve and how it differs
 from other solutions.
+
+## Disclaimer
+
+> IMPORTANT
+>
+> This codebase is AI Assisted. The following were used in the creations of this plugin:
+> - ChatGPT (Planning and Research)
+> - Claude (Plugin Creation)
+> - GitHub Copilot (Bugfixes and quick edits inside the IDE)
