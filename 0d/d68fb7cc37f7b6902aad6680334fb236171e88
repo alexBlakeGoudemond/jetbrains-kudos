@@ -1,0 +1,41 @@
+src/test/kotlin/com/kudos/commit/KudosIntegrationTest.kt
+  s_ffe7ec55c2ffed::t_c6e145b1d5feeb 51-52,56-57
+src/main/kotlin/com/kudos/commit/KudosCheckinHandler.kt
+  s_beb060241a75f5::t_7bb37c69a28cfb 17-20,25-26
+src/main/kotlin/com/kudos/commit/KudosCommitMessage.kt
+  s_beb060241a75f5::t_fbc68573d1b547 17-43,46-47
+src/main/kotlin/com/kudos/commit/KudosCommitOptionsPanel.kt
+  s_beb060241a75f5::t_452be603f0f935 3,6-7,9-12,15,19-25,32-43,47,51,53-58,69-70,74-75,84-104,108,112,119-120,127,132,135
+src/main/kotlin/com/kudos/settings/KudosSettingsState.kt
+  s_beb060241a75f5::t_7a9bc353e91903 56-63,65,76-82,103-108,114
+src/test/kotlin/com/kudos/commit/KudosCommitMessageTest.kt
+  s_beb060241a75f5::t_6661465c7243bb 44-97
+src/test/kotlin/com/kudos/commit/KudosCommitOptionsPanelTest.kt
+  s_beb060241a75f5::t_b8203a4215b43c 14-34,37-40,53,57,59,62-71,79,101-113,115
+src/test/kotlin/com/kudos/settings/KudosSettingsStateTest.kt
+  s_beb060241a75f5::t_b0fdaddb2b1464 18,38,40-56,58-59,61-69,74-75,84
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "0dd68fb7cc37f7b6902aad6680334fb236171e88",
+  "prompts": {},
+  "sessions": {
+    "s_beb060241a75f5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_beb060241a75f5",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    },
+    "s_ffe7ec55c2ffed": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "f88d8ad8-d39e-4e1c-aff6-0cb8e4bf5310",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
