@@ -1,5 +1,7 @@
 # Changelog
 
+## [Unreleased]
+
 ## [1.1.0]
 
 ### Added
@@ -15,3 +17,7 @@
     - Tool Window to enable Kudos and define Collaborators
     - Integrated into Commit Tool Window to Give Kudos to Collaborators
     - Settings remembered globally (2+ IDE instances will have same collaborators)
+
+[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.0.0...1.1.0
+[1.0.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/commits/1.0.0
