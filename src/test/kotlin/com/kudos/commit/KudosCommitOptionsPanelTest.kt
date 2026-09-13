@@ -11,33 +11,14 @@ class KudosCommitOptionsPanelTest : BasePlatformTestCase() {
         return KudosCommitOptionsPanel(settings)
     }
 
-    private fun listItems(panel: KudosCommitOptionsPanel): List<String> =
-        (0 until panel.collaboratorsList.model.size).map { panel.collaboratorsList.model.getElementAt(it) }
+    private fun listItems(panel: KudosCommitOptionsPanel): List<String?> =
+        (0 until panel.collaboratorsList.model.size).map { panel.collaboratorsList.getItemAt(it) }
 
-    /** Selects the rows for [names] the way a user clicking with Cmd/Ctrl held down would. */
-    private fun selectByName(panel: KudosCommitOptionsPanel, vararg names: String) {
-        panel.collaboratorsList.clearSelection()
-        val model = panel.collaboratorsList.model
-        for (index in 0 until model.size) {
-            if (model.getElementAt(index) in names) {
-                panel.collaboratorsList.addSelectionInterval(index, index)
-            }
-        }
-    }
-
-    fun `test list is seeded from settings collaborators`() {
+    fun `test list is seeded from settings collaborators, all unchecked`() {
         val panel = freshPanel()
 
         assertEquals(listOf("Claude", "GitHub Copilot", "ChatGPT"), listItems(panel))
-    }
-
-    fun `test list allows selecting more than one collaborator`() {
-        val panel = freshPanel()
-
-        assertEquals(
-            javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION,
-            panel.collaboratorsList.selectionMode
-        )
+        assertTrue(panel.collaboratorsList.checkedItems.isEmpty())
     }
 
     fun `test checking the box persists giveKudosEnabled`() {
@@ -50,20 +31,23 @@ class KudosCommitOptionsPanelTest : BasePlatformTestCase() {
         assertTrue(settings.giveKudosEnabled)
     }
 
-    fun `test selecting one collaborator persists selectedCollaborators`() {
+    fun `test checking one collaborator and saving persists selectedCollaborators`() {
         val panel = freshPanel()
         val settings = KudosSettingsState.getInstance()
 
-        selectByName(panel, "GitHub Copilot")
+        panel.collaboratorsList.setItemSelected("GitHub Copilot", true)
+        panel.saveState()
 
         assertEquals(setOf("GitHub Copilot"), settings.selectedCollaborators)
     }
 
-    fun `test selecting multiple collaborators persists all of them`() {
+    fun `test checking multiple collaborators and saving persists all of them`() {
         val panel = freshPanel()
         val settings = KudosSettingsState.getInstance()
 
-        selectByName(panel, "Claude", "ChatGPT")
+        panel.collaboratorsList.setItemSelected("Claude", true)
+        panel.collaboratorsList.setItemSelected("ChatGPT", true)
+        panel.saveState()
 
         assertEquals(setOf("Claude", "ChatGPT"), settings.selectedCollaborators)
     }
@@ -101,15 +85,20 @@ class KudosCommitOptionsPanelTest : BasePlatformTestCase() {
         assertEquals(listOf("New Person"), listItems(panel))
     }
 
-    fun `test refresh preserves a still-valid selection`() {
+    fun `test refresh preserves a still-valid checked selection`() {
         val panel = freshPanel()
         val settings = KudosSettingsState.getInstance()
-        selectByName(panel, "Claude", "ChatGPT")
+        panel.collaboratorsList.setItemSelected("Claude", true)
+        panel.collaboratorsList.setItemSelected("ChatGPT", true)
+        panel.saveState()
 
         // Unrelated settings change elsewhere shouldn't disturb an existing valid selection.
         settings.setCollaborators(settings.collaborators + ("New Person" to null))
         panel.refresh()
 
         assertEquals(setOf("Claude", "ChatGPT"), settings.selectedCollaborators)
+        assertTrue(panel.collaboratorsList.isItemSelected("Claude"))
+        assertTrue(panel.collaboratorsList.isItemSelected("ChatGPT"))
+        assertFalse(panel.collaboratorsList.isItemSelected("New Person"))
     }
 }

@@ -54,7 +54,7 @@ class KudosIntegrationTest : BasePlatformTestCase() {
      * */
     private fun fetchCollaborators(commitOptions: KudosCommitOptionsPanel): List<String?> {
         val model = commitOptions.collaboratorsList.model
-        val initialItems = (0 until model.size).map { model.getElementAt(it) }
+        val initialItems = (0 until model.size).map { commitOptions.collaboratorsList.getItemAt(it) }
         return initialItems
     }
 }

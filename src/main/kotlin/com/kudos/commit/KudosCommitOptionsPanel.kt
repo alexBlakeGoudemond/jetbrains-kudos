@@ -2,42 +2,31 @@ package com.kudos.commit
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent
+import com.intellij.ui.CheckBoxList
 import com.intellij.ui.components.JBCheckBox
-import com.intellij.ui.components.JBList
 import com.intellij.ui.components.JBScrollPane
 import com.kudos.settings.KudosSettingsListener
 import com.kudos.settings.KudosSettingsState
 import java.awt.BorderLayout
 import java.awt.Dimension
-import javax.swing.DefaultListModel
 import javax.swing.JComponent
 import javax.swing.JPanel
-import javax.swing.ListSelectionModel
 import javax.swing.SwingUtilities
 
 /**
  * The "Give Kudos" row shown in the commit dialog's options area.
  *
  * A unit of work can involve more than one collaborator at once (e.g. pairing with a colleague
- * *and* using an AI agent), so collaborators are shown as a multi-select list rather than a
- * single-select dropdown: hold Cmd/Ctrl (or Shift for a range) to select more than one. The list
- * is wrapped in a scroll pane so it stays a fixed, comfortable size regardless of how many
- * collaborators are configured.
+ * *and* using an AI agent), so collaborators are shown as a [CheckBoxList] - tick as many as
+ * apply - rather than a single-select dropdown. This also matches the checkbox-driven style of
+ * the rest of the commit options panel (Update copyright, Reformat code, etc.).
  */
 class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent {
-
-    // When true, selection-listener persistence is temporarily suppressed to avoid persisting
-    // intermediate empty selections while the UI rebuilds the list model and reapplies a valid
-    // selection (e.g. during refresh/collaboratorsChanged updates).
-    private var suppressSelectionPersistence: Boolean = false
 
     @Suppress("DialogTitleCapitalization")
     val checkBox = JBCheckBox("Give Kudos")
 
-    val collaboratorsList = JBList(DefaultListModel<String>()).apply {
-        selectionMode = ListSelectionModel.MULTIPLE_INTERVAL_SELECTION
-        visibleRowCount = 4
-    }
+    val collaboratorsList = CheckBoxList<String>()
 
     private val scrollPane = JBScrollPane(collaboratorsList).apply {
         preferredSize = Dimension(220, 90)
@@ -55,12 +44,11 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
             settings.giveKudosEnabled = checkBox.isSelected
             applyUiEnabledState()
         }
-        collaboratorsList.addListSelectionListener { event ->
-            if (!suppressSelectionPersistence) {
-                // Persist selection immediately; doing this on every event avoids race conditions where
-                // other code updates collaborators before the final adjustment event has been delivered.
-                settings.selectedCollaborators = selectedNames()
-            }
+
+        // Fires after CheckBoxList has already applied the click to its backing JCheckBox, so
+        // checkedItems reflects the settled state - persist it straight away.
+        collaboratorsList.setCheckBoxListListener { _, _ ->
+            settings.selectedCollaborators = checkedNames()
         }
 
         restoreState()
@@ -71,51 +59,29 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
             object : KudosSettingsListener {
                 override fun collaboratorsChanged() {
                     if (SwingUtilities.isEventDispatchThread()) {
-                            suppressSelectionPersistence = true
-                            try {
-                                reloadListModel()
-                                applySelection(settings.selectedCollaborators)
-                                applyUiEnabledState()
-                            } finally {
-                                suppressSelectionPersistence = false
-                            }
-                        } else {
-                            SwingUtilities.invokeLater {
-                                suppressSelectionPersistence = true
-                                try {
-                                    reloadListModel()
-                                    applySelection(settings.selectedCollaborators)
-                                    applyUiEnabledState()
-                                } finally {
-                                    suppressSelectionPersistence = false
-                                }
-                            }
+                        reloadListModel()
+                        applyUiEnabledState()
+                    } else {
+                        SwingUtilities.invokeLater {
+                            reloadListModel()
+                            applyUiEnabledState()
                         }
+                    }
                 }
             }
         )
     }
 
-    /** Rebuilds the list's contents from settings, without touching the current selection. */
+    /** Rebuilds the checkbox rows from settings, restoring which ones were previously checked. */
     private fun reloadListModel() {
-        val model = DefaultListModel<String>()
-        settings.collaborators.keys.forEach { model.addElement(it) }
-        collaboratorsList.model = model
-    }
-
-    /** Selects exactly the rows whose collaborator name is in [names]; ignores unknown names. */
-    private fun applySelection(names: Set<String>) {
-        collaboratorsList.clearSelection()
-        val model = collaboratorsList.model
-        for (index in 0 until model.size) {
-            if (model.getElementAt(index) in names) {
-                collaboratorsList.addSelectionInterval(index, index)
-            }
+        val selected = settings.selectedCollaborators
+        collaboratorsList.clear()
+        settings.collaborators.keys.forEach { name ->
+            collaboratorsList.addItem(name, name, name in selected)
         }
     }
 
-    /** The collaborator names currently checked in the list, in list (i.e. settings) order. */
-    private fun selectedNames(): Set<String> = collaboratorsList.selectedValuesList.toCollection(LinkedHashSet())
+    private fun checkedNames(): Set<String> = collaboratorsList.checkedItems.toCollection(LinkedHashSet())
 
     private fun applyUiEnabledState() {
         val uiEnabled = settings.kudosUiEnabled
@@ -131,28 +97,19 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
 
     /** Called when the commit dialog reopens - picks up edits made in the Kudos tool window meanwhile. */
     override fun refresh() {
-        // Persist the current UI selection first — otherwise rebuilding the list model can
-        // cause a race where settings' selectedCollaborators is stale and gets overwritten.
-        saveState()
-        suppressSelectionPersistence = true
-        try {
-            reloadListModel()
-            applySelection(settings.selectedCollaborators)
-            checkBox.isSelected = settings.giveKudosEnabled
-            applyUiEnabledState()
-        } finally {
-            suppressSelectionPersistence = false
-        }
+        reloadListModel()
+        checkBox.isSelected = settings.giveKudosEnabled
+        applyUiEnabledState()
     }
 
     override fun saveState() {
         settings.giveKudosEnabled = checkBox.isSelected
-        settings.selectedCollaborators = selectedNames()
+        settings.selectedCollaborators = checkedNames()
     }
 
     override fun restoreState() {
         checkBox.isSelected = settings.giveKudosEnabled
-        applySelection(settings.selectedCollaborators)
+        reloadListModel()
         applyUiEnabledState()
     }
 }
