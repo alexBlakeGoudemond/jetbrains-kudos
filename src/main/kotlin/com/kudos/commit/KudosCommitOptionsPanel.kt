@@ -9,11 +9,16 @@ import com.intellij.ui.components.JBScrollPane
 import com.intellij.util.ui.JBUI
 import com.kudos.settings.KudosSettingsListener
 import com.kudos.settings.KudosSettingsState
+import java.awt.BasicStroke
 import java.awt.BorderLayout
 import java.awt.Dimension
+import java.awt.Graphics
+import java.awt.Graphics2D
 import javax.swing.JComponent
 import javax.swing.JPanel
 import javax.swing.SwingUtilities
+import javax.swing.JLayer
+import javax.swing.plaf.LayerUI
 
 /**
  * The "Give Kudos" row shown in the commit dialog's options area.
@@ -40,21 +45,70 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         border = JBUI.Borders.empty()
         viewportBorder = JBUI.Borders.empty()
     }
- 
+
     private val contentPanel = JPanel(BorderLayout(0, 4)).apply {
         add(checkBox, BorderLayout.NORTH)
         add(scrollPane, BorderLayout.CENTER)
     }
 
-    private val rootPanel = JPanel(BorderLayout()).apply {
-        // Outer border panel so the accent line sits above the checkbox; inner contentPanel is
-        // inset from the border so the top border is visually complete.
-        border = JBUI.Borders.compound(
-            JBUI.Borders.customLine(KUDOS_ACCENT_COLOR, 1),
-            JBUI.Borders.empty(0, 8, 0, 8)
-        )
+    /*
+     * The actual content container.
+     *
+     * We deliberately keep the original BorderLayout and sizing behaviour.
+     * There is NO custom layout here.
+     */
+    private val borderedPanel = JPanel(BorderLayout()).apply {
+        // Keep the original spacing around the content.
+        border = JBUI.Borders.empty(0, 8, 0, 8)
+
         add(contentPanel, BorderLayout.CENTER)
     }
+
+    /*
+     * JLayer paints over its view after the view has painted.
+     *
+     * This is the important bit:
+     *
+     *     borderedPanel
+     *          ↓
+     *     contentPanel
+     *          ↓
+     *     Give Kudos checkbox
+     *          ↓
+     *     JLayer paints accent border LAST
+     *
+     * Therefore the checkbox cannot cut through the border.
+     */
+    private val rootPanel = JLayer(
+        borderedPanel,
+        object : LayerUI<JPanel>() {
+
+            override fun paint(
+                g: Graphics,
+                c: JComponent
+            ) {
+                // First paint the entire normal component hierarchy.
+                super.paint(g, c)
+
+                // Then paint our border ON TOP of everything.
+                val graphics = g.create() as Graphics2D
+
+                try {
+                    graphics.color = KUDOS_ACCENT_COLOR
+                    graphics.stroke = BasicStroke(JBUI.scale(1).toFloat())
+
+                    graphics.drawRect(
+                        0,
+                        0,
+                        c.width - 1,
+                        c.height - 1
+                    )
+                } finally {
+                    graphics.dispose()
+                }
+            }
+        }
+    )
 
     init {
         reloadListModel()
@@ -94,20 +148,34 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
     /** Rebuilds the checkbox rows from settings, restoring which ones were previously checked. */
     private fun reloadListModel() {
         val selected = settings.selectedCollaborators
+
         collaboratorsList.clear()
+
         settings.collaborators.keys.forEach { name ->
-            collaboratorsList.addItem(name, name, name in selected)
+            collaboratorsList.addItem(
+                name,
+                name,
+                name in selected
+            )
         }
     }
 
-    private fun checkedNames(): Set<String> = collaboratorsList.checkedItems.toCollection(LinkedHashSet())
+    private fun checkedNames(): Set<String> =
+        collaboratorsList.checkedItems.toCollection(LinkedHashSet())
 
     private fun applyUiEnabledState() {
         val uiEnabled = settings.kudosUiEnabled
+
         checkBox.isEnabled = uiEnabled
         collaboratorsList.isEnabled = uiEnabled && checkBox.isSelected
 
-        val tooltip = if (uiEnabled) null else "Kudos is currently disabled. Enable it from the Kudos tool window."
+        val tooltip =
+            if (uiEnabled) {
+                null
+            } else {
+                "Kudos is currently disabled. Enable it from the Kudos tool window."
+            }
+
         checkBox.toolTipText = tooltip
         collaboratorsList.toolTipText = tooltip
     }
@@ -134,6 +202,9 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
 
     companion object {
         /** Light/dark pair so the accent border reads clearly in both IDE themes. */
-        private val KUDOS_ACCENT_COLOR = JBColor(0x8759B3, 0xB39DDB)
+        private val KUDOS_ACCENT_COLOR = JBColor(
+            0x8759B3,
+            0xB39DDB
+        )
     }
 }
