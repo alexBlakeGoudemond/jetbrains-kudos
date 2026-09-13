@@ -59,7 +59,7 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
      */
     private val borderedPanel = JPanel(BorderLayout()).apply {
         // Keep the original spacing around the content.
-        border = JBUI.Borders.empty(0, 8, 0, 8)
+        border = JBUI.Borders.empty(0, -3, 0, 8)
 
         add(contentPanel, BorderLayout.CENTER)
     }
