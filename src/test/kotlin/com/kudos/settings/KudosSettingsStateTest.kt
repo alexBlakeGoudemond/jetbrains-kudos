@@ -15,7 +15,7 @@ class KudosSettingsStateTest : BasePlatformTestCase() {
 
         assertTrue(state.giveKudosEnabled)
         assertTrue(state.kudosUiEnabled)
-        assertEquals(null, state.selectedCollaborator)
+        assertTrue(state.selectedCollaborators.isEmpty())
         assertTrue(state.collaborators.containsKey("Claude"))
         assertTrue(state.collaborators.containsKey("GitHub Copilot"))
         assertTrue(state.collaborators.containsKey("ChatGPT"))
@@ -35,22 +35,44 @@ class KudosSettingsStateTest : BasePlatformTestCase() {
         assertEquals("Claude", state.formatAttribution("Claude"))
     }
 
-    fun `test selected collaborator falls back when removed`() {
+    fun `test selected collaborators are pruned when their entry is removed`() {
         val state = freshState()
-        state.setCollaborators(mapOf("Claude" to null))
-        state.selectedCollaborator = "Claude"
+        state.setCollaborators(mapOf("Claude" to null, "Colleague" to null))
+        state.selectedCollaborators = setOf("Claude", "Colleague")
 
-        // Replacing the collaborator map without "Claude" in it should
-        // move selection off a now-nonexistent entry, not leave it dangling.
-        state.setCollaborators(mapOf("GitHub Copilot" to null))
+        // Replacing the collaborator map without "Claude" in it should drop it from the
+        // selection rather than leave a dangling reference - but "Colleague" is untouched.
+        state.setCollaborators(mapOf("Colleague" to null, "GitHub Copilot" to null))
 
-        assertEquals("GitHub Copilot", state.selectedCollaborator)
+        assertEquals(setOf("Colleague"), state.selectedCollaborators)
+    }
+
+    fun `test selecting multiple collaborators preserves order for attribution`() {
+        val state = freshState()
+        state.setCollaborators(mapOf("Colleague" to null, "AI Agent" to null))
+        state.selectedCollaborators = setOf("Colleague", "AI Agent")
+
+        assertEquals(listOf("Colleague", "AI Agent"), state.currentAttributions())
+    }
+
+    fun `test currentAttributions is empty when nothing is selected`() {
+        val state = freshState()
+
+        assertTrue(state.currentAttributions().isEmpty())
+    }
+
+    fun `test currentAttributions formats each selected collaborator with its own email`() {
+        val state = freshState()
+        state.setCollaborators(mapOf("Ada Lovelace" to "ada@example.com", "Claude" to null))
+        state.selectedCollaborators = setOf("Ada Lovelace", "Claude")
+
+        assertEquals(listOf("Ada Lovelace <ada@example.com>", "Claude"), state.currentAttributions())
     }
 
     fun `test state round-trips through persistence serialization`() {
         val state = freshState()
-        state.setCollaborators(mapOf("Ada Lovelace" to "ada@example.com"))
-        state.selectedCollaborator = "Ada Lovelace"
+        state.setCollaborators(mapOf("Ada Lovelace" to "ada@example.com", "Claude" to null))
+        state.selectedCollaborators = setOf("Ada Lovelace", "Claude")
         state.giveKudosEnabled = false
 
         // Simulate what the platform does on IDE restart: serialize out, then load back in.
@@ -59,7 +81,7 @@ class KudosSettingsStateTest : BasePlatformTestCase() {
         state.loadState(savedState)
 
         assertEquals("Ada Lovelace <ada@example.com>", state.formatAttribution("Ada Lovelace"))
-        assertEquals("Ada Lovelace", state.selectedCollaborator)
+        assertEquals(setOf("Ada Lovelace", "Claude"), state.selectedCollaborators)
         assertFalse(state.giveKudosEnabled)
     }
 }

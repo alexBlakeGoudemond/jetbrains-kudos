@@ -14,12 +14,15 @@ class KudosCheckinHandler(private val panel: CheckinProjectPanel) : CheckinHandl
 
     override fun beforeCheckin(): ReturnResult {
         if (settings.giveKudosEnabled && settings.kudosUiEnabled) {
-            settings.currentAttributionOrNull()?.let { appendAttribution(it) }
+            val attributions = settings.currentAttributions()
+            if (attributions.isNotEmpty()) {
+                appendAttributions(attributions)
+            }
         }
         return ReturnResult.COMMIT
     }
 
-    private fun appendAttribution(attribution: String) {
-        panel.setCommitMessage(KudosCommitMessage.withTrailer(panel.commitMessage, attribution))
+    private fun appendAttributions(attributions: List<String>) {
+        panel.setCommitMessage(KudosCommitMessage.withTrailers(panel.commitMessage, attributions))
     }
 }
