@@ -1,0 +1,26 @@
+src/main/kotlin/com/kudos/commit/KudosCommitOptionsPanel.kt
+  s_7332366be637c2::t_ffeafc9d365aef 44,47-51,56
+  s_7332366be637c2::t_50841190b2829a 32-33
+  h_1197a506f6c7d6 34,54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "9b69dd752c835b434d5f21a660b95110d1878e64",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_7332366be637c2": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "c85cb9be-1f9e-48ee-954a-5fecb3deeaf1",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
