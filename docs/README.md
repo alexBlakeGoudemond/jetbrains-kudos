@@ -78,11 +78,14 @@ placed to decide who deserves credit for them.
 
 The plugin should initially integrate with the JetBrains Commit Tool Window:
 
-![Kudos Commit Tool Window v0.0.1](kudos-commit-tool-window-v001.png)
+![Kudos Commit Tool Window v0.0.1](assets/planning/kudos-commit-tool-window-v001.png)
 
 > Every commit will receive attribution until either:
 > - The `Give Kudos` checkbox is deselected
 > - The Commit Tool Window Kudos section is disabled
+
+> UPDATE: Claude suggested the Git Commit settings, which is a better UI choice.
+> See [git commit settings screenshot](assets/screenshots/kudos-screenshot-in-action-before-commit-resized-1200-760.png)
 
 ### Commit Tool Window
 
