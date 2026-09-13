@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0]
+
+### Added
+
+- Plugin now supports selecting multiple collaborators
+    - Useful if pair-programming with someone, and also use AI - give credit to all 3 (yourself, colleague, AI)
+
 ## [1.0.0]
 
 ### Added
