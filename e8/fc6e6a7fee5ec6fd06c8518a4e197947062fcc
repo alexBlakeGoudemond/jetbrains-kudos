@@ -1,0 +1,27 @@
+src/main/resources/META-INF/pluginIcon.svg
+  h_1197a506f6c7d6 4-5
+src/main/resources/META-INF/plugin-icon-simple.svg
+  h_1197a506f6c7d6 4-7,17,32,35-37,48-49
+  s_7332366be637c2::t_f1d69874dccb91 2-3,30-31,33,38-40,43-46,50-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e8fc6e6a7fee5ec6fd06c8518a4e197947062fcc",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_7332366be637c2": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "c85cb9be-1f9e-48ee-954a-5fecb3deeaf1",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
