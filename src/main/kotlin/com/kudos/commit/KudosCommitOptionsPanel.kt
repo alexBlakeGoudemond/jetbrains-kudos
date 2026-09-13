@@ -29,10 +29,9 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
     val checkBox = JBCheckBox("Give Kudos")
 
     val collaboratorsList = CheckBoxList<String>().apply {
-        // CheckBoxList's per-row focus border adds a hair of left padding that the other
-        // Commit Checks rows don't have, which reads as the checkboxes being out of alignment.
-        // Zeroing it here lines the checkboxes back up with "Give Kudos" and "Run Git hooks".
-        border = JBUI.Borders.empty()
+        // Indent collaborator rows so they appear nested under the "Give Kudos" checkbox.
+        // Uses a left inset (18px) while keeping top/bottom/right at 0.
+        border = JBUI.Borders.empty(0, 18, 0, 0)
     }
 
     private val scrollPane = JBScrollPane(collaboratorsList).apply {
@@ -42,18 +41,19 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         viewportBorder = JBUI.Borders.empty()
     }
  
-    private val rootPanel = JPanel(BorderLayout(0, 4)).apply {
+    private val contentPanel = JPanel(BorderLayout(0, 4)).apply {
         add(checkBox, BorderLayout.NORTH)
         add(scrollPane, BorderLayout.CENTER)
-        // A purple accent border to visually flag this section as plugin-contributed rather
-        // than a built-in IDE commit check. Uses a light/dark pair so it stays visible in
-        // either theme instead of picking one that only reads well in Darcula. Extra top
-        // padding specifically so the "Give Kudos" checkbox has clear space below the line.
+    }
+
+    private val rootPanel = JPanel(BorderLayout()).apply {
+        // Outer border panel so the accent line sits above the checkbox; inner contentPanel is
+        // inset from the border so the top border is visually complete.
         border = JBUI.Borders.compound(
             JBUI.Borders.customLine(KUDOS_ACCENT_COLOR, 1),
-            // Slightly larger top inset so the checkbox nests inside the accent border visually.
-            JBUI.Borders.empty(12, 8, 8, 8)
+            JBUI.Borders.empty(0, 8, 0, 8)
         )
+        add(contentPanel, BorderLayout.CENTER)
     }
 
     init {
