@@ -1,0 +1,31 @@
+gradle.properties
+  h_1197a506f6c7d6 8
+src/main/resources/META-INF/plugin.xml
+  h_1197a506f6c7d6 18-22
+src/main/kotlin/com/kudos/KudosDynamicPluginListener.kt
+  h_1197a506f6c7d6 1-23
+CHANGELOG.md
+  h_1197a506f6c7d6 5-6,8-11
+  s_b1bffda5cb0f39::t_de66df8ed49ff5 7,44-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "0aa0721a89d34e2f42e3d2b0bb81e9ccfeb3cdf0",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_b1bffda5cb0f39": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_b1bffda5cb0f39",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
