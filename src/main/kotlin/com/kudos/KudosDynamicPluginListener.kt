@@ -12,6 +12,7 @@ class KudosDynamicPluginListener : DynamicPluginListener {
     }
 
     override fun beforePluginUnload(pluginDescriptor: IdeaPluginDescriptor, isUpdate: Boolean) {
+        LOG.info("beforePluginUnload fired for ${pluginDescriptor.pluginId.idString}")
         // This listener fires for every plugin's unload, not just ours — filter it.
         if (pluginDescriptor.pluginId.idString != "Kudos") {
             return
