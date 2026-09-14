@@ -182,13 +182,6 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
 
     override fun getComponent(): JComponent = rootPanel
 
-    /** Called when the commit dialog reopens - picks up edits made in the Kudos tool window meanwhile. */
-    override fun refresh() {
-        reloadListModel()
-        checkBox.isSelected = settings.giveKudosEnabled
-        applyUiEnabledState()
-    }
-
     override fun saveState() {
         settings.giveKudosEnabled = checkBox.isSelected
         settings.selectedCollaborators = checkedNames()

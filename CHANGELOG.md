@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [1.1.2]
+
+### Fixed
+
+- Address Deprecated API Usage warning
+  - Remove redundant Refreshable.refresh() entirely in KudosCommitOptionsPanel
+- Improve icons
+  - fill in the back of the hand with an opaque colour - improve visibility in the IDE
+
 ## [1.1.1]
 
 ### Fixed
@@ -25,7 +34,8 @@
     - Integrated into Commit Tool Window to Give Kudos to Collaborators
     - Settings remembered globally (2+ IDE instances will have same collaborators)
 
-[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.1...HEAD
+[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.2...HEAD
+[1.1.2]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/commits/1.0.0
