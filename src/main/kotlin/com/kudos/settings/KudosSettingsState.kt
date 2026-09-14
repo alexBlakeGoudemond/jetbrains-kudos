@@ -1,9 +1,11 @@
 package com.kudos.settings
 
-import com.intellij.openapi.components.*
-import com.intellij.util.xmlb.XmlSerializerUtil
+import com.intellij.openapi.Disposable
 import com.intellij.openapi.application.ApplicationManager
+import com.intellij.openapi.components.*
 import com.intellij.util.messages.Topic
+import com.intellij.util.xmlb.XmlSerializerUtil
+import com.kudos.infrastructure.kudosLogger
 
 /**
  * Listener for Kudos settings changes published over the application message bus.
@@ -23,7 +25,7 @@ interface KudosSettingsListener {
  */
 @Service(Service.Level.APP)
 @State(name = "KudosSettings", storages = [Storage("kudos.xml")])
-class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
+class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State>, Disposable {
 
     private var myState = State()
 
@@ -107,6 +109,10 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
     fun currentAttributions(): List<String> =
         selectedCollaborators.filter { it in collaborators }.map { formatAttribution(it) }
 
+    override fun dispose() {
+        LOG.info("Disposing " + Companion::class.java.name + " underway")
+    }
+
     class State {
         var giveKudosEnabled: Boolean = true
         var kudosUiEnabled: Boolean = true
@@ -115,6 +121,8 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State> {
     }
 
     companion object {
+        private val LOG = kudosLogger<KudosSettingsState>()
+
         fun getInstance(): KudosSettingsState = service()
 
         fun defaultCollaborators(): MutableMap<String, String> = linkedMapOf(
