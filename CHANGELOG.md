@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.1.3]
+
+### Fixed
+
+- Attempt to address bug: update requires restart when it shouldn't (002)
+    - Add PluginListener to clear icon cache during unload
+
 ## [1.1.2]
 
 ### Fixed
@@ -34,7 +41,8 @@
     - Integrated into Commit Tool Window to Give Kudos to Collaborators
     - Settings remembered globally (2+ IDE instances will have same collaborators)
 
-[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.2...HEAD
+[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.3...HEAD
+[1.1.3]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.2...1.1.3
 [1.1.2]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.0.0...1.1.0

@@ -15,6 +15,11 @@
 
     <resource-bundle>messages.MyMessageBundle</resource-bundle>
 
+    <applicationListeners>
+        <listener class="com.kudos.KudosDynamicPluginListener"
+                  topic="com.intellij.ide.plugins.DynamicPluginListener"/>
+    </applicationListeners>
+
     <!-- com.intellij.modules.platform is the minimal dependency every plugin needs.
          We'll add com.intellij.modules.vcs / Git4Idea in a later step once we build
          the actual commit-checkbox integration. -->
