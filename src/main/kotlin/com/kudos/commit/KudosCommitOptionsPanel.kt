@@ -127,7 +127,7 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         restoreState()
 
         // Subscribe to settings changes so the commit options update live when collaborators are edited
-        ApplicationManager.getApplication().messageBus.connect().subscribe(
+        ApplicationManager.getApplication().messageBus.connect(settings).subscribe(
             KudosSettingsState.KUDOS_SETTINGS_TOPIC,
             object : KudosSettingsListener {
                 override fun collaboratorsChanged() {
