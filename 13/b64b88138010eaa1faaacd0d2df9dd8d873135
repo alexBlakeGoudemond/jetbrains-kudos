@@ -1,0 +1,31 @@
+CHANGELOG.md
+  h_1197a506f6c7d6 5-13
+  s_76367df4a1d0e5::t_163e694e5a4973 37-38
+gradle.properties
+  h_1197a506f6c7d6 8
+src/main/resources/META-INF/pluginIcon.svg
+  h_1197a506f6c7d6 11-15
+src/main/resources/META-INF/plugin-icon-simple.svg
+  h_1197a506f6c7d6 34-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "13b64b88138010eaa1faaacd0d2df9dd8d873135",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_76367df4a1d0e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_76367df4a1d0e5",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
