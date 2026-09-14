@@ -1,0 +1,14 @@
+docs/plugin-logs/log-example-update-plugin-from-1.1.0-to-1.1.1.txt
+  h_1197a506f6c7d6 1-830
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "16fe083ae2e1de0ca2cba66dfe2f3c350e46e972",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
