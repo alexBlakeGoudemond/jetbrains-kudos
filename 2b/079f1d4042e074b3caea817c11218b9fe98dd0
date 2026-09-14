@@ -1,0 +1,22 @@
+src/main/kotlin/com/kudos/settings/KudosSettingsState.kt
+  h_1197a506f6c7d6 3,5,7-8,28,112-115,124-125
+gradle.properties
+  h_1197a506f6c7d6 8
+src/main/kotlin/com/kudos/commit/KudosCommitOptionsPanel.kt
+  h_1197a506f6c7d6 130
+src/main/kotlin/com/kudos/infrastructure/KudosLogger.kt
+  h_1197a506f6c7d6 1-48
+CHANGELOG.md
+  h_1197a506f6c7d6 5-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2b079f1d4042e074b3caea817c11218b9fe98dd0",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
