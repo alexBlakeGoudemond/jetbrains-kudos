@@ -1,5 +1,7 @@
 package com.kudos.commit
 
+import com.intellij.openapi.Disposable
+import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.vcs.CheckinProjectPanel
 import com.intellij.openapi.vcs.checkin.CheckinHandler
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent
@@ -9,8 +11,17 @@ class KudosCheckinHandler(private val panel: CheckinProjectPanel) : CheckinHandl
 
     private val settings = KudosSettingsState.getInstance()
 
-    override fun getBeforeCheckinConfigurationPanel(): RefreshableOnComponent =
-        KudosCommitOptionsPanel(settings)
+    init {
+        // Draws the grey "Kudos Plugin will mention: ..." hint in the commit message box.
+        // Handlers are re-created (e.g. after each commit); installing is idempotent per message box.
+        KudosCommitPlaceholder.install(panel)
+    }
+
+    override fun getBeforeCheckinConfigurationPanel(): RefreshableOnComponent {
+        val optionsPanel = KudosCommitOptionsPanel(settings)
+        (panel as? Disposable)?.let { Disposer.tryRegister(it, optionsPanel) }
+        return optionsPanel
+    }
 
     override fun beforeCheckin(): ReturnResult {
         if (settings.giveKudosEnabled && settings.kudosUiEnabled) {
