@@ -1,0 +1,35 @@
+docs/DEVELOPER_NOTES.md
+  s_bbcb5406fc370a::t_b79e2f70fc9d10 78-79
+CHANGELOG.md
+  h_1197a506f6c7d6 5-12,17
+src/test/kotlin/com/kudos/commit/KudosCommitPlaceholderTest.kt
+  s_bbcb5406fc370a::t_a762e9e9388804 1-3,5-9,12-55,68-80,82-84
+  s_bbcb5406fc370a::t_134bed5d1b5bbf 4,10-11,56-67,81
+gradle.properties
+  h_1197a506f6c7d6 8
+src/main/kotlin/com/kudos/commit/KudosCommitPlaceholder.kt
+  s_bbcb5406fc370a::t_fa63c39c00cf89 62-67,76
+  s_bbcb5406fc370a::t_9b9e8ca54a8c46 155,193,198-230
+  s_bbcb5406fc370a::t_2ef4de7a0e3c1c 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b32886f584aa3f6720d47af4908816c042ced338",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_bbcb5406fc370a": {
+      "agent_id": {
+        "tool": "junie",
+        "id": "1789972077870",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
