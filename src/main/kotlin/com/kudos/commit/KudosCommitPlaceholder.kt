@@ -24,6 +24,7 @@ import com.kudos.settings.KudosSettingsState
 import java.awt.Color
 import java.awt.Graphics2D
 import java.awt.geom.Rectangle2D
+import java.lang.ref.WeakReference
 import java.util.concurrent.ConcurrentHashMap
 
 /**
@@ -66,7 +67,9 @@ class KudosCommitPlaceholder private constructor(
         // EditorTextField throws its editor away and builds a new one whenever it leaves/re-enters the UI
         // hierarchy (e.g. the tool window is hidden and shown again), and an inlay dies with its editor.
         // The settings provider is called for every editor the field creates from now on...
-        editorField.addSettingsProvider { attach(it) }
+        // Use a weak reference to avoid pinning this instance in EditorTextField's permanent settings provider list.
+        val placeholderRef = WeakReference(this)
+        editorField.addSettingsProvider { placeholderRef.get()?.attach(it) }
         // ...but not retroactively, so also pick up an editor that already exists.
         (editorField.editor as? EditorEx)?.let { attach(it) }
 

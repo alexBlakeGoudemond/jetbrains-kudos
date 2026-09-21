@@ -1,5 +1,6 @@
 package com.kudos.commit
 
+import com.intellij.openapi.Disposable
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent
 import com.intellij.ui.CheckBoxList
@@ -28,7 +29,7 @@ import javax.swing.plaf.LayerUI
  * apply - rather than a single-select dropdown. This also matches the checkbox-driven style of
  * the rest of the commit options panel (Update copyright, Reformat code, etc.).
  */
-class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent {
+class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : RefreshableOnComponent, Disposable {
 
     @Suppress("DialogTitleCapitalization")
     val checkBox = JBCheckBox("Give Kudos")
@@ -127,7 +128,7 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         restoreState()
 
         // Subscribe to settings changes so the commit options update live when collaborators are edited
-        ApplicationManager.getApplication().messageBus.connect(settings).subscribe(
+        ApplicationManager.getApplication().messageBus.connect(this).subscribe(
             KudosSettingsState.KUDOS_SETTINGS_TOPIC,
             object : KudosSettingsListener {
                 override fun collaboratorsChanged() {
@@ -191,6 +192,9 @@ class KudosCommitOptionsPanel(private val settings: KudosSettingsState) : Refres
         checkBox.isSelected = settings.giveKudosEnabled
         reloadListModel()
         applyUiEnabledState()
+    }
+
+    override fun dispose() {
     }
 
     companion object {

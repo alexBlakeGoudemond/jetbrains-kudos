@@ -1,5 +1,7 @@
 package com.kudos.commit
 
+import com.intellij.openapi.Disposable
+import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.vcs.CheckinProjectPanel
 import com.intellij.openapi.vcs.checkin.CheckinHandler
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent
@@ -15,8 +17,11 @@ class KudosCheckinHandler(private val panel: CheckinProjectPanel) : CheckinHandl
         KudosCommitPlaceholder.install(panel)
     }
 
-    override fun getBeforeCheckinConfigurationPanel(): RefreshableOnComponent =
-        KudosCommitOptionsPanel(settings)
+    override fun getBeforeCheckinConfigurationPanel(): RefreshableOnComponent {
+        val optionsPanel = KudosCommitOptionsPanel(settings)
+        (panel as? Disposable)?.let { Disposer.tryRegister(it, optionsPanel) }
+        return optionsPanel
+    }
 
     override fun beforeCheckin(): ReturnResult {
         if (settings.giveKudosEnabled && settings.kudosUiEnabled) {

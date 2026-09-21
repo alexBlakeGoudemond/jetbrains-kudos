@@ -13,6 +13,13 @@
 - Added icon to .idea directory
     - Cloning this repo now shows a unique icon for the repository
 
+### Fixed
+
+- Attempt to address bug; update requires restart when it shouldn't (003)
+    - Register additional Disposable objects
+    - Modify bus subscriptions to allow easier unloading
+- Dynamically find plugin ID incase of using hardcoded "Kudos"
+
 ## [1.1.3]
 
 ### Fixed
