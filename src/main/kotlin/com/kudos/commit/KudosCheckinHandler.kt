@@ -9,6 +9,12 @@ class KudosCheckinHandler(private val panel: CheckinProjectPanel) : CheckinHandl
 
     private val settings = KudosSettingsState.getInstance()
 
+    init {
+        // Draws the grey "Kudos Plugin will mention: ..." hint in the commit message box.
+        // Handlers are re-created (e.g. after each commit); installing is idempotent per message box.
+        KudosCommitPlaceholder.install(panel)
+    }
+
     override fun getBeforeCheckinConfigurationPanel(): RefreshableOnComponent =
         KudosCommitOptionsPanel(settings)
 

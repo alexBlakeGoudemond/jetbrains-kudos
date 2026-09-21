@@ -12,6 +12,12 @@ import com.kudos.infrastructure.kudosLogger
  */
 interface KudosSettingsListener {
     fun collaboratorsChanged()
+
+    /**
+     * The "Give Kudos" checkbox, the tool window master toggle, or the set of ticked collaborators
+     * changed. Has an empty default so existing listeners don't have to care about it.
+     */
+    fun selectionChanged() {}
 }
 
 /**
@@ -45,14 +51,18 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State>, D
     var giveKudosEnabled: Boolean
         get() = myState.giveKudosEnabled
         set(value) {
+            if (myState.giveKudosEnabled == value) return
             myState.giveKudosEnabled = value
+            fireSelectionChanged()
         }
 
     /** Master toggle from the Kudos Tool Window. When false, the commit-UI checkbox is disabled. */
     var kudosUiEnabled: Boolean
         get() = myState.kudosUiEnabled
         set(value) {
+            if (myState.kudosUiEnabled == value) return
             myState.kudosUiEnabled = value
+            fireSelectionChanged()
         }
 
     /**
@@ -64,7 +74,10 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State>, D
     var selectedCollaborators: Set<String>
         get() = myState.selectedCollaborators.toCollection(LinkedHashSet())
         set(value) {
-            myState.selectedCollaborators = value.toCollection(LinkedHashSet()).toMutableList()
+            val updated = value.toCollection(LinkedHashSet()).toMutableList()
+            if (updated == myState.selectedCollaborators) return
+            myState.selectedCollaborators = updated
+            fireSelectionChanged()
         }
 
     val collaborators: Map<String, String?>
@@ -91,6 +104,13 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State>, D
 
     fun resetToDefaults() {
         myState = State()
+        fireSelectionChanged()
+    }
+
+    private fun fireSelectionChanged() {
+        ApplicationManager.getApplication().messageBus
+            .syncPublisher(KUDOS_SETTINGS_TOPIC)
+            .selectionChanged()
     }
 
     /**
@@ -103,11 +123,19 @@ class KudosSettingsState : PersistentStateComponent<KudosSettingsState.State>, D
     }
 
     /**
+     * Names only (never emails) of the collaborators currently selected, in selection order, skipping
+     * any that no longer exist. This is the single source of truth for "who will be credited", shared
+     * by the commit trailers and the commit-box hint so the two can never disagree.
+     */
+    fun currentNames(): List<String> =
+        selectedCollaborators.filter { it in collaborators }
+
+    /**
      * Convenience for the commit-handler step: the formatted trailer text for every currently
      * selected collaborator, in selection order. Empty if nothing is selected.
      */
     fun currentAttributions(): List<String> =
-        selectedCollaborators.filter { it in collaborators }.map { formatAttribution(it) }
+        currentNames().map { formatAttribution(it) }
 
     override fun dispose() {
         LOG.info("Disposing " + Companion::class.java.name + " underway")
