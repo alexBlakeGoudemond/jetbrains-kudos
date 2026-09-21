@@ -55,6 +55,9 @@ class KudosCommitPlaceholder private constructor(
     private var shownText: String? = null
     private var reanchorQueued = false
 
+    @Volatile
+    private var isDisposed = false
+
     private val documentListener = object : DocumentListener {
         override fun documentChanged(event: DocumentEvent) = queueReanchor()
     }
@@ -81,7 +84,7 @@ class KudosCommitPlaceholder private constructor(
     }
 
     private fun attach(newEditor: EditorEx) {
-        if (Disposer.isDisposed(this) || newEditor === editor) return
+        if (isDisposed || newEditor === editor) return
 
         editor = newEditor
         inlay = null // the previous inlay (if any) went away together with the previous editor
@@ -120,7 +123,7 @@ class KudosCommitPlaceholder private constructor(
         if (app.isDispatchThread) {
             refresh()
         } else {
-            app.invokeLater({ if (!Disposer.isDisposed(this)) refresh() }, ModalityState.any())
+            app.invokeLater({ if (!isDisposed) refresh() }, ModalityState.any())
         }
     }
 
@@ -134,11 +137,12 @@ class KudosCommitPlaceholder private constructor(
         reanchorQueued = true
         ApplicationManager.getApplication().invokeLater({
             reanchorQueued = false
-            if (!Disposer.isDisposed(this)) refresh()
+            if (!isDisposed) refresh()
         }, ModalityState.any())
     }
 
     override fun dispose() {
+        isDisposed = true
         ACTIVE.remove(this)
         editorField.removeDocumentListener(documentListener)
         // The document belongs to the IDE and outlives us, and it holds our INSTALLED_KEY marker (an instance of
@@ -196,15 +200,15 @@ class KudosCommitPlaceholder private constructor(
                 LOG.info("No commit message field found under the commit panel; not showing the hint")
                 return
             }
-            if (Disposer.isDisposed(commitMessage)) return
 
             val field = commitMessage.editorField
             if (field.document.getUserData(INSTALLED_KEY) != null) return
 
             val placeholder = KudosCommitPlaceholder(KudosSettingsState.getInstance(), field)
+            if (!Disposer.tryRegister(commitMessage, placeholder)) return
+
             field.document.putUserData(INSTALLED_KEY, placeholder)
             ACTIVE.add(placeholder)
-            Disposer.register(commitMessage, placeholder)
         }
     }
 }
