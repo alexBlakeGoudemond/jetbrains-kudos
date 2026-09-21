@@ -1,0 +1,27 @@
+src/main/kotlin/com/kudos/commit/KudosCommitPlaceholder.kt
+  s_f0d7d5b2128e55::t_cab81b6aa945ca 27
+  s_f0d7d5b2128e55::t_fa582581340617 70-72
+src/main/kotlin/com/kudos/settings/KudosToolWindowFactory.kt
+  s_f0d7d5b2128e55::t_bf1f8cbc7a96d8 3,9,15,18-20
+src/main/kotlin/com/kudos/KudosDynamicPluginListener.kt
+  s_f0d7d5b2128e55::t_88f4b427b7b2a1 5,15
+  s_f0d7d5b2128e55::t_9bce599a8b8ef8 6,21-22
+src/main/kotlin/com/kudos/commit/KudosCheckinHandler.kt
+  s_f0d7d5b2128e55::t_956c3825cc60fa 3-4,20-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "7539e9dd0800d6b072d2eb0262c22cfdd9743abd",
+  "prompts": {},
+  "sessions": {
+    "s_f0d7d5b2128e55": {
+      "agent_id": {
+        "tool": "junie",
+        "id": "1789797882652",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
