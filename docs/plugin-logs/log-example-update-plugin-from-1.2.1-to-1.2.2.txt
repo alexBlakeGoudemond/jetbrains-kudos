@@ -1,0 +1,1226 @@
+2026-09-21 08:47:38,205 [1525307]   WARN - #c.i.o.a.ApplicationManager - Cannot execute background write action in 10 seconds. Thread dump is stored in file:///C:/Users/alex.personal/AppData/Local/JetBrains/IntelliJIdea2026.1/log/bg-wa/thread-dump-1608792341.txt
+2026-09-21 08:47:39,884 [1526986]   INFO - #com.window_accent.PluginLifecycleListener - [Window Accent] Lifecycle Listener registered
+2026-09-21 08:47:39,908 [1527010]   INFO - #c.i.o.u.i.PluginDownloader - downloading plugin Kudos(Kudos) version 1.2.2 from https://plugins.jetbrains.com/pluginManager?os=Windows%2011.0&build=IU-261.26222.65&updatedFrom=1.2.1&id=Kudos&arch=X86_64&uuid=03072614138ac6e-1ac4-475a-ba09-31ff1f6c5d9a
+2026-09-21 08:47:41,009 [1528111]   INFO - #c.i.i.p.m.MarketplacePluginDownloadService - Plugin's blockmap file downloaded
+2026-09-21 08:47:41,311 [1528413]   INFO - #c.i.i.p.m.MarketplacePluginDownloadService - Plugin's hash file downloaded
+2026-09-21 08:47:41,326 [1528428]   INFO - #c.i.i.p.m.MarketplacePluginDownloadService - Plugin's download percent is = 97,97
+2026-09-21 08:47:41,326 [1528428]   INFO - #c.i.i.p.m.MarketplacePluginDownloadService - Downloading the archive via the blockmap requires too many chunks, therefore the entire archive will be downloaded
+2026-09-21 08:47:42,426 [1529528]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=3a1e20b307b5df89
+2026-09-21 08:47:42,503 [1529605]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=57fb25651ef07ac
+2026-09-21 08:47:42,504 [1529606]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=7e34152367894336
+2026-09-21 08:47:42,519 [1529621]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=ecc99a1c3c5bab0b
+2026-09-21 08:47:43,509 [1530611]   INFO - #c.i.w.i.i.j.s.JpsGlobalModelSynchronizerImpl - Saving global entities com.intellij.platform.workspace.jps.entities.SdkEntity to files
+2026-09-21 08:47:43,510 [1530612]   INFO - #c.i.w.i.i.j.s.JpsGlobalModelSynchronizerImpl - Saving global entities com.intellij.platform.workspace.jps.entities.LibraryEntity to files
+2026-09-21 08:47:43,518 [1530620]   INFO - #c.i.d.d.DataSourceStorageShared$Prj - Attempting to return empty stored state
+2026-09-21 08:47:43,519 [1530621]   INFO - #c.i.d.d.DataSourceStorageShared$Prj - Attempting to return empty stored state
+2026-09-21 08:47:43,519 [1530621]   INFO - #c.i.d.d.DataSourceStorageShared$Prj - Attempting to return empty stored state
+2026-09-21 08:47:43,520 [1530622]   INFO - #c.i.d.d.DataSourceStorageShared$Prj - Attempting to return empty stored state
+2026-09-21 08:47:43,531 [1530633]   INFO - #c.i.d.d.DataSourceStorageLocal - Attempting to return empty stored state
+2026-09-21 08:47:43,533 [1530635]   INFO - #c.i.d.d.DataSourceStorageLocal - Attempting to return empty stored state
+2026-09-21 08:47:43,534 [1530636]   INFO - #c.i.d.d.DataSourceStorageLocal - Attempting to return empty stored state
+2026-09-21 08:47:43,535 [1530637]   INFO - #c.i.d.d.DataSourceStorageLocal - Attempting to return empty stored state
+2026-09-21 08:47:43,591 [1530693]   INFO - #c.i.m.l.c.a.CodexOAuthStateManager - getState() called, isAuthenticated=false
+2026-09-21 08:47:43,618 [1530720]   INFO - #c.i.a.o.PathMacrosImpl - Saved path macros: {MAVEN_REPOSITORY=C:\Users\alex.personal\.m2\repository}
+2026-09-21 08:47:43,622 [1530724]   INFO - #c.i.d.d.DataSourceStorageShared$App - Attempting to return empty stored state
+2026-09-21 08:47:43,622 [1530724]   INFO - #c.i.d.d.DataSourceStorageLocal - Attempting to return empty stored state
+2026-09-21 08:47:43,624 [1530726]   INFO - #c.i.c.ComponentStoreImpl - Saving appCompletionMLRankingSettings took 12 ms
+2026-09-21 08:47:43,670 [1530772]   INFO - #c.i.u.i.FileBasedIndexTumbler - Turning off file-based index. Reason: `Plugin loaded/unloaded`. Nested level count: before=0, after=1
+2026-09-21 08:47:43,670 [1530772]   INFO - #c.i.o.p.DumbServiceImpl - Purge dumb task queue
+2026-09-21 08:47:43,672 [1530774]   INFO - #c.i.o.p.DumbServiceImpl - Purge dumb task queue
+2026-09-21 08:47:43,672 [1530774]   INFO - #c.i.o.p.DumbServiceImpl - Purge dumb task queue
+2026-09-21 08:47:43,673 [1530775]   INFO - #c.i.o.p.DumbServiceImpl - Purge dumb task queue
+2026-09-21 08:47:43,674 [1530776]   INFO - #c.i.u.i.FileBasedIndexImpl - Index dispose started
+2026-09-21 08:47:43,737 [1530839]   INFO - #c.i.u.i.PersistentDirtyFilesQueue - Dirty file ids stored. Size: 7402. Index: 7402 Path: C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\dirty-file-ids
+2026-09-21 08:47:43,808 [1530910]   INFO - #c.i.p.s.StubIndexImpl - StubIndexExtension-s were unloaded
+2026-09-21 08:47:43,808 [1530910]   INFO - #c.i.p.s.SerializationManagerImpl - Start shutting down C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\rep.names
+2026-09-21 08:47:43,808 [1530910]   INFO - #c.i.p.s.SerializationManagerImpl - Finished shutting down C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\rep.names
+2026-09-21 08:47:43,818 [1530920]   INFO - #c.i.u.i.FileBasedIndexImpl - Index dispose completed in 144ms.
+2026-09-21 08:47:43,818 [1530920]   INFO - #c.i.u.i.FileBasedIndexImpl - Dropping registered indexes
+2026-09-21 08:47:43,821 [1530923]   INFO - #c.i.p.t.TemplateLanguageStubBaseVersion - Template stub version: 25286277
+  StubVersion(Language: Angular2Html, value: 1183689)
+  StubVersion(Language: Angular2Svg, value: 1183689)
+  StubVersion(Language: Angular2, value: 1183642)
+  StubVersion(Language: Angular17Html, value: 1183689)
+  StubVersion(Language: Angular17Svg, value: 1183689)
+  StubVersion(Language: Angular181Html, value: 1183689)
+  StubVersion(Language: Angular181Svg, value: 1183689)
+  StubVersion(Language: Angular20Html, value: 1183689)
+  StubVersion(Language: Angular20Svg, value: 1183689)
+  StubVersion(Language: Angular20, value: 1183642)
+  StubVersion(Language: Properties, value: 0)
+  StubVersion(Language: kotlin, value: 271)
+  StubVersion(Language: HTML, value: 1183684)
+  StubVersion(Language: JAVA, value: 67)
+  StubVersion(Language: SQL, value: 35)
+  StubVersion(Language: MongoDB, value: 35)
+  StubVersion(Language: Redis, value: 35)
+  StubVersion(Language: MySQL, value: 35)
+  StubVersion(Language: SQLite, value: 35)
+  StubVersion(Language: PostgreSQL, value: 35)
+  StubVersion(Language: SQL92, value: 35)
+  StubVersion(Language: GenericSQL, value: 35)
+  StubVersion(Language: Oracle, value: 35)
+  StubVersion(Language: NetSuite, value: 35)
+  StubVersion(Language: OracleSqlPlus, value: 35)
+  StubVersion(Language: TSQL, value: 35)
+  StubVersion(Language: Sybase, value: 35)
+  StubVersion(Language: MariaDB, value: 35)
+  StubVersion(Language: CassandraQL, value: 35)
+  StubVersion(Language: ClickHouse, value: 35)
+  StubVersion(Language: DB2_IS, value: 35)
+  StubVersion(Language: DB2, value: 35)
+  StubVersion(Language: DB2_ZOS, value: 35)
+  StubVersion(Language: Derby, value: 35)
+  StubVersion(Language: Exasol, value: 35)
+  StubVersion(Language: Greenplum, value: 35)
+  StubVersion(Language: H2, value: 35)
+  StubVersion(Language: HiveQL, value: 35)
+  StubVersion(Language: HSQLDB, value: 35)
+  StubVersion(Language: Redshift, value: 35)
+  StubVersion(Language: Snowflake, value: 35)
+  StubVersion(Language: SparkSQL, value: 35)
+  StubVersion(Language: Vertica, value: 35)
+  StubVersion(Language: BigQuery, value: 35)
+  StubVersion(Language: CouchbaseQuery, value: 35)
+  StubVersion(Language: Cockroach, value: 35)
+  StubVersion(Language: Dynamo, value: 35)
+  StubVersion(Language: CSS, value: 39)
+  StubVersion(Language: SCSS, value: 40)
+  StubVersion(Language: SASS, value: 40)
+  StubVersion(Language: JavaScript, value: 1183642)
+  StubVersion(Language: TypeScript, value: 1183642)
+  StubVersion(Language: ECMAScript 6, value: 1183642)
+  StubVersion(Language: TypeScript JSX, value: 1183642)
+  StubVersion(Language: Flow JS, value: 1183642)
+  StubVersion(Language: MongoJSExt, value: 1183642)
+  StubVersion(Language: Vue, value: 1183694)
+  StubVersion(Language: VueJS, value: 1183642)
+  StubVersion(Language: VueTS, value: 1183642)
+  StubVersion(Language: HttpClientHandlerJavaScriptDialect, value: 1183642)
+  StubVersion(Language: ruby, value: 213392)
+  StubVersion(Language: ErbRuby, value: 213392)
+  StubVersion(RUBY_CODE_IN_ERB_ROOT, value: 0)
+  StubVersion(Language: ruby.rbs, value: 47)
+  StubVersion(Language: Jupyter, value: 0)
+  StubVersion(Language: Markdown, value: 0)
+  StubVersion(Language: Makefile, value: 0)
+  StubVersion(Language: protobuf, value: 0)
+  StubVersion(Language: Python, value: 107)
+  StubVersion(Language: PythonStub, value: 107)
+  StubVersion(Language: Groovy, value: 52)
+  StubVersion(Language: PostCSS, value: 42)
+  StubVersion(Language: LESS, value: 39)
+  StubVersion(Language: PyFunctionTypeComment, value: 107)
+  StubVersion(Language: PyTypeRepresentation, value: 107)
+  StubVersion(Language: PyTypeHint, value: 107)
+  StubVersion(Language: Doctest, value: 107)
+  StubVersion(Language: JupyterPython, value: 107)
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.KudosDynamicPluginListener - [Kudos] beforePluginUnload fired for Kudos
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.commit.KudosCheckinHandler - [Kudos] KudosCheckinHandler.disposeAll() started
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.commit.KudosCheckinHandler - [Kudos] Successfully detached KudosCheckinHandler from AbstractCommitWorkflow._commitHandlers
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.commit.KudosCheckinHandler - [Kudos] Successfully detached KudosCheckinHandler from AbstractCommitWorkflow._commitHandlers
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.commit.KudosCheckinHandler - [Kudos] Successfully detached KudosCheckinHandler from AbstractCommitWorkflow._commitHandlers
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.commit.KudosCheckinHandler - [Kudos] KudosCheckinHandler.disposeAll() completed
+2026-09-21 08:47:43,823 [1530925]   INFO - #com.kudos.KudosDynamicPluginListener - [Kudos] Clearing IconLoader cache ahead of unload (isUpdate=false)
+2026-09-21 08:47:43,824 [1530926]   INFO - #com.kudos.KudosDynamicPluginListener - [Kudos] beforePluginUnload completed
+2026-09-21 08:47:43,860 [1530962]   INFO - #c.i.o.p.DumbServiceImpl - enter dumb mode [Kudos]
+2026-09-21 08:47:43,861 [1530963]   INFO - #c.i.o.p.DumbServiceImpl - enter dumb mode [custom-shell-aliases-and-scripts]
+2026-09-21 08:47:43,862 [1530964]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Running task: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:43,862 [1530964]   INFO - #c.i.o.p.DumbServiceImpl - enter dumb mode [absurdly-goud]
+2026-09-21 08:47:43,863 [1530965]   INFO - #c.i.o.p.DumbServiceImpl - enter dumb mode [WindowAccent]
+2026-09-21 08:47:43,863 [1530965]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Running task: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:43,863 [1530965]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Running task: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:43,864 [1530966]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Running task: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:43,931 [1531033]   INFO - #c.i.o.p.i.ProgressManagerImpl - checkCancelled is invoked while write-action is pending. nonCancellable: false, hasProgressIndicator: false, hasContextJob: true, hasNoneBehavior: false, hasOnlyHooksBehavior: true, cancelled: false
+2026-09-21 08:47:43,940 [1531042]   INFO - #com.kudos.settings.KudosSettingsState - [Kudos] Disposing com.kudos.settings.KudosSettingsState$Companion underway
+2026-09-21 08:47:44,019 [1531121]   INFO - #c.i.i.p.PluginManager - Plugin set resolution:
+Module intellij.json.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.sh.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.textmate.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.toml.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.yaml.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.markdown.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.terminal.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.protoeditor.go is not enabled because dependency org.jetbrains.plugins.go is not available
+Module intellij.packageChecker.php is not enabled because dependency com.jetbrains.php is not available
+Module intellij.packageChecker.go is not enabled because dependency org.jetbrains.plugins.go is not available
+Module intellij.yaml.helm is not enabled because dependency org.jetbrains.plugins.go-template is not available
+Module intellij.editorconfig.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.sass.watcher is not enabled because dependency com.intellij.plugins.watcher is not available
+Module intellij.css.watcher is not enabled because dependency com.intellij.plugins.watcher is not available
+Module intellij.css.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.sass.frontend.split is not enabled because dependency intellij.css.frontend.split is not available
+Module intellij.less.watcher is not enabled because dependency com.intellij.plugins.watcher is not available
+Module matterhorn.ide-core.android-platform.main is not enabled because dependency org.jetbrains.android is not available
+Module matterhorn.ide-core.android-ij-platform.main is not enabled because dependency matterhorn.ide-core.android-platform.main is not available
+Module matterhorn.ide-server.android.main is not enabled because dependency matterhorn.ide-core.android-platform.main is not available
+Module matterhorn.ej-core-ide.kmp.compose-desktop.main is not enabled because dependency intellij.kmm.compose.desktop is not available
+Module matterhorn.ej-core-ide.rust.main is not enabled because dependency com.jetbrains.rust is not available
+Module matterhorn.ej-core-ide.clion.main is not enabled because dependency intellij.clion.radler.core is not available
+Module matterhorn.ej-core-ide.php.main is not enabled because dependency com.jetbrains.php is not available
+Module matterhorn.ej-ui.php.main is not enabled because dependency matterhorn.ej-core-ide.php.main is not available
+Module matterhorn.ej-core-ide.go.main is not enabled because dependency org.jetbrains.plugins.go is not available
+Module matterhorn.ej-core-ide.rider.main is not enabled because dependency com.intellij.modules.rider is not available
+Module intellij.httpClient.injection.graphql is not enabled because dependency com.intellij.lang.jsgraphql is not available
+Module intellij.station.frontend.split is not enabled because dependency com.intellij.jetbrains.client is not available
+Module intellij.webDeployment/phpStorm is not enabled because dependency com.intellij.modules.phpstorm is not available
+Module intellij.clouds.docker.file.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.clouds.kubernetes.charts.gotpl is not enabled because dependency intellij.yaml.helm is not available
+Module intellij.database.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.devkit.uiDesigner is not enabled because dependency com.intellij.uiDesigner is not available
+Module intellij.python.pyramid is not enabled because dependency intellij.python.dap.plugin is not available
+Module intellij.python is not enabled because dependency intellij.python.pyramid is not available
+Module intellij.python.pro.localization is not enabled because dependency intellij.python is not available
+Module intellij.python.uml is not enabled because dependency intellij.python is not available
+Module intellij.python.profiler is not enabled because dependency intellij.python is not available
+Module intellij.python.gherkin is not enabled because dependency intellij.python is not available
+Module intellij.python.pytestBdd is not enabled because dependency intellij.python.gherkin is not available
+Module intellij.python.duplicatesDetection is not enabled because dependency intellij.python is not available
+Module intellij.python.djangoDbConfig is not enabled because dependency intellij.python is not available
+Module intellij.python.concurrencyVisualizer is not enabled because dependency intellij.python is not available
+Module intellij.python.plugin.java is not enabled because dependency intellij.python is not available
+Module intellij.python.community.plugin.minorRider is not enabled because dependency com.intellij.modules.python-in-mini-ide-capable is not available
+Module intellij.python.community.plugin.minor is not enabled because dependency com.intellij.modules.python-in-mini-ide-capable is not available
+Module intellij.kotlin.devkit.k1 is not enabled because dependency com.intellij.modules.kotlin.k1 is not available
+Module intellij.devkit.workspaceModel.k1 is not enabled because dependency com.intellij.modules.kotlin.k1 is not available
+Module intellij.compose.ide.plugin.k1 is not enabled because dependency com.intellij.modules.kotlin.k1 is not available
+Module intellij.compose.ide.plugin.resources.android is not enabled because dependency org.jetbrains.android is not available
+Module kotlin-ultimate.native-debugger is not enabled because dependency intellij.cidr.runner is not available
+Module kotlin-ultimate.ultimate-native is not enabled because dependency kotlin-ultimate.native-debugger is not available
+Module intellij.packageChecker.amper is not enabled because dependency org.jetbrains.kotlin-toolchain is not available
+Module intellij.ruby.slim is not enabled because dependency org.jetbrains.plugins.slim is not available
+Module intellij.ruby.rbs.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.ruby.puppet.shared is not enabled because dependency com.intellij.lang.puppet is not available
+Module intellij.ruby.puppet is not enabled because dependency intellij.ruby.puppet.shared is not available
+Module intellij.ruby.puppet.java is not enabled because dependency intellij.ruby.puppet.shared is not available
+Module intellij.ruby.haml is not enabled because dependency org.jetbrains.plugins.haml is not available
+Module intellij.ruby.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.ruby.fileWatcher is not enabled because dependency com.intellij.plugins.watcher is not available
+Module intellij.ruby.cucumber is not enabled because dependency gherkin is not available
+Module intellij.llmInstaller.ds.ide is not enabled because dependency intellij.dataspell.ide.impl is not available
+Module intellij.llmInstaller.ds is not enabled because dependency intellij.dataWrangler.llm is not available
+Module intellij.llmInstaller.pycharm.community is not enabled because dependency intellij.pycharm.community.ide.impl.promotion is not available
+Module intellij.fullLine.terraform is not enabled because dependency org.intellij.plugins.hcl is not available
+Module intellij.fullLine.rust is not enabled because dependency com.jetbrains.rust is not available
+Module intellij.fullLine.rider is not enabled because dependency intellij.rd.client is not available
+Module intellij.fullLine.rider.unrealengine is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.rider.shaderlab is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.rider.fsharp is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.rider.csharp is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.rider.cpp is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.php is not enabled because dependency com.jetbrains.php is not available
+Module intellij.fullLine.go is not enabled because dependency org.jetbrains.plugins.go is not available
+Module intellij.fullLine.cpp is not enabled because dependency intellij.cidr.lang.base is not available
+Module intellij.fullLine.federatedCompute is not enabled because dependency com.intellij.federatedCompute is not available
+Module intellij.fullLine.terraform.local is not enabled because dependency intellij.fullLine.terraform is not available
+Module intellij.fullLine.rust.local is not enabled because dependency intellij.fullLine.rust is not available
+Module intellij.fullLine.rider.local is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.rider.csharp.local is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.rider.cpp.local is not enabled because dependency intellij.fullLine.rider is not available
+Module intellij.fullLine.php.local is not enabled because dependency intellij.fullLine.php is not available
+Module intellij.fullLine.go.local is not enabled because dependency intellij.fullLine.go is not available
+Module intellij.fullLine.cpp.local is not enabled because dependency intellij.fullLine.cpp is not available
+Module intellij.ml.llm.sql.datagrip is not enabled because dependency com.intellij.database.ide is not available
+Module intellij.ml.llm.playground.latest is not enabled because dependency intellij.aiplayground.aiassistant is not available
+Module intellij.ml.llm.mdx.nextEdits.backend is not enabled because dependency mdx.js is not available
+Module intellij.ml.llm.go.inlinePromptDetector is not enabled because dependency org.jetbrains.plugins.go is not available
+Module intellij.ml.llm.rider is not enabled because dependency intellij.rider.rdclient.dotnet is not available
+Module intellij.ml.llm.rider.dotTools is not enabled because dependency intellij.ml.llm.rider is not available
+Module intellij.ml.llm.rider.fsharp is not enabled because dependency intellij.ml.llm.rider is not available
+Module intellij.ml.llm.rider.cpp is not enabled because dependency intellij.ml.llm.rider is not available
+Module intellij.ml.llm.rider.cpp.nextEdits.backend is not enabled because dependency intellij.ml.llm.rider.cpp is not available
+Module intellij.ml.llm.ideolog is not enabled because dependency com.intellij.ideolog is not available
+Module intellij.ml.llm.mcp.perforce is not enabled because dependency PerforceDirectPlugin is not available
+Module intellij.ml.llm.php is not enabled because dependency com.jetbrains.php is not available
+Module intellij.ml.llm.php.mcp is not enabled because dependency intellij.ml.llm.php is not available
+Module intellij.ml.llm.php.inlinePromptDetector is not enabled because dependency intellij.ml.llm.php is not available
+Module intellij.ml.llm.php.nextEdits.backend is not enabled because dependency intellij.ml.llm.php is not available
+Module intellij.ml.llm.rust is not enabled because dependency com.jetbrains.rust is not available
+Module intellij.ml.llm.rust.nextEdits.backend is not enabled because dependency intellij.ml.llm.rust is not available
+Module intellij.ml.llm.go.embeddings is not enabled because dependency org.jetbrains.plugins.go is not available
+Module intellij.ml.llm.php.embeddings is not enabled because dependency com.jetbrains.php is not available
+Module intellij.ml.llm.searchEverywhere.embeddings.datagrip is not enabled because dependency com.intellij.database.ide is not available
+Module intellij.ml.llm.searchEverywhere.embeddings.radler is not enabled because dependency intellij.clion.radler.core is not available
+Module intellij.ml.llm.searchEverywhere.embeddings.rider is not enabled because dependency intellij.rider is not available
+Module intellij.ml.llm.android is not enabled because dependency org.jetbrains.android is not available
+Module intellij.ml.llm.cpp.common is not enabled because dependency intellij.cidr.clangd.core is not available
+Module intellij.ml.llm.cpp.cmake is not enabled because dependency intellij.cidr.execution is not available
+Module intellij.ml.llm.cpp is not enabled because dependency intellij.cidr.lang.base is not available
+Module intellij.ml.llm.cpp.nextEdits.backend is not enabled because dependency intellij.ml.llm.cpp is not available
+Module intellij.ml.llm.python.ultimate is not enabled because dependency intellij.python is not available
+Module intellij.ml.llm.go is not enabled because dependency org.jetbrains.plugins.go is not available
+Module intellij.ml.llm.go.nextEdits.backend is not enabled because dependency intellij.go.impl is not available
+Module intellij.ml.llm.space is not enabled because dependency intellij.space.vcs is not available
+Module intellij.ml.llm.space.latest is not enabled because dependency intellij.ml.llm.space is not available
+Module intellij.ml.llm.federatedCompute is not enabled because dependency intellij.fullLine.federatedCompute is not available
+Module intellij.ml.llm.rider.unrealengine.completion is not enabled because dependency intellij.fullLine.rider.unrealengine is not available
+Module intellij.ml.llm.rider.shaderlab.completion is not enabled because dependency intellij.fullLine.rider.shaderlab is not available
+Module intellij.ml.llm.rider.godot.completion is not enabled because dependency intellij.fullLine.rider.shaderlab is not available
+Module intellij.ml.llm.rider.fsharp.completion is not enabled because dependency intellij.fullLine.rider.fsharp is not available
+Module intellij.ml.llm.rider.csharp.completion is not enabled because dependency intellij.fullLine.rider.csharp is not available
+Module intellij.ml.llm.rider.cpp.completion is not enabled because dependency intellij.fullLine.rider.cpp is not available
+Module intellij.ml.llm.rust.completion is not enabled because dependency intellij.fullLine.rust is not available
+Module intellij.ml.llm.cpp.completion is not enabled because dependency intellij.fullLine.cpp is not available
+Module intellij.ml.llm.terraform.completion is not enabled because dependency intellij.fullLine.terraform is not available
+Module intellij.ml.llm.php.completion is not enabled because dependency intellij.fullLine.php is not available
+Module intellij.ml.llm.go.completion is not enabled because dependency intellij.fullLine.go is not available
+Module intellij.java.promo is not enabled because dependency com.intellij.modules.idea.community is not available
+Module intellij.spring.boot.rewrite is not enabled because dependency com.intellij.openRewrite is not available
+Module intellij.java.frontend.split is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.groovy.ant is not enabled because dependency AntSupport is not available
+Module matterhorn.ej-core-ide.scala.main is not enabled because dependency scalaCommunity.bsp is not available
+Module matterhorn.ej-core-ide.android-ij.main is not enabled because dependency org.jetbrains.android is not available
+Module matterhorn.ej-core-ide.android-as.main is not enabled because dependency com.intellij.modules.androidstudio is not available
+Module matterhorn.ej-core-ide.kmp.ios.main is not enabled because dependency com.intellij.modules.nativeDebug is not available
+Module matterhorn.ej-core-ide.kmp.android.main is not enabled because dependency matterhorn.ide-core.android-platform.main is not available
+Module matterhorn.ej-core-ide.kmp.android-ij.main is not enabled because dependency matterhorn.ej-core-ide.kmp.android.main is not available
+Module matterhorn.ej-core-ide.kmp.android-as.main is not enabled because dependency matterhorn.ej-core-ide.kmp.android.main is not available
+Module intellij.micronaut.rewrite is not enabled because dependency com.intellij.openRewrite is not available
+Module intellij.quarkus.rewrite is not enabled because dependency com.intellij.openRewrite is not available
+Module intellij.spring.jsf is not enabled because dependency com.intellij.jsf is not available
+Module intellij.qodana.rust is not enabled because dependency com.intellij.modules.rustrover is not available
+Module intellij.qodana.cpp is not enabled because dependency intellij.cidr.projectModel is not available
+Module intellij.qodana.python.coverage is not enabled because dependency intellij.python is not available
+Module intellij.qodana.php is not enabled because dependency com.jetbrains.php is not available
+Module intellij.qodana.go is not enabled because dependency intellij.go.coverage is not available
+Module intellij.ml.llm.rider.csharp is not enabled because dependency intellij.ml.llm.rider is not available
+Module intellij.ml.llm.rider.csharp.inlinePromptDetector is not enabled because dependency intellij.ml.llm.rider.csharp is not available
+Module intellij.ml.llm.rider.csharp.razor is not enabled because dependency intellij.ml.llm.rider is not available
+Module intellij.ml.llm.rider.csharp.nextEdits.backend is not enabled because dependency intellij.ml.llm.rider.csharp is not available
+Module intellij.ml.llm.javascript.svelte is not enabled because dependency dev.blachut.svelte.lang is not available
+Module intellij.ml.llm.javascript.svelte.nextEdits.backend is not enabled because dependency intellij.ml.llm.javascript.svelte is not available
+Module intellij.ml.llm.javascript.astro is not enabled because dependency org.jetbrains.plugins.astro is not available
+Module intellij.ml.llm.javascript.astro.nextEdits.backend is not enabled because dependency intellij.ml.llm.javascript.astro is not available
+Module intellij.python.javascript.debugger is not enabled because dependency intellij.python is not available
+Module intellij.javascript.debugger.webstorm.specific is not enabled because dependency com.intellij.modules.webstorm is not available
+Module intellij.ruby.javascript is not enabled because dependency com.intellij.stimulus is not available
+Module intellij.fullLine.js.svelte is not enabled because dependency dev.blachut.svelte.lang is not available
+Module intellij.ml.llm.javascript.svelte.completion is not enabled because dependency intellij.fullLine.js.svelte is not available
+Module intellij.fullLine.js.svelte.local is not enabled because dependency intellij.fullLine.js.svelte is not available
+Module intellij.fullLine.js.astro is not enabled because dependency org.jetbrains.plugins.astro is not available
+Module intellij.ml.llm.javascript.astro.completion is not enabled because dependency intellij.fullLine.js.astro is not available
+Module intellij.fullLine.js.astro.local is not enabled because dependency intellij.fullLine.js.astro is not available
+Module intellij.ml.llm.uiTestGeneration is not enabled because dependency intellij.aqua.wi is not available
+Module intellij.javascript.fileWatcher is not enabled because dependency com.intellij.plugins.watcher is not available
+Module intellij.javascript.newProject is not enabled because dependency com.intellij.modules.webstorm is not available
+Module intellij.python.huggingFace is not enabled because dependency intellij.python is not available
+Module intellij.jupyter.split.frontend.py is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.jupyter.split.frontend is not enabled because dependency intellij.platform.frontend.split is not available
+Module intellij.kotlin.jupyter.k1 is not enabled because dependency kotlin.base.scripting.k1 is not available
+Module intellij.ml.llm.ds is not enabled because dependency intellij.dataWrangler.llm is not available
+Module intellij.ml.llm.ds.next is not enabled because dependency intellij.dataWrangler.llm is not available
+Module intellij.ml.llm.ds.latest is not enabled because dependency intellij.ml.llm.ds is not available
+Module intellij.jupyter.py.dap is not enabled because dependency intellij.python.dap.plugin is not available
+2026-09-21 08:47:44,056 [1531158]   INFO - #c.i.u.i.FileBasedIndexTumbler - Turning on file-based index. Reason: `Plugin loaded/unloaded`. Nested level count: before=1, after=0
+2026-09-21 08:47:44,056 [1531158]   INFO - #c.i.u.i.FileBasedIndexImpl - Loading indexes
+2026-09-21 08:47:44,061 [1531163]   INFO - #c.i.i.s.p.i.SharedIndexMainZipStorage - Shared Indexes Storage is opened and empty
+2026-09-21 08:47:44,084 [1531186]   INFO - #c.i.u.i.PersistentDirtyFilesQueue - Dirty file ids read. Size: 7402. Index: 7402 Path: C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\dirty-file-ids.
+2026-09-21 08:47:44,166 [1531268]   INFO - #c.i.u.i.PersistentMapImpl - Compacting C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\org.jetbrains.kotlin.idea.vfilefinder.kotlinpartialpackagenamesindex\org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex.storage
+2026-09-21 08:47:44,166 [1531268]   INFO - #c.i.u.i.PersistentMapImpl - Live keys:6903, dead keys:198, read compaction size:6752434
+2026-09-21 08:47:44,173 [1531275]   INFO - #c.i.u.i.PersistentMapImpl - Loaded mappings:6ms, keys:6903
+2026-09-21 08:47:44,277 [1531379]   INFO - #c.i.u.i.PersistentMapImpl - Compacted values for:102ms fragments:9540, new fragments:6903
+2026-09-21 08:47:44,277 [1531379]   INFO - #c.i.u.i.PersistentMapImpl - Updated mappings:1 ms
+2026-09-21 08:47:44,287 [1531389]   INFO - #c.i.u.i.PersistentMapImpl - Compacted C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\org.jetbrains.kotlin.idea.vfilefinder.kotlinpartialpackagenamesindex\org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex.storage:12844831 bytes into 3656480 bytes in 121ms.
+2026-09-21 08:47:44,378 [1531480]   INFO - #c.i.u.i.FileBasedIndexImpl - Indices to be built:FilenameIndex(v = 258)
+2026-09-21 08:47:44,378 [1531480]   INFO - #c.i.u.i.FileBasedIndexImpl - Using simple flusher for indexes
+2026-09-21 08:47:44,382 [1531484]   INFO - #c.i.u.i.IndexDataInitializer - Index data initialization done: 322 ms. Initialized indexes: [Trigram.Index, FilenameIndex, TodoIndex, sql.routine.index, XsltSymbolIndex, sql.types.count.index, IdIndex, RelaxSymbolIndex, XmlNamespaces, SchemaTypeInheritance, XmlTagNames, html5.custom.attributes.index, HashFragmentIndex, DomFileIndex, java.auto.module.name, fileIncludes, FrameworkDetectionIndex, xmlProperties, json.file.root.values, VtlFileIndex, http.request.execution.environment, editorconfig.index.name, http.request.completion.host, http.request.headers.values.index, http.request.name.index, OpenapiSpecificationContentIndexer, SwReferencesIndex, java.null.method.argument, java.source.module.name, java.fun.expression, java.binary.plus.expression, org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinJavaScriptMetaFileIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex, Stubs, org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex, bytecodeAnalysis, org.jetbrains.kotlin.idea.vfilefinder.KotlinBuiltInsMetadataIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFileIndex, KotlinPackageSourcesMemberNamesIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinMetadataFilePackageIndex, org.jetbrains.kotlin.idea.vfilefinder.KotlinStdlibIndex, org.jetbrains.kotlin.idea.vfilefinder.KlibMetaFileIndex, KotlinTopLevelCallableByPackageShortNameIndex, KotlinTopLevelClassLikeDeclarationByPackageShortNameIndex, javafx.custom.component, protoeditor.java.outer.class.index, com.intellij.jpa.jpb.model.EntityRegisterFileIndex, KotlinBinaryRootToPackageIndex, JavaFxControllerClassIndex, FtlFileIndex, javafx.id.name, SpringBootYamlImports, PropertyCodeReferenceIndex, spring.spiFileIndex, SpringXmlBeansIndex, SpringBootPropertiesImports, Py.module.name, spring.autoConfigureMetadataIndex, spring.boot.importsFileIndex, HtmlTagIdIndex, js.custom.single.entry.index, CompassFunctionsIndex, css.template.selectors, Py.setuptools.namespace, LombokConfigIndex, js.string.literal.words.index, taglibUris, js.test.names, CssIndex, js.package.index, js.implicit.elements.index, HtmlScriptSrcIndex, javafx.stylesheets.name, js.test.names.extensible, TypeScriptConfigIndexData, ruby.declaration.fqn, yard.macro.descriptions, VueNoScriptFilesIndex, ruby.rdoc.options, ruby.declaration.hierarchy, RequiresIndexExtension, rails.ruby.schema.version, VueComponentStylesIndex, ruby.anonymous.declaration.superclass, org.jetbrains.kotlin.idea.vfilefinder.KotlinPartialPackageNamesIndex, ruby.declaration.superclass, yard.macro.names, filetypes, FileNameEmbeddingIndex, i18n.yaml.possible.locale, rbs.declaration.by.parent.fqn, yaml.top.level.keys.index, i18n.yaml.translation, rails.sql.schema.version, SymbolBodyEmbeddingIndex, i18n.yaml.translation.keys, rbs.declaration.fqn, rbs.globalVariable.name, rbs.methodName.property, Python.Django.AdminRegister, DjangoBlockInheritanceIndex, SymbolNameEmbeddingIndex, ClassBodyEmbeddingIndex, TextChunksEmbeddingIndex, ClassNameEmbeddingIndex, IdeaPluginRegistrationIndex, PluginIdModuleIndex, PluginIdDependenciesIndex, devkit.ExtensionPointIndex, WebComponentsIndex, devkit.ExtensionPointClassIndex].
+2026-09-21 08:47:44,484 [1531586]   INFO - #c.i.i.s.p.i.SharedIndexChunkConfigurationImpl - Chunk bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65 is registered for project 'Kudos: matching: (fb=96, stub=132), incompatible: (fb=1, stub=0), unknown: (fb=10, stub=9),
+2026-09-21 08:47:44,559 [1531661]   INFO - #c.i.i.s.p.i.SharedIndexChunkConfigurationImpl - Chunk bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65 is registered for project 'Kudos: matching: (fb=62, stub=153), incompatible: (fb=4, stub=0), unknown: (fb=30, stub=25),
+2026-09-21 08:47:44,560 [1531662]   INFO - #c.i.i.s.p.i.SharedIndexInfrastructure - Attached 2 shared indexes: bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65, bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65
+2026-09-21 08:47:44,561 [1531663]   INFO - #c.i.i.s.p.i.SharedIndexInfrastructure - Attached 2 shared indexes: bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65, bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65
+2026-09-21 08:47:44,562 [1531664]   INFO - #c.i.i.s.p.i.SharedIndexInfrastructure - Attached 2 shared indexes: bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65, bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65
+2026-09-21 08:47:44,563 [1531665]   INFO - #c.i.i.s.p.i.SharedIndexInfrastructure - Attached 2 shared indexes: bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65, bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65
+2026-09-21 08:47:44,563 [1531665]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Task finished: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:44,563 [1531665]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Task finished: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:44,563 [1531665]   INFO - #c.i.u.i.d.AppIndexingDependenciesService - Invalidating all indexing flags. Reason: Plugin loaded/unloaded
+2026-09-21 08:47:44,563 [1531665]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Task finished: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:44,563 [1531665]   INFO - #c.i.o.p.MergingQueueGuiExecutor - Task finished: (dumb mode task) Plugin loaded/unloaded (re-load indexes)
+2026-09-21 08:47:44,591 [1531693]   INFO - #c.i.u.i.PersistentDirtyFilesQueue - Dirty file ids read. Size: 1. Index: 7068 Path: C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\dirty-file-queues\4c3178c6.
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.UnindexedFilesScanner - Full scanning on startup will NOT be skipped for project [Kudos] because of following unsatisfied conditions:
+ALLOWED: Full scanning was requested
+FILTER_IS_NOT_UP_TO_DATE: Persistent indexable files filter is NOT up-to-date because of following unsatisfied conditions: [INDEXING_REQUEST_ID_DID_NOT_CHANGE_AFTER_LAST_SCANNING]
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.PersistentDirtyFilesQueue - Dirty file ids read. Size: 1. Index: 7068 Path: C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\dirty-file-queues\897788b.
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.UnindexedFilesScanner - Full scanning on startup will NOT be skipped for project [custom-shell-aliases-and-scripts] because of following unsatisfied conditions:
+ALLOWED: Full scanning was requested
+FILTER_IS_NOT_UP_TO_DATE: Persistent indexable files filter is NOT up-to-date because of following unsatisfied conditions: [INDEXING_REQUEST_ID_DID_NOT_CHANGE_AFTER_LAST_SCANNING]
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.PersistentDirtyFilesQueue - Dirty file ids read. Size: 1. Index: 7068 Path: C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\dirty-file-queues\f62cc9c1.
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.UnindexedFilesScanner - Full scanning on startup will NOT be skipped for project [absurdly-goud] because of following unsatisfied conditions:
+ALLOWED: Full scanning was requested
+FILTER_IS_NOT_UP_TO_DATE: Persistent indexable files filter is NOT up-to-date because of following unsatisfied conditions: [INDEXING_REQUEST_ID_DID_NOT_CHANGE_AFTER_LAST_SCANNING]
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.PersistentDirtyFilesQueue - Dirty file ids read. Size: 0. Index: 7068 Path: C:\Users\alex.personal\AppData\Local\JetBrains\IntelliJIdea2026.1\index\dirty-file-queues\5ff93e6f.
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.UnindexedFilesScanner - Full scanning on startup will NOT be skipped for project [WindowAccent] because of following unsatisfied conditions:
+ALLOWED: Full scanning was requested
+FILTER_IS_NOT_UP_TO_DATE: Persistent indexable files filter is NOT up-to-date because of following unsatisfied conditions: [INDEXING_REQUEST_ID_DID_NOT_CHANGE_AFTER_LAST_SCANNING]
+2026-09-21 08:47:44,592 [1531694]   INFO - #c.i.u.i.FileBasedIndexTumbler - Index rescanning has been started. Reason: `Plugin loaded/unloaded`
+2026-09-21 08:47:44,592 [1531694]   INFO - #com.window_accent.PluginLifecycleListener - [Window Accent] pluginUnloaded event for: Kudos
+2026-09-21 08:47:44,605 [1531707]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [4c3178c6] Running task: com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@4eecea56
+2026-09-21 08:47:44,605 [1531707]   INFO - #c.i.u.i.UnindexedFilesScanner - [4c3178c6] scanning stage (scanning id=10): DelayedPushProperties
+2026-09-21 08:47:44,605 [1531707]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [897788b] Running task: com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@199fb682
+2026-09-21 08:47:44,605 [1531707]   INFO - #c.i.u.i.UnindexedFilesScanner - [897788b] scanning stage (scanning id=11): DelayedPushProperties
+2026-09-21 08:47:44,608 [1531710]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [f62cc9c1] Running task: com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@6e5acdd7
+2026-09-21 08:47:44,608 [1531710]   INFO - #c.i.u.i.UnindexedFilesScanner - [f62cc9c1] scanning stage (scanning id=12): DelayedPushProperties
+2026-09-21 08:47:44,608 [1531710]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,608 [1531710]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [5ff93e6f] Running task: com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@11f70a3a
+2026-09-21 08:47:44,608 [1531710]   INFO - #c.i.u.i.UnindexedFilesScanner - [5ff93e6f] scanning stage (scanning id=13): DelayedPushProperties
+2026-09-21 08:47:44,608 [1531710]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,626 [1531728]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,633 [1531735]   INFO - #c.i.u.i.FileBasedIndexImpl - Indexes are already loaded
+2026-09-21 08:47:44,647 [1531749]   INFO - #c.i.p.u.i.s.e.DurableEnumeratorFactory - [enumerator.mmapped]: .valueHashToId (in memory) was filled (416 records)
+2026-09-21 08:47:44,929 [1532031]   INFO - #c.i.o.p.i.ProgressManagerImpl - checkCancelled is invoked while write-action is pending. nonCancellable: false, hasProgressIndicator: false, hasContextJob: true, hasNoneBehavior: false, hasOnlyHooksBehavior: true, cancelled: false
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,113 [1532215]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,114 [1532216]   WARN - #c.i.o.v.e.LineStatusMarkerRenderer - Line marker highlighter was recovered. This incident will be reported.
+2026-09-21 08:47:45,116 [1532218]   INFO - #c.i.o.p.i.ProgressManagerImpl - checkCancelled is invoked while write-action is pending. nonCancellable: false, hasProgressIndicator: false, hasContextJob: false, hasNoneBehavior: false, hasOnlyHooksBehavior: true, cancelled: false
+2026-09-21 08:47:45,168 [1532270]   INFO - #c.i.o.a.i.ActionUpdater - 502 ms to grab EDT for EditorMarkupModelImpl$NavigationGroup#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$NavigationGroup)
+2026-09-21 08:47:45,168 [1532270]   INFO - #c.i.o.a.i.ActionUpdater - 503 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2026-09-21 08:47:45,168 [1532270]   INFO - #c.i.o.a.i.ActionUpdater - 503 ms to grab EDT for InspectionWidgetContentExclusionAction#presentation@EditorInspectionsToolbar (com.github.copilot.status.InspectionWidgetContentExclusionAction)
+2026-09-21 08:47:45,169 [1532271]   INFO - #c.i.o.a.i.ActionUpdater - 496 ms to grab EDT for ToolWindowHeader$2#children@ToolwindowTitle (com.intellij.toolWindow.ToolWindowHeader$2)
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 490 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 490 ms to grab EDT for EditorMarkupModelImpl$NavigationGroup#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$NavigationGroup)
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 490 ms to grab EDT for AIAssistantInputContextUsageAction#presentation@AIAssistantChatInputRight (com.intellij.ml.llm.core.chat.ui.chat.input.AIAssistantInputContextUsageAction) "AIAssistant.Chat.Input.ContextUsage"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 490 ms to grab EDT for AIAssistantInputIdeContextToggleAction#presentation@AIAssistantChatInputRight (com.intellij.ml.llm.core.chat.ui.chat.input.AIAssistantInputIdeContextToggleAction) "AIAssistant.Chat.Input.IdeContextToggle"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 490 ms to grab EDT for AIAssistantInputSendAction#presentation@AIAssistantChatInputRight (com.intellij.ml.llm.core.chat.ui.chat.input.AIAssistantInputSendAction) "AIAssistant.Chat.SendActions.Send"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 433 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 433 ms to grab EDT for EditorMarkupModelImpl$NavigationGroup#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$NavigationGroup)
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 426 ms to grab EDT for SelectInChangesViewAction#presentation@ChangesViewToolbar (com.intellij.openapi.vcs.changes.actions.SelectInChangesViewAction) "ChangesView.SelectFile"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 426 ms to grab EDT for ExpandAllAction#presentation@ChangesViewToolbar (ExpandAllAction) "ExpandAll"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 426 ms to grab EDT for CollapseAllAction#presentation@ChangesViewToolbar (CollapseAllAction) "CollapseAll"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 427 ms to grab EDT for ToggleAmendCommitModeAction#presentation@ChangesView.CommitToolbar (com.intellij.vcs.commit.ToggleAmendCommitModeAction) "Vcs.ToggleAmendCommitMode"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 413 ms to grab EDT for GitCommitAndPushExecutorAction#presentation@ChangesView.CommitButtonsToolbar (git4idea.actions.GitCommitAndPushExecutorAction) "Git.Commit.And.Push.Executor"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 424 ms to grab EDT for InspectionWidgetContentExclusionAction#presentation@EditorInspectionsToolbar (com.github.copilot.status.InspectionWidgetContentExclusionAction)
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 413 ms to grab EDT for ShowCommitOptionsAction#presentation@ChangesView.ShowCommitOptions (com.intellij.openapi.vcs.actions.ShowCommitOptionsAction) "ChangesView.ShowCommitOptions"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 379 ms to grab EDT for ToggleDetailsAction#presentation@ChangesViewToolbar (com.intellij.openapi.vcs.changes.ToggleDetailsAction) "ChangesView.SingleClickPreview"
+2026-09-21 08:47:45,176 [1532278]   INFO - #c.i.o.a.i.ActionUpdater - 350 ms to grab EDT for GitCommitGenerateAction#presentation@ChangesView.CommitToolbar (com.github.copilot.git.GitCommitGenerateAction) "copilot.git.commit.button"
+2026-09-21 08:47:45,184 [1532286]   INFO - #c.i.o.a.i.ActionUpdater - 334 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2026-09-21 08:47:45,184 [1532286]   INFO - #c.i.o.a.i.ActionUpdater - 334 ms to grab EDT for EditorMarkupModelImpl$NavigationGroup#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$NavigationGroup)
+2026-09-21 08:47:45,184 [1532286]   INFO - #c.i.o.a.i.ActionUpdater - 308 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2026-09-21 08:47:45,185 [1532287]   INFO - #c.i.o.a.i.ActionUpdater - 308 ms to grab EDT for EditorMarkupModelImpl$NavigationGroup#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$NavigationGroup)
+2026-09-21 08:47:45,185 [1532287]   INFO - #c.i.o.a.i.ActionUpdater - 306 ms to grab EDT for EditorMarkupModelImpl$TrafficLightAction#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction)
+2026-09-21 08:47:45,185 [1532287]   INFO - #c.i.o.a.i.ActionUpdater - 306 ms to grab EDT for EditorMarkupModelImpl$NavigationGroup#presentation@EditorInspectionsToolbar (com.intellij.openapi.editor.impl.EditorMarkupModelImpl$NavigationGroup)
+2026-09-21 08:47:45,376 [1532478]   INFO - #c.i.u.i.IndexDataInitializer - Index data initialization done: 996 ms. Initialized stub indexes: {org.jetbrains.kotlin.idea.stubindex.KotlinExactPackagesIndex, Scss.variable, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeFqNameIndex, js.gcl.modules, org.jetbrains.kotlin.idea.stubindex.KotlinAnnotationsIndex, ruby.factoryBot.factoryName, Rails.render.file, java.record.component.name, rbs.classVariableDeclaration.name, js.class.index2, rbs.instanceVariableDeclaration.name, angular2.metadata.module.index, angular2.metadata.function.index, org.jetbrains.kotlin.idea.stubindex.KotlinFunctionShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinScriptFqnIndex, rbs.constantDeclaration.fqn, rbs.extendedContainer.name, Scss.placeholder.selector, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelFunctionFqnNameIndex, Css.custom.variable, Ruby.superclasses.qualified, KotlinTopLevelExpectPropertyFqNameIndex, vue.options.index, rbs.globalVariableDeclaration.name, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelTypeAliasFqNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinSubclassObjectNameIndex, angular2.symbol.index, markdown.header, java.class.fqn, js.lazy.packages, js.local.namespace.members.index, vue.mixin.binding.index, js.nonglobal.symbol.index, Css.custom.mixin, java.annotations, Ruby.require.load.shortName, KotlinOverridableInternalMembersShortNameIndex, org.jetbrains.kotlin.idea.stubindex.KotlinInnerTypeAliasClassIdIndex, js.element.qualifiedName, ruby.constantDeclaration.fqn, Py.class.attributes, gr.method.name, postcss.custom.media, Ruby.completion.fqn, rbs.typeDeclaration.fqn, Py.module.attribute, Ruby.documentation.fqn, gr.script.class, angular2.metadata.pipe.index, Ruby.all.instance.variables, KotlinTopLevelExpectFunctionFqNameIndex, Py.variable.shortName, properties.index, rbs.moduleDeclaration.fqn, JS.subclass.stub.index, angular2.metadata.className.index, angular2.source.module.index, JRuby.import.shortName, Ruby.class_eval.receiver, js.doc.modules, sql.table.shortName, rails.store.accessor, vue.url.index, java.method.name, Ruby.include.extend.qualified, JS.global.qualified.elements, Css.id, rbs.attributeDeclaration.name, rbs.methodDeclaration.name, js.symbol.qualified.names.index, ts.local.classes, java.class.shortname, Scss.function, JS.class.super, amd.baseUrl.index, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelClassByPackageIndex, markdown.header.anchor, java.class.extlist, protobuf.byShortName, rails.activeRecord.poylmorphicAssociationReferee, js.generics.index, js.namespace.index, KotlinTopLevelPropertyByPackageIndex, vue.extends.binding.index, angular2.js.html.custom-property.index, js.used.remote.modules, rbs.singletonStatement.parentFqn, redis.dml.shortName, es6.exported.index, es6.side.effect.import.index, devise.deviseFor.name, Django.foreignKey, Ruby.resolution.fqn, Py.class.super, KotlinFileFacadeClassByPackageIndex, gr.field.name, org.jetbrains.kotlin.idea.stubindex.KotlinTopLevelPropertyFqnNameIndex, ruby.rspec.shared.examples.ref, es6.assignment.index, org.jetbrains.kotlin.idea.stubindex.KotlinPropertyShortNameIndex, ts.external.module.name.index, Ruby.method.name, rake.task.declaration, rails.attributeMethod.fqn, Ruby.method.dynamic.name, Py.class.shortName, js.export.default.react.component.index, rbs.classDeclaration.fqn, Less.mixins, Css.attr, gr.anonymous.class, ruby.factoryBot.traitName, org.jetbrains.kotlin.idea.stubindex.KotlinFullClassNameIndex, gr.class.fqn.s, vue.composition.app.index, devise.name, Python.Decorator, Css.class, sql.column.name, org.jetbrains.kotlin.idea.stubindex.KotlinFileFacadeShortNameIndex, js.exported.index, Scss.mixin, java.method.parameter.types, org.jetbrains.kotlin.idea.stubindex.KotlinJvmNameAnnotationIndex, gr.script.fqn.s, Ruby.symbol.name, js.global.symbol.index, KotlinProbablyInjectedFunctionShortNameIndex, postcss.custom.selector, Ruby.inheritance.shortName, vue.global.filters.index, java.field.name, js.amd.modules, vue.id.index, ruby.factoryBot.sequenceName, JS.framework.markers.index, java.anonymous.baseref, Django.manager, Py.function.shortName, rbs.includedContainer.name, JS.base.types.index, KotlinTopLevelFunctionByPackageIndex, sql.names, ruby.globalVariableDeclaration.name, js.symbol.index2, vuex.store.index, ruby.rspec.sharedName, vue.components.index, KotlinProbablyNothingFunctionShortNameIndex, ts.embedded.content.index, KotlinTypeAliasByExpansionShortNameIndex, gr.annot.members, KotlinProbablyNothingPropertyShortNameIndex, angular2.ivy.directive.index, ts.external.module.index, KotlinExtensionsInObjectsByReceiverTypeIndex, Py.class.shortNameInsensitive, Css.custom.property, vue.global.directives.index, KotlinTopLevelTypeAliasByPackageIndex, Css.ampersand.selector, amd.requirePaths.index, js.typedef.index2, KotlinTopLevelExtensionsByReceiverTypeIndex, Ruby.included.extended.qualified, gr.class.super, org.jetbrains.kotlin.idea.stubindex.KotlinMultifileClassPartIndex, jvm.static.member.type, angular2.metadata.directive.index, protobuf.byQualifiedName, rbs.interfaceDeclaration.fqn, makefile.target.index, org.jetbrains.kotlin.idea.stubindex.KotlinFilePartClassIndex, KotlinProbablyContractedFunctionShortNameIndex, gr.annot.method.name, rbs.containerStatement.parentFqn, angular2.js.css.custom-property.index, angular2.metadata.node.index, jvm.static.member.name, js.qualified.shortName, Ruby.class.module.shortName, ts.global.exported.index, java.unnamed.class, dom.elementClass, angular2.source.pipe.index, kotlin.primeIndexKey, Py.TypeAliasName, org.jetbrains.kotlin.idea.stubindex.KotlinSuperClassIndex, angular2.ivy.module.index, rails.activeRecord.poylmorphicAssociationName, org.jetbrains.kotlin.idea.stubindex.KotlinTypeAliasShortNameIndex, Less.variables, js.imported.bindings.index, dom.namespaceKey, angular2.ivy.pipe.index, JS.class.implements, org.jetbrains.kotlin.idea.stubindex.KotlinClassShortNameIndex, java.module.name, angular2.source.directive.index, angular2.templateUrl.index}.
+2026-09-21 08:47:45,378 [1532480]   INFO - #c.i.u.i.UnindexedFilesScanner - [f62cc9c1] Started scanning for indexing of [absurdly-goud]. Reason: On FileBasedIndexTumbler.turnOn (reason=Plugin loaded/unloaded)
+2026-09-21 08:47:45,378 [1532480]   INFO - #c.i.u.i.UnindexedFilesScanner - [5ff93e6f] Started scanning for indexing of [WindowAccent]. Reason: On FileBasedIndexTumbler.turnOn (reason=Plugin loaded/unloaded)
+2026-09-21 08:47:45,378 [1532480]   INFO - #c.i.u.i.UnindexedFilesScanner - [897788b] Started scanning for indexing of [custom-shell-aliases-and-scripts]. Reason: On FileBasedIndexTumbler.turnOn (reason=Plugin loaded/unloaded)
+2026-09-21 08:47:45,380 [1532482]   INFO - #c.i.u.i.UnindexedFilesScanner - [4c3178c6] Started scanning for indexing of [Kudos]. Reason: On FileBasedIndexTumbler.turnOn (reason=Plugin loaded/unloaded)
+2026-09-21 08:47:45,382 [1532484]   INFO - #c.i.u.i.UnindexedFilesScanner - [f62cc9c1] scanning stage (scanning id=12): CreatingIterators
+2026-09-21 08:47:45,382 [1532484]   INFO - #c.i.u.i.UnindexedFilesScanner - [5ff93e6f] scanning stage (scanning id=13): CreatingIterators
+2026-09-21 08:47:45,382 [1532484]   INFO - #c.i.u.i.UnindexedFilesScanner - [897788b] scanning stage (scanning id=11): CreatingIterators
+2026-09-21 08:47:45,384 [1532486]   INFO - #c.i.u.i.UnindexedFilesScanner - [4c3178c6] scanning stage (scanning id=10): CreatingIterators
+2026-09-21 08:47:45,389 [1532491]   INFO - #c.i.u.i.UnindexedFilesScanner - [f62cc9c1] scanning stage (scanning id=12): CollectingIndexableFiles
+2026-09-21 08:47:45,389 [1532491]   INFO - #c.i.u.i.UnindexedFilesScanner - [897788b] scanning stage (scanning id=11): CollectingIndexableFiles
+2026-09-21 08:47:45,389 [1532491]   INFO - #c.i.u.i.UnindexedFilesScanner - Scanning of [absurdly-goud] uses 15 scanning threads
+2026-09-21 08:47:45,389 [1532491]   INFO - #c.i.u.i.UnindexedFilesScanner - Scanning of [custom-shell-aliases-and-scripts] uses 15 scanning threads
+2026-09-21 08:47:45,392 [1532494]   INFO - #c.i.u.i.UnindexedFilesScanner - [5ff93e6f] scanning stage (scanning id=13): CollectingIndexableFiles
+2026-09-21 08:47:45,392 [1532494]   INFO - #c.i.u.i.UnindexedFilesScanner - Scanning of [WindowAccent] uses 15 scanning threads
+2026-09-21 08:47:45,395 [1532497]   INFO - #c.i.u.i.UnindexedFilesScanner - [4c3178c6] scanning stage (scanning id=10): CollectingIndexableFiles
+2026-09-21 08:47:45,395 [1532497]   INFO - #c.i.u.i.UnindexedFilesScanner - Scanning of [Kudos] uses 15 scanning threads
+2026-09-21 08:47:45,412 [1532514]   INFO - #c.i.o.p.DumbServiceImpl - exit dumb mode [absurdly-goud]
+2026-09-21 08:47:45,413 [1532515]   INFO - #c.i.o.p.DumbServiceImpl - exit dumb mode [custom-shell-aliases-and-scripts]
+2026-09-21 08:47:45,415 [1532517]   INFO - #c.i.o.p.DumbServiceImpl - exit dumb mode [WindowAccent]
+2026-09-21 08:47:45,416 [1532518]   INFO - #c.i.o.p.DumbServiceImpl - exit dumb mode [Kudos]
+2026-09-21 08:47:45,431 [1532533]   WARN - #c.i.o.v.n.p.PersistentFSImpl - file[1220887, flags: 4]: top parent (id: 1130123, name: 'app-client.jar', flags: 775 parent: 0), is still not in the idToDirCache. path: [1207698, 1204635, 1175307, 1174862, 1130123] [/app-client.jar/com/intellij/ui/components], cachedRoots.size(=0), roots.size(=1432), pfs.roots.contains(1130123)=false, fs.roots.contains(1130123)=true, non-cached roots: 1432, cached non-roots: 0, FS roots not PFS roots: 1455:
+
+2026-09-21 08:47:45,629 [1532731]   INFO - #c.i.u.i.UnindexedFilesScanner - [897788b] Scanning completed for [custom-shell-aliases-and-scripts]. Number of scanned files: 549; number of files for indexing: 0
+2026-09-21 08:47:45,630 [1532732]   INFO - #c.i.u.i.PerProjectIndexingQueue - Finished for [custom-shell-aliases-and-scripts]. No files to index with loading content.
+2026-09-21 08:47:45,630 [1532732]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [897788b] Task finished (scanning id=11): com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@199fb682
+2026-09-21 08:47:51,932 [1539034]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file 418-im-a-teapot.svg (id=2048150) with appliers: [] and removers: [SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=2048150, fileInfo='418-im-a-teapot.svg(id=2048150)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=2048150, fileInfo='418-im-a-teapot.svg(id=2048150)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:51,995 [1539097]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file website-whiteboard.excalidraw.md (id=2037326) with appliers: [] and removers: [SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=2037326, fileInfo='website-whiteboard.excalidraw.md(id=2037326)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=2037326, fileInfo='website-whiteboard.excalidraw.md(id=2037326)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:52,003 [1539105]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file website-whiteboard.excalidraw.svg (id=2037327) with appliers: [SingleIndexValueApplier{indexId=filetypes, inputId=2037327, fileInfo='website-whiteboard.excalidraw.svg(id=2037327)'}] and removers: [SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=2037327, fileInfo='website-whiteboard.excalidraw.svg(id=2037327)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=2037327, fileInfo='website-whiteboard.excalidraw.svg(id=2037327)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:52,035 [1539137]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file workspace.json (id=7478) with appliers: [] and removers: [SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=7478, fileInfo='workspace.json(id=7478)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=7478, fileInfo='workspace.json(id=7478)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:52,059 [1539161]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file Pasted Image 20260921083112_092.svg (id=2048124) with appliers: [] and removers: [SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=2048124, fileInfo='Pasted Image 20260921083112_092.svg(id=2048124)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=2048124, fileInfo='Pasted Image 20260921083112_092.svg(id=2048124)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:55,871 [1542973]   INFO - #c.i.o.u.LowMemoryWatcher - Low memory signal received (gc overloaded: false)
+2026-09-21 08:47:57,227 [1544329]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file checkstyle-idea.xml (id=1121827) with appliers: [] and removers: [SingleIndexValueRemover{indexId=FileNameEmbeddingIndex, inputId=1121827, fileInfo='checkstyle-idea.xml(id=1121827)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=1121827, fileInfo='checkstyle-idea.xml(id=1121827)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=1121827, fileInfo='checkstyle-idea.xml(id=1121827)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:57,233 [1544335]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file CHANGELOG.md (id=2017893) with appliers: [] and removers: [SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=2017893, fileInfo='CHANGELOG.md(id=2017893)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=2017893, fileInfo='CHANGELOG.md(id=2017893)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:57,628 [1544730]   INFO - #c.i.d.h.p.HProfEventBasedParser - HProfEventBasedParser - create hprof metadata: 4.838 s
+2026-09-21 08:47:57,778 [1544880] SEVERE - #c.i.g.t.CheckerRunner - While processing Spelling.MISPLACED_SPACE in English (US)
+java.lang.RuntimeException: While processing Spelling.MISPLACED_SPACE in English (US)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:614)
+	at ai.grazie.rules.Rule$PatternRule.match(Rule.java:224)
+	at com.intellij.grazie.text.TreeRuleChecker.lambda$matchTrees$4(TreeRuleChecker.java:250)
+	at com.intellij.util.containers.ContainerUtil.map(ContainerUtil.java:2123)
+	at com.intellij.grazie.text.TreeRuleChecker.matchTrees(TreeRuleChecker.java:246)
+	at com.intellij.grazie.text.TreeRuleChecker.doCheck(TreeRuleChecker.java:222)
+	at com.intellij.grazie.text.TreeRuleChecker.check(TreeRuleChecker.java:481)
+	at com.intellij.grazie.text.AsyncTreeRuleChecker.checkExternally(AsyncTreeRuleChecker.kt:20)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1$1.invokeSuspend(CheckerRunner.kt:108)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1$1.invoke(CheckerRunner.kt)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1$1.invoke(CheckerRunner.kt)
+	at com.intellij.grazie.text.CheckerRunner.catchingSuspend(CheckerRunner.kt:309)
+	at com.intellij.grazie.text.CheckerRunner.access$catchingSuspend(CheckerRunner.kt:58)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1.invokeSuspend(CheckerRunner.kt:108)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:112)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$BuildersKt__BuildersKt(Builders.kt:87)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingWithParallelismCompensation(Builders.kt:63)
+	at kotlinx.coroutines.BuildersKt.runBlockingWithParallelismCompensation(Unknown Source)
+	at kotlinx.coroutines.internal.intellij.IntellijCoroutines.runBlockingWithParallelismCompensation(intellij.kt:48)
+	at com.intellij.util.IntelliJCoroutinesFacade.runBlockingWithParallelismCompensation(IntelliJCoroutinesFacade.kt:35)
+	at com.intellij.openapi.progress.CoroutinesKt.runBlockingCancellable$lambda$0(coroutines.kt:160)
+	at com.intellij.openapi.progress.ContextKt.prepareIndicatorThreadContext$lambda$1$0(context.kt:120)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.progress.ContextKt.prepareIndicatorThreadContext$lambda$1(context.kt:119)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.silenceGlobalIndicator(CoreProgressManager.java:1113)
+	at com.intellij.openapi.progress.ContextKt.prepareIndicatorThreadContext(context.kt:118)
+	at com.intellij.openapi.progress.ContextKt.prepareThreadContext(context.kt:89)
+	at com.intellij.openapi.progress.CoroutinesKt.runBlockingCancellable(coroutines.kt:151)
+	at com.intellij.openapi.progress.CoroutinesKt.runBlockingCancellable(coroutines.kt:134)
+	at com.intellij.grazie.text.CheckerRunner.doRun(CheckerRunner.kt:105)
+	at com.intellij.grazie.text.CheckerRunner.run(CheckerRunner.kt:80)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection$buildVisitor$1.visitElement(GrazieInspection.kt:86)
+	at com.intellij.psi.impl.source.tree.LeafPsiElement.accept(LeafPsiElement.java:200)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner$InspectionProblemHolder.visitElement(InspectionRunner.java:647)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$processContext$19(InspectionRunner.java:447)
+	at com.intellij.codeInsight.daemon.impl.InspectionVisitorOptimizer.acceptElements(InspectionVisitorOptimizer.java:219)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.processContext(InspectionRunner.java:445)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$7(InspectionRunner.java:211)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$15(InspectionRunner.java:418)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$16(InspectionRunner.java:417)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:159)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:151)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$17(InspectionRunner.java:415)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:130)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:119)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.executeInImpatientReadAction(InspectionRunner.java:415)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$8(InspectionRunner.java:204)
+	at com.intellij.concurrency.ApplierCompleter.processArrayItem(ApplierCompleter.java:121)
+	at com.intellij.concurrency.ApplierCompleter.processArray(ApplierCompleter.java:221)
+	at com.intellij.concurrency.ApplierCompleter.execAll(ApplierCompleter.java:171)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$3(JobLauncherImpl.java:120)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$2(ApplierCompleter.java:153)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:164)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapAndRun$1(ApplierCompleter.java:145)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.concurrency.ApplierCompleter.wrapAndRun(ApplierCompleter.java:145)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$4(JobLauncherImpl.java:120)
+	at com.intellij.concurrency.JobLauncherImpl.safeIterate(JobLauncherImpl.java:200)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$5(JobLauncherImpl.java:117)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgressAsync(JobLauncherImpl.java:116)
+	at com.intellij.concurrency.JobLauncherImpl.processConcurrentlyAsync(JobLauncherImpl.java:498)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$11(InspectionRunner.java:221)
+	at com.intellij.codeInspection.InspectionEngine.withSession(InspectionEngine.java:271)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.inspect(InspectionRunner.java:178)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$collectInformationWithProgress$4(LocalInspectionsPass.java:182)
+	at com.intellij.codeInsight.daemon.impl.HighlightInfoUpdaterImpl.lambda$runWithInvalidPsiRecycler$54(HighlightInfoUpdaterImpl.java:1128)
+	at com.intellij.codeInsight.daemon.impl.ManagedHighlighterRecycler.runWithRecycler(ManagedHighlighterRecycler.java:105)
+	at com.intellij.codeInsight.daemon.impl.HighlightInfoUpdaterImpl.runWithInvalidPsiRecycler(HighlightInfoUpdaterImpl.java:1099)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.collectInformationWithProgress(LocalInspectionsPass.java:194)
+	at com.intellij.codeInsight.daemon.impl.ProgressableTextEditorHighlightingPass.doCollectInformation(ProgressableTextEditorHighlightingPass.java:97)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:76)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:449)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:29)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$3(PassExecutorService.java:445)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$4(PassExecutorService.java:435)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:434)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:409)
+	at com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl.cacheFileTypesInside(FileTypeManagerImpl.java:905)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$1(PassExecutorService.java:409)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:407)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:289)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: java.lang.NoSuchMethodError: 'boolean ai.grazie.spell.lists.WordListWithFrequency.isSuggestible(java.lang.String)'
+	at ai.grazie.rules.tree.TreeSupport.isSuggestedBySpellchecker(TreeSupport.java:200)
+	at ai.grazie.rules.common.CommonPatterns.lambda$misplacedSpace$34(CommonPatterns.java:417)
+	at ai.grazie.rules.tree.NodePattern.lambda$custom$6(NodePattern.java:157)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:605)
+	... 112 more
+2026-09-21 08:47:57,781 [1544883] SEVERE - #c.i.g.t.CheckerRunner - IntelliJ IDEA 2026.1.4  Build #IU-261.26222.65
+2026-09-21 08:47:57,781 [1544883] SEVERE - #c.i.g.t.CheckerRunner - JDK: 25.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-09-21 08:47:57,781 [1544883] SEVERE - #c.i.g.t.CheckerRunner - OS: Windows 11
+2026-09-21 08:47:57,781 [1544883] SEVERE - #c.i.g.t.CheckerRunner - Plugin to blame: Natural Languages version: 261.26222.65
+2026-09-21 08:47:57,781 [1544883] SEVERE - #c.i.g.t.CheckerRunner - Last Action: ShowSettings
+2026-09-21 08:47:57,794 [1544896]   INFO - #c.i.o.p.u.AbstractProgressIndicatorBase - This progress indicator (Unloading plugin Kudos 957444374: running=true; canceled=false) is indeterminate, this may lead to visual inconsistency. Please call setIndeterminate(false) before you start progress. class com.intellij.openapi.progress.util.PotemkinProgress
+java.lang.IllegalStateException
+	at com.intellij.openapi.progress.util.AbstractProgressIndicatorBase.setFraction(AbstractProgressIndicatorBase.java:218)
+	at com.intellij.openapi.progress.util.AbstractProgressIndicatorExBase.setFraction(AbstractProgressIndicatorExBase.java:118)
+	at com.intellij.openapi.progress.util.ProgressWindow.setFraction(ProgressWindow.java:342)
+	at com.intellij.diagnostic.hprof.analysis.HProfAnalysis.analyze(HProfAnalysis.kt:101)
+	at com.intellij.ide.plugins.DynamicPluginsKt.analyzeSnapshot(DynamicPlugins.kt:1315)
+	at com.intellij.ide.plugins.DynamicPluginsKt.saveMemorySnapshot(DynamicPlugins.kt:1216)
+	at com.intellij.ide.plugins.DynamicPluginsKt.access$saveMemorySnapshot(DynamicPlugins.kt:1)
+	at com.intellij.ide.plugins.DynamicPlugins.unloadPluginWithoutProgress(DynamicPlugins.kt:764)
+	at com.intellij.ide.plugins.DynamicPlugins.doUnloadPluginWithProgress$lambda$2$0(DynamicPlugins.kt:561)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:287)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:44)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:286)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.lambda$executeProcessUnderProgress$0(ProgressManagerImpl.java:90)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.runWithHook(ProgressManagerImpl.java:293)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:90)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:267)
+	at com.intellij.openapi.progress.util.PotemkinProgress.runInSwingThread(PotemkinProgress.java:155)
+	at com.intellij.ide.plugins.DynamicPlugins.doUnloadPluginWithProgress$lambda$2(DynamicPlugins.kt:560)
+	at com.intellij.openapi.application.impl.ModalityKt.inModalContext(modality.kt:12)
+	at com.intellij.ide.plugins.DynamicPlugins.doUnloadPluginWithProgress(DynamicPlugins.kt:555)
+	at com.intellij.ide.plugins.DynamicPlugins.unloadPluginWithProgress$lambda$0(DynamicPlugins.kt:529)
+	at com.intellij.ide.plugins.DynamicPlugins.runProcess(DynamicPlugins.kt:224)
+	at com.intellij.ide.plugins.DynamicPlugins.unloadPluginWithProgress(DynamicPlugins.kt:528)
+	at com.intellij.ide.plugins.PluginInstaller.unloadDynamicPlugin(PluginInstaller.java:111)
+	at com.intellij.ide.plugins.PluginInstaller.uninstallDynamicPlugin(PluginInstaller.java:125)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController.uninstallDynamicPlugin(DefaultUiPluginManagerController.kt:593)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController.applySingleSession(DefaultUiPluginManagerController.kt:383)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController.access$applySingleSession(DefaultUiPluginManagerController.kt:92)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController$apply$2.invokeSuspend(DefaultUiPluginManagerController.kt:349)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1$0(NonBlockingFlushQueue.kt:334)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:333)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:114)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:121)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:187)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:229)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1051)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$MyDialog.show(DialogWrapperPeerImpl.java:1009)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$13(DialogWrapperPeerImpl.java:574)
+	at com.intellij.openapi.application.WriteIntentReadAction.lambda$run$0(WriteIntentReadAction.java:24)
+	at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+	at com.intellij.openapi.application.WriteIntentReadAction.computeThrowable(WriteIntentReadAction.java:55)
+	at com.intellij.openapi.application.WriteIntentReadAction.run(WriteIntentReadAction.java:23)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$14(DialogWrapperPeerImpl.java:573)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$5(DialogWrapperPeerImpl.java:515)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:305)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$6(DialogWrapperPeerImpl.java:514)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.show(DialogWrapperPeerImpl.java:569)
+	at com.intellij.openapi.ui.DialogWrapper.lambda$doShow$16(DialogWrapper.java:1926)
+	at com.intellij.openapi.application.WriteIntentReadAction.lambda$run$0(WriteIntentReadAction.java:24)
+	at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+	at com.intellij.openapi.application.WriteIntentReadAction.computeThrowable(WriteIntentReadAction.java:55)
+	at com.intellij.openapi.application.WriteIntentReadAction.run(WriteIntentReadAction.java:23)
+	at com.intellij.openapi.ui.DialogWrapper.doShow(DialogWrapper.java:1925)
+	at com.intellij.openapi.ui.DialogWrapper.show(DialogWrapper.java:1873)
+	at com.intellij.ide.actions.ShowSettingsUtilImpl$showSettingsDialog$4.invokeSuspend(ShowSettingsUtilImpl.kt:191)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1$0(NonBlockingFlushQueue.kt:334)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:333)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2026-09-21 08:47:57,845 [1544947] SEVERE - #c.i.c.d.i.InspectionRunner - While processing Spelling.MISPLACED_SPACE in English (US)
+java.lang.RuntimeException: While processing Spelling.MISPLACED_SPACE in English (US)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:614)
+	at ai.grazie.rules.Rule$PatternRule.match(Rule.java:224)
+	at com.intellij.grazie.text.TreeRuleChecker.lambda$matchTrees$4(TreeRuleChecker.java:250)
+	at com.intellij.util.containers.ContainerUtil.map(ContainerUtil.java:2123)
+	at com.intellij.grazie.text.TreeRuleChecker.matchTrees(TreeRuleChecker.java:246)
+	at com.intellij.grazie.text.TreeRuleChecker.doCheck(TreeRuleChecker.java:222)
+	at com.intellij.grazie.text.TreeRuleChecker.obtainDocument(TreeRuleChecker.java:438)
+	at com.intellij.grazie.text.TreeRuleChecker.checkTextLevelProblems(TreeRuleChecker.java:305)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection.checkTextLevel(GrazieInspection.kt:103)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection.access$checkTextLevel(GrazieInspection.kt:42)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection$buildVisitor$1.visitElement(GrazieInspection.kt:96)
+	at com.intellij.psi.PsiElementVisitor.visitFile(PsiElementVisitor.java:51)
+	at com.intellij.extapi.psi.PsiFileBase.accept(PsiFileBase.java:59)
+	at com.jetbrains.python.psi.impl.PyFileImpl.accept(PyFileImpl.java:313)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner$InspectionProblemHolder.visitElement(InspectionRunner.java:647)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$processContext$19(InspectionRunner.java:447)
+	at com.intellij.codeInsight.daemon.impl.InspectionVisitorOptimizer.acceptElements(InspectionVisitorOptimizer.java:219)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.processContext(InspectionRunner.java:445)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$7(InspectionRunner.java:211)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$15(InspectionRunner.java:418)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$16(InspectionRunner.java:417)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:159)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:151)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$17(InspectionRunner.java:415)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:130)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:119)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.executeInImpatientReadAction(InspectionRunner.java:415)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$8(InspectionRunner.java:204)
+	at com.intellij.concurrency.ApplierCompleter.processArrayItem(ApplierCompleter.java:121)
+	at com.intellij.concurrency.ApplierCompleter.processArray(ApplierCompleter.java:221)
+	at com.intellij.concurrency.ApplierCompleter.execAll(ApplierCompleter.java:171)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$3(JobLauncherImpl.java:120)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$2(ApplierCompleter.java:153)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:164)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapAndRun$1(ApplierCompleter.java:145)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.concurrency.ApplierCompleter.wrapAndRun(ApplierCompleter.java:145)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$4(JobLauncherImpl.java:120)
+	at com.intellij.concurrency.JobLauncherImpl.safeIterate(JobLauncherImpl.java:200)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$5(JobLauncherImpl.java:117)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgressAsync(JobLauncherImpl.java:116)
+	at com.intellij.concurrency.JobLauncherImpl.processConcurrentlyAsync(JobLauncherImpl.java:498)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$11(InspectionRunner.java:221)
+	at com.intellij.codeInspection.InspectionEngine.withSession(InspectionEngine.java:271)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.inspect(InspectionRunner.java:178)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.lambda$collectInformationWithProgress$4(LocalInspectionsPass.java:182)
+	at com.intellij.codeInsight.daemon.impl.HighlightInfoUpdaterImpl.lambda$runWithInvalidPsiRecycler$54(HighlightInfoUpdaterImpl.java:1128)
+	at com.intellij.codeInsight.daemon.impl.ManagedHighlighterRecycler.runWithRecycler(ManagedHighlighterRecycler.java:105)
+	at com.intellij.codeInsight.daemon.impl.HighlightInfoUpdaterImpl.runWithInvalidPsiRecycler(HighlightInfoUpdaterImpl.java:1099)
+	at com.intellij.codeInsight.daemon.impl.LocalInspectionsPass.collectInformationWithProgress(LocalInspectionsPass.java:194)
+	at com.intellij.codeInsight.daemon.impl.ProgressableTextEditorHighlightingPass.doCollectInformation(ProgressableTextEditorHighlightingPass.java:97)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:76)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:449)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:29)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$3(PassExecutorService.java:445)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$4(PassExecutorService.java:435)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:434)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:409)
+	at com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl.cacheFileTypesInside(FileTypeManagerImpl.java:905)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$1(PassExecutorService.java:409)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:407)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:289)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: java.lang.NoSuchMethodError: 'boolean ai.grazie.spell.lists.WordListWithFrequency.isSuggestible(java.lang.String)'
+	at ai.grazie.rules.tree.TreeSupport.isSuggestedBySpellchecker(TreeSupport.java:200)
+	at ai.grazie.rules.common.CommonPatterns.lambda$misplacedSpace$34(CommonPatterns.java:417)
+	at ai.grazie.rules.tree.NodePattern.lambda$custom$6(NodePattern.java:157)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:605)
+	... 90 more
+2026-09-21 08:47:57,847 [1544949] SEVERE - #c.i.c.d.i.InspectionRunner - IntelliJ IDEA 2026.1.4  Build #IU-261.26222.65
+2026-09-21 08:47:57,847 [1544949] SEVERE - #c.i.c.d.i.InspectionRunner - JDK: 25.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-09-21 08:47:57,847 [1544949] SEVERE - #c.i.c.d.i.InspectionRunner - OS: Windows 11
+2026-09-21 08:47:57,847 [1544949] SEVERE - #c.i.c.d.i.InspectionRunner - Plugin to blame: Python Community Edition version: 261.26222.65
+2026-09-21 08:47:57,847 [1544949] SEVERE - #c.i.c.d.i.InspectionRunner - Last Action: ShowSettings
+2026-09-21 08:47:58,205 [1545307]   INFO - #c.i.u.i.IndexingReasonExplanationLogger - Scanner has updated file workspace.xml (id=848077) with appliers: [] and removers: [SingleIndexValueRemover{indexId=FileNameEmbeddingIndex, inputId=848077, fileInfo='workspace.xml(id=848077)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=ClassNameEmbeddingIndex, inputId=848077, fileInfo='workspace.xml(id=848077)', applicationMode =SameThreadOutsideReadLock}, SingleIndexValueRemover{indexId=SymbolNameEmbeddingIndex, inputId=848077, fileInfo='workspace.xml(id=848077)', applicationMode =SameThreadOutsideReadLock}];
+2026-09-21 08:47:59,119 [1546221]   INFO - #c.i.u.i.UnindexedFilesScanner - [f62cc9c1] Scanning completed for [absurdly-goud]. Number of scanned files: 45078; number of files for indexing: 0
+2026-09-21 08:47:59,120 [1546222]   INFO - #c.i.u.i.PerProjectIndexingQueue - Finished for [absurdly-goud]. No files to index with loading content.
+2026-09-21 08:47:59,120 [1546222]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [f62cc9c1] Task finished (scanning id=12): com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@6e5acdd7
+2026-09-21 08:47:59,416 [1546518]   INFO - #c.i.u.i.UnindexedFilesScanner - [5ff93e6f] Scanning completed for [WindowAccent]. Number of scanned files: 289137; number of files for indexing: 0
+2026-09-21 08:47:59,417 [1546519]   INFO - #c.i.u.i.PerProjectIndexingQueue - Finished for [WindowAccent]. No files to index with loading content.
+2026-09-21 08:47:59,417 [1546519]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [5ff93e6f] Task finished (scanning id=13): com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@11f70a3a
+2026-09-21 08:47:59,545 [1546647]   INFO - #c.i.u.i.UnindexedFilesScanner - [4c3178c6] Scanning completed for [Kudos]. Number of scanned files: 359467; number of files for indexing: 0
+2026-09-21 08:47:59,546 [1546648]   INFO - #c.i.u.i.PerProjectIndexingQueue - Finished for [Kudos]. No files to index with loading content.
+2026-09-21 08:47:59,546 [1546648]   INFO - #c.i.o.p.UnindexedFilesScannerExecutor - [4c3178c6] Task finished (scanning id=10): com.intellij.util.indexing.UnindexedFilesScannerExecutorImpl$ScheduledScanningTask@4eecea56
+2026-09-21 08:47:59,811 [1546913]   INFO - #c.i.d.h.p.HProfEventBasedParser - HProfEventBasedParser - histogram: 2.015 s
+2026-09-21 08:48:02,822 [1549924]   INFO - #c.i.d.h.p.HProfEventBasedParser - HProfEventBasedParser - id mapping: 2.818 s
+2026-09-21 08:48:09,448 [1556550]   INFO - #c.i.d.h.p.HProfEventBasedParser - HProfEventBasedParser - auxFiles: 6.393 s
+2026-09-21 08:48:17,967 [1565069] SEVERE - #c.i.i.p.DynamicPlugins - Snapshot analysis result: Root 1:
+  ROOT: Global JNI
+  (root): com.intellij.openapi.wm.impl.IdeFrameImpl
+  frameHelper: com.intellij.openapi.wm.impl.ProjectFrameHelper$2
+  this$0: com.intellij.openapi.wm.impl.IdeProjectFrameHelper
+  toolWindowPane: com.intellij.toolWindow.ToolWindowPane
+  horizontalSplitter: com.intellij.openapi.ui.ThreeComponentsSplitter
+  firstComponent: com.intellij.toolWindow.InternalDecoratorImpl
+  componentsWithEditorLikeBackground: com.intellij.util.SmartList
+  myElem: com.intellij.ui.EditorTextFieldProviderImpl$MyEditorTextField
+  mySettingsProviders: java.util.ArrayList
+  elementData: java.lang.Object[]
+  []: com.kudos.commit.KudosCommitPlaceholder$$Lambda+0x000000003b6ad330
+  <class>: java.lang.Class
+* cachedConstructor: com.intellij.ide.plugins.cl.PluginClassLoader
+
+
+java.lang.Throwable: Snapshot analysis result: Root 1:
+  ROOT: Global JNI
+  (root): com.intellij.openapi.wm.impl.IdeFrameImpl
+  frameHelper: com.intellij.openapi.wm.impl.ProjectFrameHelper$2
+  this$0: com.intellij.openapi.wm.impl.IdeProjectFrameHelper
+  toolWindowPane: com.intellij.toolWindow.ToolWindowPane
+  horizontalSplitter: com.intellij.openapi.ui.ThreeComponentsSplitter
+  firstComponent: com.intellij.toolWindow.InternalDecoratorImpl
+  componentsWithEditorLikeBackground: com.intellij.util.SmartList
+  myElem: com.intellij.ui.EditorTextFieldProviderImpl$MyEditorTextField
+  mySettingsProviders: java.util.ArrayList
+  elementData: java.lang.Object[]
+  []: com.kudos.commit.KudosCommitPlaceholder$$Lambda+0x000000003b6ad330
+  <class>: java.lang.Class
+* cachedConstructor: com.intellij.ide.plugins.cl.PluginClassLoader
+
+
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:375)
+	at com.intellij.ide.plugins.DynamicPluginsKt.saveMemorySnapshot(DynamicPlugins.kt:1224)
+	at com.intellij.ide.plugins.DynamicPluginsKt.access$saveMemorySnapshot(DynamicPlugins.kt:1)
+	at com.intellij.ide.plugins.DynamicPlugins.unloadPluginWithoutProgress(DynamicPlugins.kt:764)
+	at com.intellij.ide.plugins.DynamicPlugins.doUnloadPluginWithProgress$lambda$2$0(DynamicPlugins.kt:561)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:287)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:44)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:286)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.lambda$executeProcessUnderProgress$0(ProgressManagerImpl.java:90)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.runWithHook(ProgressManagerImpl.java:293)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:90)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:267)
+	at com.intellij.openapi.progress.util.PotemkinProgress.runInSwingThread(PotemkinProgress.java:155)
+	at com.intellij.ide.plugins.DynamicPlugins.doUnloadPluginWithProgress$lambda$2(DynamicPlugins.kt:560)
+	at com.intellij.openapi.application.impl.ModalityKt.inModalContext(modality.kt:12)
+	at com.intellij.ide.plugins.DynamicPlugins.doUnloadPluginWithProgress(DynamicPlugins.kt:555)
+	at com.intellij.ide.plugins.DynamicPlugins.unloadPluginWithProgress$lambda$0(DynamicPlugins.kt:529)
+	at com.intellij.ide.plugins.DynamicPlugins.runProcess(DynamicPlugins.kt:224)
+	at com.intellij.ide.plugins.DynamicPlugins.unloadPluginWithProgress(DynamicPlugins.kt:528)
+	at com.intellij.ide.plugins.PluginInstaller.unloadDynamicPlugin(PluginInstaller.java:111)
+	at com.intellij.ide.plugins.PluginInstaller.uninstallDynamicPlugin(PluginInstaller.java:125)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController.uninstallDynamicPlugin(DefaultUiPluginManagerController.kt:593)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController.applySingleSession(DefaultUiPluginManagerController.kt:383)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController.access$applySingleSession(DefaultUiPluginManagerController.kt:92)
+	at com.intellij.ide.plugins.newui.DefaultUiPluginManagerController$apply$2.invokeSuspend(DefaultUiPluginManagerController.kt:349)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1$0(NonBlockingFlushQueue.kt:334)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:333)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:114)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:121)
+	at java.desktop/java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:187)
+	at java.desktop/java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:229)
+	at java.desktop/java.awt.Dialog.show(Dialog.java:1051)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$MyDialog.show(DialogWrapperPeerImpl.java:1009)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$13(DialogWrapperPeerImpl.java:574)
+	at com.intellij.openapi.application.WriteIntentReadAction.lambda$run$0(WriteIntentReadAction.java:24)
+	at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+	at com.intellij.openapi.application.WriteIntentReadAction.computeThrowable(WriteIntentReadAction.java:55)
+	at com.intellij.openapi.application.WriteIntentReadAction.run(WriteIntentReadAction.java:23)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$14(DialogWrapperPeerImpl.java:573)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$5(DialogWrapperPeerImpl.java:515)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:305)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.lambda$show$6(DialogWrapperPeerImpl.java:514)
+	at com.intellij.openapi.ui.impl.DialogWrapperPeerImpl.show(DialogWrapperPeerImpl.java:569)
+	at com.intellij.openapi.ui.DialogWrapper.lambda$doShow$16(DialogWrapper.java:1926)
+	at com.intellij.openapi.application.WriteIntentReadAction.lambda$run$0(WriteIntentReadAction.java:24)
+	at com.intellij.openapi.application.impl.AppImplKt$rethrowCheckedExceptions$2.invoke(appImpl.kt:126)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.runWriteIntentReadAction(NestedLocksThreadingSupport.kt:705)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:1214)
+	at com.intellij.openapi.application.WriteIntentReadAction.computeThrowable(WriteIntentReadAction.java:55)
+	at com.intellij.openapi.application.WriteIntentReadAction.run(WriteIntentReadAction.java:23)
+	at com.intellij.openapi.ui.DialogWrapper.doShow(DialogWrapper.java:1925)
+	at com.intellij.openapi.ui.DialogWrapper.show(DialogWrapper.java:1873)
+	at com.intellij.ide.actions.ShowSettingsUtilImpl$showSettingsDialog$4.invokeSuspend(ShowSettingsUtilImpl.kt:191)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at com.intellij.openapi.application.impl.DispatchedRunnable.run(DispatchedRunnable.kt:42)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:22)
+	at com.intellij.openapi.application.TransactionGuardImpl$2.run(TransactionGuardImpl.java:218)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1$0(NonBlockingFlushQueue.kt:334)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:333)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:747)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:721)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:574)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:378)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1111)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1111)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:376)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:416)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2026-09-21 08:48:17,967 [1565069] SEVERE - #c.i.i.p.DynamicPlugins - IntelliJ IDEA 2026.1.4  Build #IU-261.26222.65
+2026-09-21 08:48:17,967 [1565069] SEVERE - #c.i.i.p.DynamicPlugins - JDK: 25.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-09-21 08:48:17,967 [1565069] SEVERE - #c.i.i.p.DynamicPlugins - OS: Windows 11
+2026-09-21 08:48:17,967 [1565069] SEVERE - #c.i.i.p.DynamicPlugins - Last Action: ShowSettings
+2026-09-21 08:48:17,977 [1565079]   INFO - #c.i.i.p.DynamicPlugins - Plugin Kudos is not unload-safe because class loader cannot be unloaded. Memory snapshot created at C:\Users\alex.personal/unload-Kudos-21.09.2026_08.47.46.hprof
+2026-09-21 08:48:18,114 [1565216]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=7e34152367894336
+2026-09-21 08:48:18,114 [1565216]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=57fb25651ef07ac
+2026-09-21 08:48:18,114 [1565216]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=3a1e20b307b5df89
+2026-09-21 08:48:18,114 [1565216]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=ecc99a1c3c5bab0b
+2026-09-21 08:48:18,389 [1565491] SEVERE - #c.i.g.t.CheckerRunner - While processing Spelling.MISPLACED_SPACE in English (US)
+java.lang.RuntimeException: While processing Spelling.MISPLACED_SPACE in English (US)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:614)
+	at ai.grazie.rules.Rule$PatternRule.match(Rule.java:224)
+	at com.intellij.grazie.text.TreeRuleChecker.lambda$matchTrees$4(TreeRuleChecker.java:250)
+	at com.intellij.util.containers.ContainerUtil.map(ContainerUtil.java:2123)
+	at com.intellij.grazie.text.TreeRuleChecker.matchTrees(TreeRuleChecker.java:246)
+	at com.intellij.grazie.text.TreeRuleChecker.doCheck(TreeRuleChecker.java:222)
+	at com.intellij.grazie.text.TreeRuleChecker.check(TreeRuleChecker.java:481)
+	at com.intellij.grazie.text.AsyncTreeRuleChecker.checkExternally(AsyncTreeRuleChecker.kt:20)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1$1.invokeSuspend(CheckerRunner.kt:108)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1$1.invoke(CheckerRunner.kt)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1$1.invoke(CheckerRunner.kt)
+	at com.intellij.grazie.text.CheckerRunner.catchingSuspend(CheckerRunner.kt:309)
+	at com.intellij.grazie.text.CheckerRunner.access$catchingSuspend(CheckerRunner.kt:58)
+	at com.intellij.grazie.text.CheckerRunner$doRun$1$deferred$1$1.invokeSuspend(CheckerRunner.kt:108)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:112)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$BuildersKt__BuildersKt(Builders.kt:87)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingWithParallelismCompensation(Builders.kt:63)
+	at kotlinx.coroutines.BuildersKt.runBlockingWithParallelismCompensation(Unknown Source)
+	at kotlinx.coroutines.internal.intellij.IntellijCoroutines.runBlockingWithParallelismCompensation(intellij.kt:48)
+	at com.intellij.util.IntelliJCoroutinesFacade.runBlockingWithParallelismCompensation(IntelliJCoroutinesFacade.kt:35)
+	at com.intellij.openapi.progress.CoroutinesKt.runBlockingCancellable$lambda$0(coroutines.kt:160)
+	at com.intellij.openapi.progress.ContextKt.prepareIndicatorThreadContext$lambda$1$0(context.kt:120)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.progress.ContextKt.prepareIndicatorThreadContext$lambda$1(context.kt:119)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.silenceGlobalIndicator(CoreProgressManager.java:1113)
+	at com.intellij.openapi.progress.ContextKt.prepareIndicatorThreadContext(context.kt:118)
+	at com.intellij.openapi.progress.ContextKt.prepareThreadContext(context.kt:89)
+	at com.intellij.openapi.progress.CoroutinesKt.runBlockingCancellable(coroutines.kt:151)
+	at com.intellij.openapi.progress.CoroutinesKt.runBlockingCancellable(coroutines.kt:134)
+	at com.intellij.grazie.text.CheckerRunner.doRun(CheckerRunner.kt:105)
+	at com.intellij.grazie.text.CheckerRunner.run(CheckerRunner.kt:80)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection$buildVisitor$1.visitElement(GrazieInspection.kt:86)
+	at com.intellij.psi.impl.source.tree.LeafPsiElement.accept(LeafPsiElement.java:200)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner$InspectionProblemHolder.visitElement(InspectionRunner.java:647)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$processContext$19(InspectionRunner.java:447)
+	at com.intellij.codeInsight.daemon.impl.InspectionVisitorOptimizer.acceptElements(InspectionVisitorOptimizer.java:219)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.processContext(InspectionRunner.java:445)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$7(InspectionRunner.java:211)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$16(InspectionRunner.java:424)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:159)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:151)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$17(InspectionRunner.java:415)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:130)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:119)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.executeInImpatientReadAction(InspectionRunner.java:415)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$8(InspectionRunner.java:204)
+	at com.intellij.concurrency.ApplierCompleter.processArrayItem(ApplierCompleter.java:121)
+	at com.intellij.concurrency.ApplierCompleter.processArray(ApplierCompleter.java:221)
+	at com.intellij.concurrency.ApplierCompleter.execAll(ApplierCompleter.java:171)
+	at com.intellij.concurrency.ApplierCompleter.lambda$exec$0(ApplierCompleter.java:110)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$2(ApplierCompleter.java:153)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:164)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapAndRun$1(ApplierCompleter.java:145)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.concurrency.ApplierCompleter.wrapAndRun(ApplierCompleter.java:145)
+	at com.intellij.concurrency.ApplierCompleter.exec(ApplierCompleter.java:113)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool.helpJoin(ForkJoinPool.java:2304)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:499)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:1047)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$6(JobLauncherImpl.java:140)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$7(JobLauncherImpl.java:138)
+	at com.intellij.concurrency.JobLauncherImpl.safeIterate(JobLauncherImpl.java:200)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgressAsync(JobLauncherImpl.java:125)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:53)
+	at com.intellij.codeInsight.daemon.impl.InjectedGeneralHighlightingPass.processInjectedPsiFiles(InjectedGeneralHighlightingPass.java:167)
+	at com.intellij.codeInsight.daemon.impl.InjectedGeneralHighlightingPass.lambda$collectInformationWithProgress$4(InjectedGeneralHighlightingPass.java:100)
+	at com.intellij.codeInsight.daemon.impl.ManagedHighlighterRecycler.runWithRecycler(ManagedHighlighterRecycler.java:105)
+	at com.intellij.codeInsight.daemon.impl.InjectedGeneralHighlightingPass.collectInformationWithProgress(InjectedGeneralHighlightingPass.java:99)
+	at com.intellij.codeInsight.daemon.impl.ProgressableTextEditorHighlightingPass.doCollectInformation(ProgressableTextEditorHighlightingPass.java:97)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:76)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:449)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:29)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$3(PassExecutorService.java:445)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$4(PassExecutorService.java:435)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:434)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:409)
+	at com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl.cacheFileTypesInside(FileTypeManagerImpl.java:905)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$1(PassExecutorService.java:409)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:407)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:289)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: java.lang.NoSuchMethodError: 'boolean ai.grazie.spell.lists.WordListWithFrequency.isSuggestible(java.lang.String)'
+	at ai.grazie.rules.tree.TreeSupport.isSuggestedBySpellchecker(TreeSupport.java:200)
+	at ai.grazie.rules.common.CommonPatterns.lambda$misplacedSpace$34(CommonPatterns.java:417)
+	at ai.grazie.rules.tree.NodePattern.lambda$custom$6(NodePattern.java:157)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:605)
+	... 112 more
+2026-09-21 08:48:18,391 [1565493] SEVERE - #c.i.g.t.CheckerRunner - IntelliJ IDEA 2026.1.4  Build #IU-261.26222.65
+2026-09-21 08:48:18,391 [1565493] SEVERE - #c.i.g.t.CheckerRunner - JDK: 25.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-09-21 08:48:18,391 [1565493] SEVERE - #c.i.g.t.CheckerRunner - OS: Windows 11
+2026-09-21 08:48:18,391 [1565493] SEVERE - #c.i.g.t.CheckerRunner - Plugin to blame: Natural Languages version: 261.26222.65
+2026-09-21 08:48:18,391 [1565493] SEVERE - #c.i.g.t.CheckerRunner - Last Action: ShowSettings
+2026-09-21 08:48:18,435 [1565537] SEVERE - #c.i.c.d.i.InspectionRunner - While processing Spelling.MISPLACED_SPACE in English (US)
+java.lang.RuntimeException: While processing Spelling.MISPLACED_SPACE in English (US)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:614)
+	at ai.grazie.rules.Rule$PatternRule.match(Rule.java:224)
+	at com.intellij.grazie.text.TreeRuleChecker.lambda$matchTrees$4(TreeRuleChecker.java:250)
+	at com.intellij.util.containers.ContainerUtil.map(ContainerUtil.java:2123)
+	at com.intellij.grazie.text.TreeRuleChecker.matchTrees(TreeRuleChecker.java:246)
+	at com.intellij.grazie.text.TreeRuleChecker.doCheck(TreeRuleChecker.java:222)
+	at com.intellij.grazie.text.TreeRuleChecker.obtainDocument(TreeRuleChecker.java:438)
+	at com.intellij.grazie.text.TreeRuleChecker.checkTextLevelProblems(TreeRuleChecker.java:305)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection.checkTextLevel(GrazieInspection.kt:103)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection.access$checkTextLevel(GrazieInspection.kt:42)
+	at com.intellij.grazie.ide.inspection.grammar.GrazieInspection$buildVisitor$1.visitElement(GrazieInspection.kt:96)
+	at com.intellij.psi.PsiElementVisitor.visitFile(PsiElementVisitor.java:51)
+	at com.intellij.extapi.psi.PsiFileBase.accept(PsiFileBase.java:59)
+	at com.jetbrains.python.psi.impl.PyFileImpl.accept(PyFileImpl.java:313)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner$InspectionProblemHolder.visitElement(InspectionRunner.java:647)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$processContext$19(InspectionRunner.java:447)
+	at com.intellij.codeInsight.daemon.impl.InspectionVisitorOptimizer.acceptElements(InspectionVisitorOptimizer.java:219)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.processContext(InspectionRunner.java:445)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$7(InspectionRunner.java:211)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$16(InspectionRunner.java:424)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:159)
+	at com.intellij.util.AstLoadingFilter.forceAllowTreeLoading(AstLoadingFilter.java:151)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$executeInImpatientReadAction$17(InspectionRunner.java:415)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:130)
+	at com.intellij.util.AstLoadingFilter.disallowTreeLoading(AstLoadingFilter.java:119)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.executeInImpatientReadAction(InspectionRunner.java:415)
+	at com.intellij.codeInsight.daemon.impl.InspectionRunner.lambda$inspect$8(InspectionRunner.java:204)
+	at com.intellij.concurrency.ApplierCompleter.processArrayItem(ApplierCompleter.java:121)
+	at com.intellij.concurrency.ApplierCompleter.processArray(ApplierCompleter.java:221)
+	at com.intellij.concurrency.ApplierCompleter.execAll(ApplierCompleter.java:171)
+	at com.intellij.concurrency.ApplierCompleter.lambda$exec$0(ApplierCompleter.java:110)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$2(ApplierCompleter.java:153)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:164)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapAndRun$1(ApplierCompleter.java:145)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.concurrency.ApplierCompleter.wrapAndRun(ApplierCompleter.java:145)
+	at com.intellij.concurrency.ApplierCompleter.exec(ApplierCompleter.java:113)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool.helpJoin(ForkJoinPool.java:2304)
+	at java.base/java.util.concurrent.ForkJoinTask.awaitDone(ForkJoinTask.java:499)
+	at java.base/java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:1047)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$6(JobLauncherImpl.java:140)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.concurrency.JobLauncherImpl.lambda$invokeConcurrentlyUnderProgressAsync$7(JobLauncherImpl.java:138)
+	at com.intellij.concurrency.JobLauncherImpl.safeIterate(JobLauncherImpl.java:200)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgressAsync(JobLauncherImpl.java:125)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:53)
+	at com.intellij.codeInsight.daemon.impl.InjectedGeneralHighlightingPass.processInjectedPsiFiles(InjectedGeneralHighlightingPass.java:167)
+	at com.intellij.codeInsight.daemon.impl.InjectedGeneralHighlightingPass.lambda$collectInformationWithProgress$4(InjectedGeneralHighlightingPass.java:100)
+	at com.intellij.codeInsight.daemon.impl.ManagedHighlighterRecycler.runWithRecycler(ManagedHighlighterRecycler.java:105)
+	at com.intellij.codeInsight.daemon.impl.InjectedGeneralHighlightingPass.collectInformationWithProgress(InjectedGeneralHighlightingPass.java:99)
+	at com.intellij.codeInsight.daemon.impl.ProgressableTextEditorHighlightingPass.doCollectInformation(ProgressableTextEditorHighlightingPass.java:97)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:76)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:449)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:29)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$3(PassExecutorService.java:445)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.openapi.application.impl.AppImplKt$runnableUnitFunction$1.invoke(appImpl.kt:124)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunReadAction(NestedLocksThreadingSupport.kt:900)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1266)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$4(PassExecutorService.java:435)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:744)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:819)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:775)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:743)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:87)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:434)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:409)
+	at com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl.cacheFileTypesInside(FileTypeManagerImpl.java:905)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$1(PassExecutorService.java:409)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:306)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:407)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:289)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: java.lang.NoSuchMethodError: 'boolean ai.grazie.spell.lists.WordListWithFrequency.isSuggestible(java.lang.String)'
+	at ai.grazie.rules.tree.TreeSupport.isSuggestedBySpellchecker(TreeSupport.java:200)
+	at ai.grazie.rules.common.CommonPatterns.lambda$misplacedSpace$34(CommonPatterns.java:417)
+	at ai.grazie.rules.tree.NodePattern.lambda$custom$6(NodePattern.java:157)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodePattern.matchNoTouch(NodePattern.java:131)
+	at ai.grazie.rules.tree.NodePattern.matchWithPrevention(NodePattern.java:122)
+	at ai.grazie.rules.tree.NodeMatch.matchAll(NodeMatch.java:605)
+	... 90 more
+2026-09-21 08:48:18,437 [1565539] SEVERE - #c.i.c.d.i.InspectionRunner - IntelliJ IDEA 2026.1.4  Build #IU-261.26222.65
+2026-09-21 08:48:18,437 [1565539] SEVERE - #c.i.c.d.i.InspectionRunner - JDK: 25.0.3; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-09-21 08:48:18,437 [1565539] SEVERE - #c.i.c.d.i.InspectionRunner - OS: Windows 11
+2026-09-21 08:48:18,437 [1565539] SEVERE - #c.i.c.d.i.InspectionRunner - Plugin to blame: Python Community Edition version: 261.26222.65
+2026-09-21 08:48:18,437 [1565539] SEVERE - #c.i.c.d.i.InspectionRunner - Last Action: ShowSettings
+2026-09-21 08:48:19,468 [1566570]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=3a1e20b307b5df89
+2026-09-21 08:48:19,539 [1566641]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=7e34152367894336
+2026-09-21 08:48:19,540 [1566642]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=57fb25651ef07ac
+2026-09-21 08:48:19,555 [1566657]   WARN - #c.i.m.l.m.i.s.s.JunieEditorStateServiceImpl - Get editor context timed out for projectId=ecc99a1c3c5bab0b
