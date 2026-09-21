@@ -48,6 +48,7 @@ class KudosCommitPlaceholder private constructor(
     private val editorField: EditorTextField,
 ) : Disposable {
 
+    private val document = editorField.document
     private var editor: EditorEx? = null
     private var inlay: Inlay<*>? = null
     private var shownText: String? = null
@@ -139,6 +140,9 @@ class KudosCommitPlaceholder private constructor(
     override fun dispose() {
         ACTIVE.remove(this)
         editorField.removeDocumentListener(documentListener)
+        // The document belongs to the IDE and outlives us, and it holds our INSTALLED_KEY marker (an instance of
+        // our class). Leaving it there would pin this plugin's classloader after an unload/update.
+        if (document.getUserData(INSTALLED_KEY) === this) document.putUserData(INSTALLED_KEY, null)
         inlay?.takeIf { it.isValid }?.let { Disposer.dispose(it) }
         inlay = null
         editor = null
@@ -151,6 +155,14 @@ class KudosCommitPlaceholder private constructor(
         private val INSTALLED_KEY = Key.create<KudosCommitPlaceholder>("Kudos.CommitPlaceholder")
 
         private val ACTIVE: MutableSet<KudosCommitPlaceholder> = ConcurrentHashMap.newKeySet()
+
+        /**
+         * Set once the plugin is unloading. An `install` queued just before that (a commit UI opened a moment
+         * earlier) would otherwise run afterwards and attach a fresh hint that nothing would ever clean up.
+         * It is a static of *this* classloader, so a reloaded plugin starts with it cleared again.
+         */
+        @Volatile
+        private var unloading = false
 
         /**
          * Finds the commit message field belonging to [panel] and attaches the hint to it (once per field).
@@ -171,10 +183,12 @@ class KudosCommitPlaceholder private constructor(
          * registered stays referenced until the field itself is disposed.
          */
         fun disposeAll() {
+            unloading = true
             ACTIVE.toList().forEach { Disposer.dispose(it) }
         }
 
         private fun installNow(panel: CheckinProjectPanel) {
+            if (unloading) return
             val root = panel.component ?: return
             val commitMessage = UIUtil.findComponentOfType(root, CommitMessage::class.java)
             if (commitMessage == null) {
