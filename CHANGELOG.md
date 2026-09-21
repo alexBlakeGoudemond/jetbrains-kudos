@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [1.2.0]
+
+### Added
+
+- Added a hint to the commit tool window textbox showing Kudos addition
+    - You now see all collaborators before you commit, incase you forgot you enabled Kudos!
+    - This only shows if Kudos is enabled and if the input has text (does not replace the default hint: 'Commit
+      Message')
+
 ## [1.1.3]
 
 ### Fixed
