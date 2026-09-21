@@ -1,0 +1,25 @@
+src/main/kotlin/com/kudos/commit/KudosCommitPlaceholder.kt
+  h_1197a506f6c7d6 51,143-145,160-166,186,191
+  s_b0cd76d1e74a14::t_85ea81abba42ff 159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "102784efae4db95a71f9e426b67e419eafa01a35",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_b0cd76d1e74a14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_b0cd76d1e74a14",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
