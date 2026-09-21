@@ -59,7 +59,8 @@
     - Integrated into Commit Tool Window to Give Kudos to Collaborators
     - Settings remembered globally (2+ IDE instances will have same collaborators)
 
-[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.3...HEAD
+[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.3...1.2.0
 [1.1.3]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.2...1.1.3
 [1.1.2]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.0...1.1.1
