@@ -1,0 +1,14 @@
+.idea/icon.svg
+  h_1197a506f6c7d6 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "01795de6bcae07ecec8fd46b7c5d3ea281f6c7ae",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
