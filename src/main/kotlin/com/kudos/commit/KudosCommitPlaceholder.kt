@@ -21,6 +21,7 @@ import com.intellij.util.ui.UIUtil
 import com.kudos.infrastructure.kudosLogger
 import com.kudos.settings.KudosSettingsListener
 import com.kudos.settings.KudosSettingsState
+import java.awt.Color
 import java.awt.Graphics2D
 import java.awt.geom.Rectangle2D
 import java.util.concurrent.ConcurrentHashMap
@@ -228,6 +229,6 @@ private class KudosHintRenderer(private val text: String) : EditorCustomElementR
 
     private companion object {
         /** Mid-grey reads as "placeholder" in both light and dark themes. */
-        val HINT_COLOR: JBColor = JBColor.GRAY
+        val HINT_COLOR: Color = JBColor.MAGENTA
     }
 }
