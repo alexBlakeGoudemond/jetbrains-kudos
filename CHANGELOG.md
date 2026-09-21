@@ -10,6 +10,8 @@
     - You now see all collaborators before you commit, incase you forgot you enabled Kudos!
     - This only shows if Kudos is enabled and if the input has text (does not replace the default hint: 'Commit
       Message')
+- Added icon to .idea directory
+    - Cloning this repo now shows a unique icon for the repository
 
 ## [1.1.3]
 
