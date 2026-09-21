@@ -1,0 +1,40 @@
+src/main/kotlin/com/kudos/commit/KudosCheckinHandler.kt
+  s_e8eec9c52abf85::t_acbd4bc4adc8be 8,10,17,42-52,54-61,63-119
+  h_1197a506f6c7d6 53,62
+  s_e8eec9c52abf85::t_e6eb7d3eff7a31 120
+src/main/kotlin/com/kudos/KudosDynamicPluginListener.kt
+  h_1197a506f6c7d6 34,37
+  s_e8eec9c52abf85::t_9b1cb531b28942 8
+  s_e8eec9c52abf85::t_b74c8c578fd34b 31-33
+docs/DEVELOPER_NOTES.md
+  s_e8eec9c52abf85::t_689bfa9f858ec1 77-81
+gradle.properties
+  h_1197a506f6c7d6 8
+CHANGELOG.md
+  h_1197a506f6c7d6 5-11,25
+src/test/kotlin/com/kudos/commit/KudosCheckinHandlerTest.kt
+  s_e8eec9c52abf85::t_ef9c18ff19d466 7,20,45
+  s_e8eec9c52abf85::t_752f181e625f47 6,14-19,21-44,46-63,69
+  s_e8eec9c52abf85::t_82da4f25d8f7dd 1-5,8-13,64-68,70-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "836ef5c7af3ebf0ed04183ff8bedf16187a18d64",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_e8eec9c52abf85": {
+      "agent_id": {
+        "tool": "junie",
+        "id": "1789965556918",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
