@@ -1,0 +1,37 @@
+src/test/kotlin/com/kudos/settings/KudosSettingsEventsTest.kt
+  h_1197a506f6c7d6 1-66
+src/main/kotlin/com/kudos/settings/KudosSettingsState.kt
+  h_1197a506f6c7d6 15,17-20,54,56,63,65,77-80,107-113,126-132,138
+  s_c32eff2d2b110b::t_890db45f342e70 16,125,170
+src/test/kotlin/com/kudos/commit/KudosPlaceholderTextTest.kt
+  h_1197a506f6c7d6 1-50
+src/main/kotlin/com/kudos/commit/KudosCommitPlaceholder.kt
+  h_1197a506f6c7d6 1-219
+src/main/kotlin/com/kudos/commit/KudosCheckinHandler.kt
+  h_1197a506f6c7d6 12-17
+src/main/kotlin/com/kudos/KudosDynamicPluginListener.kt
+  h_1197a506f6c7d6 6,22-25
+src/main/kotlin/com/kudos/commit/KudosPlaceholderText.kt
+  h_1197a506f6c7d6 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d434ee9af3a325b89350d7d8249933ad9271cde1",
+  "prompts": {},
+  "humans": {
+    "h_1197a506f6c7d6": {
+      "author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_c32eff2d2b110b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_c32eff2d2b110b",
+        "model": "unknown"
+      },
+      "human_author": "Alex Blake-Goudemond <alexgoudemond@gmail.com>"
+    }
+  }
+}
