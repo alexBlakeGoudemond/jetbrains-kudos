@@ -9,7 +9,6 @@
 - Attempt to address bug: update requires restart when it shouldn't (005)
     - Fixed a memory leak during dynamic plugin
 
-
 ## [1.2.1]
 
 ### Fixed
@@ -74,7 +73,9 @@
     - Integrated into Commit Tool Window to Give Kudos to Collaborators
     - Settings remembered globally (2+ IDE instances will have same collaborators)
 
-[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.2.1...HEAD
+[Unreleased]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.2.2...HEAD
+
+[1.2.2]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.2.1...1.2.2
 [1.2.1]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.3...1.2.0
 [1.1.3]: https://github.com/alexBlakeGoudemond/jetbrains-window-accent/compare/1.1.2...1.1.3
