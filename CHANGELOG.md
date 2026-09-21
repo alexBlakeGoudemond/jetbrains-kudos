@@ -2,11 +2,19 @@
 
 ## [Unreleased]
 
+## [1.2.2]
+
+### Fixed
+
+- Attempt to address bug: update requires restart when it shouldn't (005)
+    - Fixed a memory leak during dynamic plugin
+
+
 ## [1.2.1]
 
 ### Fixed
 
-- Attempt to address bug: update requires restart when it shouldn't (003)
+- Attempt to address bug: update requires restart when it shouldn't (004)
     - Enhance Kudos plugin unload process by cleaning up commit handlers and resources
 
 ## [1.2.0]

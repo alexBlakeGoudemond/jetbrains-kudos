@@ -15,6 +15,7 @@ import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.util.Key
 import com.intellij.openapi.vcs.CheckinProjectPanel
 import com.intellij.openapi.vcs.ui.CommitMessage
+import com.intellij.ui.EditorSettingsProvider
 import com.intellij.ui.EditorTextField
 import com.intellij.ui.JBColor
 import com.intellij.util.ui.UIUtil
@@ -24,7 +25,6 @@ import com.kudos.settings.KudosSettingsState
 import java.awt.Color
 import java.awt.Graphics2D
 import java.awt.geom.Rectangle2D
-import java.lang.ref.WeakReference
 import java.util.concurrent.ConcurrentHashMap
 
 /**
@@ -59,6 +59,12 @@ class KudosCommitPlaceholder private constructor(
     @Volatile
     private var isDisposed = false
 
+    private val settingsProvider = EditorSettingsProvider { newEditor ->
+        if (!isDisposed) {
+            attach(newEditor)
+        }
+    }
+
     private val documentListener = object : DocumentListener {
         override fun documentChanged(event: DocumentEvent) = queueReanchor()
     }
@@ -67,9 +73,7 @@ class KudosCommitPlaceholder private constructor(
         // EditorTextField throws its editor away and builds a new one whenever it leaves/re-enters the UI
         // hierarchy (e.g. the tool window is hidden and shown again), and an inlay dies with its editor.
         // The settings provider is called for every editor the field creates from now on...
-        // Use a weak reference to avoid pinning this instance in EditorTextField's permanent settings provider list.
-        val placeholderRef = WeakReference(this)
-        editorField.addSettingsProvider { placeholderRef.get()?.attach(it) }
+        editorField.addSettingsProvider(settingsProvider)
         // ...but not retroactively, so also pick up an editor that already exists.
         (editorField.editor as? EditorEx)?.let { attach(it) }
 
@@ -148,6 +152,7 @@ class KudosCommitPlaceholder private constructor(
         isDisposed = true
         ACTIVE.remove(this)
         editorField.removeDocumentListener(documentListener)
+        removeSettingsProviders(editorField, settingsProvider)
         // The document belongs to the IDE and outlives us, and it holds our INSTALLED_KEY marker (an instance of
         // our class). Leaving it there would pin this plugin's classloader after an unload/update.
         if (document.getUserData(INSTALLED_KEY) === this) document.putUserData(INSTALLED_KEY, null)
@@ -185,14 +190,44 @@ class KudosCommitPlaceholder private constructor(
         }
 
         /**
-         * Takes every hint down. Called when the plugin is about to be unloaded.
-         *
-         * Note: `EditorTextField` has no way to remove a settings provider, so the (now inert) lambda we
-         * registered stays referenced until the field itself is disposed.
+         * Takes every hint down and cleans up registered settings providers. Called when the plugin is about to be unloaded.
          */
         fun disposeAll() {
             unloading = true
             ACTIVE.toList().forEach { Disposer.dispose(it) }
+            ACTIVE.clear()
+        }
+
+        /**
+         * Removes settings provider instances from the EditorTextField's internal provider list.
+         * EditorTextField does not expose a public removeSettingsProvider method, but keeping
+         * provider instances loaded by our PluginClassLoader pins the classloader and breaks dynamic unloading.
+         */
+        fun removeSettingsProviders(field: EditorTextField, provider: EditorSettingsProvider? = null) {
+            var clazz: Class<*>? = field.javaClass
+            while (clazz != null && clazz != Any::class.java) {
+                try {
+                    val f = clazz.getDeclaredField("mySettingsProviders")
+                    f.isAccessible = true
+                    val list = f.get(field) as? MutableCollection<*>
+                    if (list != null) {
+                        if (provider != null) {
+                            list.remove(provider)
+                        }
+                        val ourLoader = KudosCommitPlaceholder::class.java.classLoader
+                        list.removeIf { item ->
+                            item != null && item.javaClass.classLoader === ourLoader
+                        }
+                        LOG.info("Cleaned EditorSettingsProviders from ${clazz.simpleName}")
+                    }
+                    break
+                } catch (_: NoSuchFieldException) {
+                    clazz = clazz.superclass
+                } catch (e: Throwable) {
+                    LOG.warn("Failed to remove EditorSettingsProvider from ${field.javaClass.simpleName}", e)
+                    break
+                }
+            }
         }
 
         private fun installNow(panel: CheckinProjectPanel) {
