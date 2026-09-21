@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.2.1]
+
+### Fixed
+
+- Attempt to address bug: update requires restart when it shouldn't (003)
+    - Enhance Kudos plugin unload process by cleaning up commit handlers and resources
+
 ## [1.2.0]
 
 ### Added
@@ -15,7 +22,7 @@
 
 ### Fixed
 
-- Attempt to address bug; update requires restart when it shouldn't (003)
+- Attempt to address bug: update requires restart when it shouldn't (003)
     - Register additional Disposable objects
     - Modify bus subscriptions to allow easier unloading
 - Dynamically find plugin ID incase of using hardcoded "Kudos"

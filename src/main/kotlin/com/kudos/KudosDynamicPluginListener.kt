@@ -5,6 +5,7 @@ import com.intellij.ide.plugins.IdeaPluginDescriptor
 import com.intellij.ide.plugins.PluginManager
 import com.intellij.openapi.extensions.PluginId
 import com.intellij.openapi.util.IconLoader
+import com.kudos.commit.KudosCheckinHandler
 import com.kudos.commit.KudosCommitPlaceholder
 import com.kudos.infrastructure.kudosLogger
 
@@ -27,7 +28,12 @@ class KudosDynamicPluginListener : DynamicPluginListener {
         // explicitly or those editors would keep our classes alive after the plugin is unloaded.
         KudosCommitPlaceholder.disposeAll()
 
+        // Active checkin handlers retained by long-lived VCS commit workflows must also be detached
+        // so they don't pin this plugin's classloader after unloading.
+        KudosCheckinHandler.disposeAll()
+
         LOG.info("Clearing IconLoader cache ahead of unload (isUpdate=$isUpdate)")
         IconLoader.clearCache()
+        LOG.info("beforePluginUnload completed")
     }
 }

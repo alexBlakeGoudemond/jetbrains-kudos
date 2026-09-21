@@ -74,6 +74,9 @@ points and services:
 
 - `KudosDynamicPluginListener` listens to the `DynamicPluginListener` topic via `<applicationListeners>` in
   `plugin.xml`.
-- When `beforePluginUnload` is triggered for the "Kudos" plugin, it invokes `IconLoader.clearCache()` to release cached
-  SVG icon resources and ensure clean dynamic unloads/reloads.
+- When `beforePluginUnload` is triggered for the "Kudos" plugin:
+  1. Calls `KudosCommitPlaceholder.disposeAll()` to remove all commit message block inlays and clean document user data.
+  2. Calls `KudosCheckinHandler.disposeAll()` to detach active `KudosCheckinHandler` instances from long-lived VCS
+     commit workflows (`ChangesViewCommitWorkflow._commitHandlers`), preventing classloader pinning.
+  3. Invokes `IconLoader.clearCache()` to release cached SVG icon resources.
 
